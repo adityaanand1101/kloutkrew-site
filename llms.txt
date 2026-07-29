@@ -4,11 +4,11 @@
 
 ## Pages
 
-- [Home](https://kloutkrew.com/) — KloutKrew AI Studio homepage. AI-first creative agency overview, stats, testimonials, case studies.
-- [About](https://kloutkrew.com/about) — About KloutKrew. Global creative studio making everything that happens on a screen.
-- [Services](https://kloutkrew.com/services) — Full service list: Graphics Design, UI/UX, Web Development, Digital Marketing, Brand Films, Content & UGC.
-- [Work](https://kloutkrew.com/works) — Portfolio of brand films, packaging, web design, and AI films.
-- [Contact](https://kloutkrew.com/contact-us) — Get in touch. Quote requests, project inquiries.
+- [Home](https://kloutkrew.in/) — KloutKrew AI Studio homepage. AI-first creative agency overview, stats, testimonials, case studies.
+- [About](https://kloutkrew.in/about) — About KloutKrew. Global creative studio making everything that happens on a screen.
+- [Services](https://kloutkrew.in/services) — Full service list: Graphics Design, UI/UX, Web Development, Digital Marketing, Brand Films, Content & UGC.
+- [Work](https://kloutkrew.in/works) — Portfolio of brand films, packaging, web design, and AI films.
+- [Contact](https://kloutkrew.in/contact-us) — Get in touch. Quote requests, project inquiries.
 
 ## Contact
 

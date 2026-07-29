@@ -3,7 +3,7 @@ Allow: /
 Disallow: /_server.js
 Disallow: /About\ Us.html
 
-Sitemap: https://kloutkrew.com/sitemap.xml
+Sitemap: https://kloutkrew.in/sitemap.xml
 
 # Crawl delay for polite crawling
 Crawl-delay: 10
