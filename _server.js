@@ -89,6 +89,7 @@ http.createServer((req, res) => {
   if (urlPath === '/service' || urlPath === '/services') urlPath = '/services.html';
   if (urlPath === '/about' || urlPath === '/about-us' || urlPath === '/aboutus' || urlPath === '/about-us.html' || urlPath === '/About Us.html') urlPath = '/about.html';
   if (urlPath === '/projects' || urlPath === '/work' || urlPath === '/works') urlPath = '/works.html';
+  if (urlPath === '/blog') urlPath = '/blog.html';
   if (urlPath === '/favicon.ico') urlPath = '/favicon.svg';
   let filePath = path.join(ROOT, urlPath);
   if (!filePath.startsWith(ROOT)) { res.writeHead(403); return res.end('Forbidden'); }
