@@ -1,0 +1,15 @@
+﻿# temp/block files
+__*_block.txt
+_submissions.json
+DESIGN_GUIDELINES.md
+
+# env
+.claude/
+.env
+
+# media (too large for git)
+*.mp4
+*.png
+*.ttf
+*.avif
+*.webp
