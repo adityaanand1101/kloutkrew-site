@@ -90,6 +90,17 @@ http.createServer((req, res) => {
   if (urlPath === '/about' || urlPath === '/about-us' || urlPath === '/aboutus' || urlPath === '/about-us.html' || urlPath === '/About Us.html') urlPath = '/about.html';
   if (urlPath === '/projects' || urlPath === '/work' || urlPath === '/works') urlPath = '/works.html';
   if (urlPath === '/blog') urlPath = '/blog.html';
+  if (urlPath === '/blog/how-ai-is-changing-brand-films') urlPath = '/blog/how-ai-is-changing-brand-films.html';
+  if (urlPath === '/blog/scroll-stopping-content-guide') urlPath = '/blog/scroll-stopping-content-guide.html';
+  if (urlPath === '/blog/ai-first-creative-strategy') urlPath = '/blog/ai-first-creative-strategy.html';
+  if (urlPath === '/blog/graphics-design-trends-2026') urlPath = '/blog/graphics-design-trends-2026.html';
+  if (urlPath === '/blog/ui-ux-design-best-practices') urlPath = '/blog/ui-ux-design-best-practices.html';
+  if (urlPath === '/blog/power-of-ugc-for-brands') urlPath = '/blog/power-of-ugc-for-brands.html';
+  if (urlPath === '/blog/webflow-vs-framer-vs-wordpress') urlPath = '/blog/webflow-vs-framer-vs-wordpress.html';
+  if (urlPath === '/blog/digital-marketing-b2b-brands') urlPath = '/blog/digital-marketing-b2b-brands.html';
+  if (urlPath === '/blog/brand-identity-stand-out') urlPath = '/blog/brand-identity-stand-out.html';
+  if (urlPath === '/blog/future-of-content-creation-ai') urlPath = '/blog/future-of-content-creation-ai.html';
+
   if (urlPath === '/favicon.ico') urlPath = '/favicon.svg';
   let filePath = path.join(ROOT, urlPath);
   if (!filePath.startsWith(ROOT)) { res.writeHead(403); return res.end('Forbidden'); }
