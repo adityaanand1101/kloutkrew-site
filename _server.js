@@ -89,12 +89,18 @@ http.createServer((req, res) => {
   if (urlPath === '/service' || urlPath === '/services') urlPath = '/services.html';
   if (urlPath === '/about' || urlPath === '/about-us' || urlPath === '/aboutus' || urlPath === '/about-us.html' || urlPath === '/About Us.html') urlPath = '/about.html';
   if (urlPath === '/projects' || urlPath === '/work' || urlPath === '/works') urlPath = '/works.html';
+  if (urlPath === '/favicon.ico') urlPath = '/favicon.svg';
   let filePath = path.join(ROOT, urlPath);
   if (!filePath.startsWith(ROOT)) { res.writeHead(403); return res.end('Forbidden'); }
   fs.stat(filePath, (err, stat) => {
     if (err || !stat.isFile()) { res.writeHead(404); return res.end('Not found: ' + urlPath); }
     const ext = path.extname(filePath).toLowerCase();
-    res.writeHead(200, { 'Content-Type': types[ext] || 'application/octet-stream' });
+    const isHtml = ext === '.html';
+    const cacheMaxAge = isHtml ? 0 : 31536000;
+    res.writeHead(200, {
+      'Content-Type': types[ext] || 'application/octet-stream',
+      'Cache-Control': 'public, max-age=' + cacheMaxAge + (isHtml ? ', must-revalidate' : ', immutable'),
+    });
     fs.createReadStream(filePath).pipe(res);
   });
 }).listen(PORT, () => console.log('Serving ' + ROOT + ' on http://localhost:' + PORT));

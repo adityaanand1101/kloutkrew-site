@@ -1,0 +1,25 @@
+# KloutKrew AI Studio
+
+> An AI-first creative agency crafting scroll-stopping brand films, content and ads for ambitious brands.
+
+## Pages
+
+- [Home](https://kloutkrew.com/) — KloutKrew AI Studio homepage. AI-first creative agency overview, stats, testimonials, case studies.
+- [About](https://kloutkrew.com/about) — About KloutKrew. Global creative studio making everything that happens on a screen.
+- [Services](https://kloutkrew.com/services) — Full service list: Graphics Design, UI/UX, Web Development, Digital Marketing, Brand Films, Content & UGC.
+- [Work](https://kloutkrew.com/works) — Portfolio of brand films, packaging, web design, and AI films.
+- [Contact](https://kloutkrew.com/contact-us) — Get in touch. Quote requests, project inquiries.
+
+## Contact
+
+- Phone: +91 99910 971008
+- Email: shudhanshu.kloutkrew@gmail.com
+
+## Services
+
+1. Graphics Design — Branding, Logo, Packaging, Poster, Illustration
+2. UI/UX Design — Product, Design System, App, SaaS
+3. Web Development — Webflow, Framer, WordPress, Shopify
+4. Digital Marketing — SEO, Meta Ads, Google Ads, Social
+5. Brand Films — AI Production, Direction, Editing, Color
+6. Content & UGC — Reels, Ads, Campaigns, Photography

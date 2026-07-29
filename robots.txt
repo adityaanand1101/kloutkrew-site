@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /_server.js
+Disallow: /About\ Us.html
+
+Sitemap: https://kloutkrew.com/sitemap.xml
+
+# Crawl delay for polite crawling
+Crawl-delay: 10
