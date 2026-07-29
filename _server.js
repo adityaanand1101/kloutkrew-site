@@ -18,6 +18,7 @@ const types = {
   '.svg': 'image/svg+xml',
   '.avif': 'image/avif',
   '.webp': 'image/webp',
+  '.xml': 'application/xml',
   '.ttf': 'font/ttf',
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
