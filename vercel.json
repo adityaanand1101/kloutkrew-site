@@ -1,0 +1,14 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/services", "destination": "/services.html" },
+    { "source": "/works", "destination": "/works.html" },
+    { "source": "/contact-us", "destination": "/contact-us.html" },
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/404", "destination": "/404.html" },
+    { "source": "/favicon.ico", "destination": "/favicon.svg" },
+    { "source": "/blog/:slug", "destination": "/blog/:slug.html" }
+  ]
+}
