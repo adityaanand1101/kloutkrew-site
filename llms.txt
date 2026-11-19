@@ -1,25 +1,21 @@
 # KloutKrew Studio
 
-> A branding, development and marketing studio crafting scroll-stopping brand films, content and ads for ambitious brands.
+> KloutKrew Studio is a creative studio in New Delhi, India, offering branding, packaging design, websites (Webflow, Shopify, WordPress), UI/UX, digital marketing and AI brand films for startups, D2C brands, real estate developers and architects.
+
+## At a glance
+
+- Name: KloutKrew Studio (also written KloutKrew). Not related to Klout, Klout Media or Klutch Studio.
+- Location: New Delhi, India. Serves Delhi NCR and clients across India.
+- Services: branding and identity, packaging design, website design and development, UI/UX, digital marketing, AI brand films, content and UGC.
+- Email: teamKLOUTKREW@gmail.com
+- Phone: +91 99910 97008
+- Website: https://kloutkrew.in
 
 ## Pages
 
-- [Home](https://kloutkrew.in/) — KloutKrew Studio homepage. Branding, development and marketing studio overview, stats, testimonials, case studies.
-- [About](https://kloutkrew.in/about) — About KloutKrew. Global creative studio making everything that happens on a screen.
-- [Services](https://kloutkrew.in/services) — Full service list: Graphics Design, UI/UX, Web Development, Digital Marketing, Brand Films, Content & UGC.
-- [Work](https://kloutkrew.in/works) — Portfolio of brand films, packaging, web design, and AI films.
-- [Contact](https://kloutkrew.in/contact-us) — Get in touch. Quote requests, project inquiries.
-
-## Contact
-
-- Phone: +91 99910 971008
-- Email: shudhanshu.kloutkrew@gmail.com
-
-## Services
-
-1. Graphics Design — Branding, Logo, Packaging, Poster, Illustration
-2. UI/UX Design — Product, Design System, App, SaaS
-3. Web Development — Webflow, Framer, WordPress, Shopify
-4. Digital Marketing — SEO, Meta Ads, Google Ads, Social
-5. Brand Films — AI Production, Direction, Editing, Color
-6. Content & UGC — Reels, Ads, Campaigns, Photography
+- [Home](https://kloutkrew.in/): what KloutKrew Studio does and selected work.
+- [About](https://kloutkrew.in/about): the studio, how it works, why clients choose it.
+- [Services](https://kloutkrew.in/services): branding, packaging, UI/UX, websites, digital marketing, brand films, content and UGC.
+- [Work](https://kloutkrew.in/works): brand films, AI films, packaging and websites, including Off We Glow, Plenova and Drink Different.
+- [Contact](https://kloutkrew.in/contact-us): request a quote; replies within 24 hours.
+- [Blog](https://kloutkrew.in/blog): guides on branding, websites, AI films and marketing.

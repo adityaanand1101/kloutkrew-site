@@ -331,8 +331,8 @@ ${cats.map(c => `<button class="kb-chip" data-filter="${esc(slugify(c))}" aria-p
 ${CTA}
 </main>`;
   const head = headHTML({
-    title: `Blog | ${SITE_NAME}`,
-    description: 'Ideas on branding, design, development and marketing from the KloutKrew Studio team.',
+    title: `Branding, Web & Marketing Blog | ${SITE_NAME}`,
+    description: 'Guides on branding, packaging, websites, AI brand films and marketing from KloutKrew Studio, a New Delhi creative studio.',
     url: `${SITE}/blog`,
     image: featured?.cover?.og ? SITE + featured.cover.og : DEFAULT_OG,
     jsonLd: {
@@ -455,6 +455,9 @@ async function main() {
   for (const post of posts) await fsp.writeFile(path.join(DIST, 'blog', `${post.slug}.html`), postPage(post, posts));
   await fsp.writeFile(path.join(DIST, 'blog', 'rss.xml'), rss(posts));
   await fsp.writeFile(path.join(DIST, 'sitemap.xml'), sitemap(posts));
+  const llms = fs.readFileSync(path.join(ROOT, 'llms.txt'), 'utf8').trimEnd()
+    + '\n\n## Blog\n\n' + posts.filter(p => !p.draft).map(p => `- [${p.title}](${SITE}/blog/${p.slug}): ${p.description}`).join('\n') + '\n';
+  await fsp.writeFile(path.join(DIST, 'llms.txt'), llms);
 
   console.log(`Built ${posts.length} post(s)${INCLUDE_DRAFTS ? ' (drafts included)' : ''} and ${imageJobs.size} image(s) in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
 }
