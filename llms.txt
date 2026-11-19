@@ -1,10 +1,10 @@
 # KloutKrew Studio
 
-> An Branding, development and marketing studio crafting scroll-stopping brand films, content and ads for ambitious brands.
+> A branding, development and marketing studio crafting scroll-stopping brand films, content and ads for ambitious brands.
 
 ## Pages
 
-- [Home](https://kloutkrew.in/) — KloutKrew Studio homepage. AI-first creative agency overview, stats, testimonials, case studies.
+- [Home](https://kloutkrew.in/) — KloutKrew Studio homepage. Branding, development and marketing studio overview, stats, testimonials, case studies.
 - [About](https://kloutkrew.in/about) — About KloutKrew. Global creative studio making everything that happens on a screen.
 - [Services](https://kloutkrew.in/services) — Full service list: Graphics Design, UI/UX, Web Development, Digital Marketing, Brand Films, Content & UGC.
 - [Work](https://kloutkrew.in/works) — Portfolio of brand films, packaging, web design, and AI films.

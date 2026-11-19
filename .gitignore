@@ -11,3 +11,14 @@ DESIGN_GUIDELINES.md
 *.png
 *.avif
 *.webp
+
+# build output
+node_modules/
+dist/
+
+# blog images and site assets ARE committed
+!content/**/*.png
+!content/**/*.webp
+!content/**/*.avif
+!assets/**/*.png
+!assets/**/*.webp
