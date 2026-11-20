@@ -238,6 +238,7 @@ async function loadPosts() {
       featured: Boolean(data.featured),
       draft: Boolean(data.draft),
       readMins: Math.max(1, Math.round(words / 220)),
+      faqs: Array.isArray(data.faqs) ? data.faqs : [],
     });
   }
   return posts.sort((a, b) => b.date - a.date);
@@ -346,6 +347,15 @@ ${CTA}
   return page(head, content, `<script src="/assets/blog.js" defer></script>`);
 }
 
+function faqSection(faqs) {
+  if (!faqs.length) return '';
+  return `<section class="kb-faq" aria-labelledby="faq-title"><div class="kb-narrow">
+<h2 id="faq-title">Frequently asked questions</h2>
+${faqs.map(f => `<details><summary>${esc(f.q)}</summary><div>${md.render(String(f.a))}</div></details>`).join('\n')}
+</div></section>`;
+}
+const faqLd = faqs => ({ '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: String(f.a).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') } })) });
+
 function postPage(post, posts) {
   const related = [
     ...posts.filter(p => p !== post && p.category === post.category),
@@ -368,6 +378,7 @@ ${post.draft ? '<p class="kb-draft-banner">Draft preview — this post is hidden
 <div class="kb-post-body">
 ${post.html}
 </div>
+${faqSection(post.faqs)}
 <footer class="kb-post-foot"><div class="kb-narrow">
 ${post.tags.length ? `<ul class="kb-tags">${post.tags.map(t => `<li>#${esc(t)}</li>`).join('')}</ul>` : ''}
 <div class="kb-share"><span>Share</span>
@@ -394,7 +405,12 @@ ${CTA}
       post.cover && !post.cover.external && !post.cover.passthrough
         ? `<link rel="preload" as="image" type="image/avif" imagesrcset="${post.cover.avif.join(', ')}" imagesizes="${SIZES.cover}" fetchpriority="high"/>` : '',
     ].filter(Boolean).join('\n'),
-    jsonLd: {
+    jsonLd: post.faqs.length ? { '@context': 'https://schema.org', '@graph': [{ '@type': 'BlogPosting',
+      headline: post.title, description: post.description, image,
+      datePublished: post.date.toISOString(), dateModified: (post.updated || post.date).toISOString(),
+      author: { '@type': post.author === SITE_NAME ? 'Organization' : 'Person', name: post.author },
+      publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: `${SITE}/favicon.svg` } },
+      mainEntityOfPage: url, keywords: post.tags.join(', '), articleSection: post.category }, faqLd(post.faqs)] } : {
       '@context': 'https://schema.org', '@type': 'BlogPosting',
       headline: post.title, description: post.description, image,
       datePublished: post.date.toISOString(), dateModified: (post.updated || post.date).toISOString(),
@@ -493,7 +509,7 @@ ${CTA}
       { '@type': 'ListItem', position: 2, name: d.breadcrumb || d.h1, item: url },
     ],
   }];
-  if (faqs.length) graph.push({ '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: String(f.a) } })) });
+  if (faqs.length) graph.push({ '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: String(f.a).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') } })) });
   const head = headHTML({ title: d.title, description: d.metaDescription || d.description, url, image: DEFAULT_OG,
     jsonLd: { '@context': 'https://schema.org', '@graph': graph } });
   return page(head, content, `<script src="/assets/blog.js" defer></script>`);

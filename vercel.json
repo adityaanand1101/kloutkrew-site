@@ -52,6 +52,26 @@
       "destination": "/international.html"
     },
     {
+      "source": "/ai-brand-films",
+      "destination": "/ai-brand-films.html"
+    },
+    {
+      "source": "/branding-agency",
+      "destination": "/branding-agency.html"
+    },
+    {
+      "source": "/packaging-design-agency",
+      "destination": "/packaging-design-agency.html"
+    },
+    {
+      "source": "/social-media-marketing",
+      "destination": "/social-media-marketing.html"
+    },
+    {
+      "source": "/website-design-agency",
+      "destination": "/website-design-agency.html"
+    },
+    {
       "source": "/blog/:slug([^/.]+)",
       "destination": "/blog/:slug.html"
     }
