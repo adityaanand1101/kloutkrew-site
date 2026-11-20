@@ -3,7 +3,7 @@ title: "How to Write a Brand Positioning Statement (With Examples)"
 description: "A simple formula for writing a brand positioning statement, worked examples for D2C and service brands, and how to use it in design decisions."
 date: 2027-02-01
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["brand positioning statement", "brand positioning", "brand strategy", "positioning examples"]
 faqs:
   - q: 'What is a brand positioning statement?'

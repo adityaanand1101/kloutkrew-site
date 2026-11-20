@@ -3,7 +3,7 @@ title: "What Is a Dieline? A Packaging Guide for Brand Owners"
 description: "What a packaging dieline is, what's on it, how designers use it, and how to avoid costly print mistakes."
 date: 2027-03-11
 category: "Packaging"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["what is a dieline", "dieline", "packaging template", "packaging printing"]
 faqs:
   - q: 'What is a dieline?'

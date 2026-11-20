@@ -3,7 +3,7 @@ title: "Brand Architecture Explained: Master Brand, Sub-Brands and Endorsed Bran
 description: "What brand architecture is, the main models with examples, and how growing D2C and service companies should organise products and brands."
 date: 2026-11-24
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["brand architecture", "sub brand", "branded house", "house of brands"]
 faqs:
   - q: 'What is brand architecture?'

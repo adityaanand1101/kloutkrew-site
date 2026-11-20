@@ -3,7 +3,7 @@ title: "D2C Branding in India: How New Brands Stand Out"
 description: "A practical guide to branding a direct-to-consumer brand in India, from positioning and identity to packaging, website and launch content."
 date: 2026-11-21
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["d2c branding agency", "d2c branding india", "d2c brand strategy", "branding for startups"]
 faqs:
   - q: 'What is D2C branding?'

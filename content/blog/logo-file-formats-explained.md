@@ -3,7 +3,7 @@ title: "Logo File Formats Explained: SVG, PNG, PDF, EPS and More"
 description: "Which logo file formats you need, what each one is for, and the complete logo pack every designer should hand over."
 date: 2027-03-08
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["logo file formats", "svg logo", "logo files", "brand assets"]
 faqs:
   - q: 'Which logo file format is best?'

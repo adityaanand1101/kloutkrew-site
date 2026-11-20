@@ -3,7 +3,7 @@ title: "How an AI Ad Film Is Made: The Production Process"
 description: "Step by step, how an AI-assisted ad film goes from brief to final cut: script, storyboard, generation, editing, sound, colour and versions."
 date: 2026-12-04
 category: "AI Filmmaking"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["ai ad film", "ai ad film production", "ai video production", "ad film process"]
 faqs:
   - q: 'How long does an AI ad film take to make?'

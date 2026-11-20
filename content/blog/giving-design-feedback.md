@@ -3,7 +3,7 @@ title: "How to Give Design Feedback That Gets Better Results"
 description: "How clients and teams can give clear, useful feedback on logos, packaging, websites and films, with examples of helpful and unhelpful comments."
 date: 2026-12-10
 category: "Studio Notes"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["design feedback", "how to give design feedback", "working with designers", "creative review"]
 faqs:
   - q: 'How do I give feedback on a design I don''t like?'

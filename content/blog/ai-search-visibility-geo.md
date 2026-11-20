@@ -3,7 +3,7 @@ title: "How to Get Your Brand Recommended by ChatGPT and AI Search"
 description: "What generative engine optimisation (GEO) is, how AI assistants choose which brands to mention, and practical steps to improve your visibility."
 date: 2026-11-21
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["ai search visibility", "generative engine optimisation", "geo seo", "chatgpt brand mentions"]
 faqs:
   - q: 'What is GEO?'

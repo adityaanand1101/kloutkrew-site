@@ -3,7 +3,7 @@ title: "Webflow Agency in India: When Webflow Is the Right Choice"
 description: "Why startups and brands choose Webflow, what a Webflow agency in India does, how to evaluate one and what to expect from a Webflow project."
 date: 2026-11-21
 category: "Web Development"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["webflow agency india", "webflow agency in india", "webflow agency", "webflow development"]
 faqs:
   - q: 'What does a Webflow agency do?'

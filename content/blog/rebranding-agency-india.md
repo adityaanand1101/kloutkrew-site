@@ -3,7 +3,7 @@ title: "Working With a Rebranding Agency in India: What to Expect"
 description: "How a rebranding project works with an agency in India: audit, strategy, design, rollout, timeline and how to prepare your team."
 date: 2026-12-11
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["rebranding agency india", "rebranding services", "brand refresh agency", "rebrand process"]
 faqs:
   - q: 'How long does a rebrand take?'

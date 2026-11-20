@@ -3,7 +3,7 @@ title: "Luxury Real Estate Website Design: How to Look the Part"
 description: "How to design a luxury real estate or premium project website: restraint, imagery, film, storytelling, speed and discreet enquiry paths."
 date: 2026-11-21
 category: "Web Development"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["luxury real estate website design", "luxury property website", "real estate website design", "premium project website"]
 faqs:
   - q: 'What makes a real estate website feel luxurious?'

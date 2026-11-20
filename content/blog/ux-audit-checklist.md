@@ -3,7 +3,7 @@ title: "UX Audit Checklist: Find What's Stopping Users"
 description: "A practical UX audit checklist for websites and apps: navigation, content, forms, mobile, accessibility, speed and analytics, with how to prioritise fixes."
 date: 2027-01-28
 category: "UI/UX"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["ux audit", "ux audit checklist", "usability review", "website ux"]
 faqs:
   - q: 'What is a UX audit?'

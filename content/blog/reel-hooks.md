@@ -3,7 +3,7 @@ title: "Reel Hooks: 20 Opening Lines That Stop the Scroll"
 description: "Hook formulas for Instagram Reels and Shorts, with examples for D2C, service and B2B brands, plus how to test which hooks work."
 date: 2027-02-25
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["reel hooks", "instagram reel ideas", "video hooks", "short form video"]
 faqs:
   - q: 'What is a hook in a Reel?'

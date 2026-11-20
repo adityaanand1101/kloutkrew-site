@@ -3,7 +3,7 @@ title: "Webflow vs Framer vs WordPress: Which Is Right?"
 description: "An honest comparison of the three platforms — design flexibility, SEO, pricing, and which one fits your brand's needs."
 date: 2026-05-15
 category: "Web Development"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["Webflow", "Framer", "WordPress", "website builder comparison"]
 ---
 

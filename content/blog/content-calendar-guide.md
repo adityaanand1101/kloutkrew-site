@@ -3,7 +3,7 @@ title: "How to Build a Content Calendar That You'll Actually Follow"
 description: "A simple content calendar for small brands: monthly themes, weekly slots, batching, approvals and a template you can copy."
 date: 2026-11-26
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["content calendar", "social media calendar", "content planning", "content marketing"]
 faqs:
   - q: 'What should a content calendar include?'

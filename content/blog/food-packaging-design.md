@@ -3,7 +3,7 @@ title: "Food Packaging Design: A Guide for Indian Food Brands"
 description: "How to design food packaging that looks appetising, communicates freshness and quality, stays practical and works across shelves and delivery apps."
 date: 2026-11-21
 category: "Packaging"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["food packaging design agency", "food packaging design", "snack packaging", "packaging design india"]
 faqs:
   - q: 'What makes food packaging appealing?'

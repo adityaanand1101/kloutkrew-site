@@ -3,7 +3,7 @@ title: "Shopify Store Design for D2C Brands: What Converts"
 description: "How to design a Shopify store that sells: homepage, collections, product pages, trust, speed and checkout tips for Indian and global D2C brands."
 date: 2027-02-26
 category: "Web Development"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["shopify store design", "shopify website design", "d2c website", "ecommerce design"]
 faqs:
   - q: 'Should I use a Shopify theme or a custom design?'

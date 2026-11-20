@@ -3,7 +3,7 @@ title: "Packaging Printing Finishes Explained: Foil, Emboss, Spot UV and More"
 description: "A plain-English guide to packaging finishes, what each one looks and feels like, when to use it and how to specify it for your printer."
 date: 2027-02-12
 category: "Packaging"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["packaging finishes", "foil stamping", "embossing", "spot uv"]
 faqs:
   - q: 'Which packaging finish looks the most premium?'

@@ -3,7 +3,7 @@ title: "Digital Marketing Strategies for B2B Brands in 2026"
 description: "LinkedIn, content marketing, ABM, and video — the B2B playbook has changed. Here's what's working now."
 date: 2026-05-08
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["B2B marketing", "digital marketing", "LinkedIn strategy", "ABM"]
 ---
 

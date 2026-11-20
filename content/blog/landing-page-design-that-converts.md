@@ -3,7 +3,7 @@ title: "Landing Page Design That Converts: A Practical Guide"
 description: "How to design landing pages for ads and launches: one goal, a strong hero, proof, objections, a clear form and fast loading."
 date: 2027-02-03
 category: "Web Development"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["landing page design", "high converting landing page", "landing page tips", "conversion rate optimisation"]
 faqs:
   - q: 'What is a landing page?'

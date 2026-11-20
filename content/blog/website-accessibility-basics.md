@@ -3,7 +3,7 @@ title: "Website Accessibility Basics Every Business Should Know"
 description: "Simple accessibility improvements that make your website usable for more people and often improve SEO: contrast, alt text, headings, keyboard and forms."
 date: 2027-03-10
 category: "Web Development"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["website accessibility", "web accessibility checklist", "wcag basics", "accessible design"]
 faqs:
   - q: 'What is web accessibility?'

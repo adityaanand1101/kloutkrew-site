@@ -3,7 +3,7 @@ title: "Core Web Vitals Explained for Business Owners"
 description: "What Core Web Vitals (LCP, INP, CLS) are, why they matter for SEO and sales, and the most common fixes for slow websites."
 date: 2026-12-18
 category: "Web Development"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["core web vitals", "website speed", "lcp", "page speed seo"]
 faqs:
   - q: 'What are Core Web Vitals?'

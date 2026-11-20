@@ -3,7 +3,7 @@ title: "Restaurant and Café Branding: From Name to Menu"
 description: "How to brand a restaurant or café: concept, name, identity, interiors, menus, packaging for delivery and Instagram-ready details."
 date: 2027-03-22
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["restaurant branding", "cafe branding", "restaurant logo", "menu design"]
 faqs:
   - q: 'What does restaurant branding include?'

@@ -3,7 +3,7 @@ title: "The Power of User-Generated Content for Brands"
 description: "UGC converts 4x better than brand-produced content. Here's why and how to build a UGC strategy that works."
 date: 2026-05-22
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["UGC", "user generated content", "brand marketing", "social proof"]
 ---
 

@@ -3,7 +3,7 @@ title: "Website Copywriting Tips for Service Businesses"
 description: "How to write website copy that's clear, specific and persuasive: headlines, service pages, proof, calls to action and SEO-friendly wording."
 date: 2027-03-15
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["website copywriting", "website content writing", "service page copy", "conversion copywriting"]
 faqs:
   - q: 'How long should website copy be?'

@@ -3,7 +3,7 @@ title: "LinkedIn Content for Founders: What to Post and How"
 description: "A practical LinkedIn content system for founders: post types, a weekly plan, writing tips, carousels and how to turn posts into leads."
 date: 2027-02-02
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["linkedin content for founders", "linkedin posting strategy", "founder content", "b2b content"]
 faqs:
   - q: 'How often should founders post on LinkedIn?'

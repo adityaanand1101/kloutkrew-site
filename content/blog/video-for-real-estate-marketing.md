@@ -3,7 +3,7 @@ title: "Video for Real Estate Marketing: Films That Sell Homes"
 description: "The video formats that help developers and agents sell property: walkthroughs, lifestyle films, construction updates, location films and ads."
 date: 2027-02-23
 category: "AI Filmmaking"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["real estate video marketing", "property walkthrough video", "real estate ad film", "real estate marketing agency delhi ncr"]
 faqs:
   - q: 'What video does a real estate project need first?'

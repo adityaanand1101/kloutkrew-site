@@ -3,7 +3,7 @@ title: "12 Product Video Ideas for D2C Brands"
 description: "Product video formats that work for D2C brands on Instagram, YouTube, ads and product pages, with tips for making each one."
 date: 2027-02-05
 category: "AI Filmmaking"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["product video ideas", "d2c video content", "product videos", "video marketing"]
 faqs:
   - q: 'Which product videos work best for ads?'

@@ -3,7 +3,7 @@ title: "Brand Consistency Across Channels: A Practical System"
 description: "How to keep your brand consistent across website, social, packaging, ads, marketplaces and sales materials as your team and channels grow."
 date: 2027-01-01
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["brand consistency", "consistent branding", "brand management", "brand guidelines"]
 faqs:
   - q: 'Why does brand consistency matter?'

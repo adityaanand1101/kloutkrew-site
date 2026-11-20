@@ -3,7 +3,7 @@ title: "How to Publish a Post on the KloutKrew Blog"
 description: "A working example of every formatting option the blog supports — headings, images, galleries, quotes, callouts, tables and video embeds."
 date: 2026-11-19
 category: "Studio Notes"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 cover: ./images/how-to-publish-a-blog-post/cover.jpg
 coverAlt: "Three stills from KloutKrew brand films: a horse in a field, a pink lip gloss swatch, and a model holding an Off We Glow bottle"
 tags: ["guide", "blogging", "kloutkrew"]

@@ -3,7 +3,7 @@ title: "Personal Branding for Founders: A Simple Playbook"
 description: "Why founder personal branding helps a company grow, and a practical playbook for LinkedIn, content, photos and speaking without it taking over your week."
 date: 2027-02-18
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["personal branding for founders", "founder brand", "linkedin personal brand", "thought leadership"]
 faqs:
   - q: 'Why should founders build a personal brand?'

@@ -3,7 +3,7 @@ title: "Branding Cost for Startups in India (2026): A Realistic Budget"
 description: "What startup branding costs in India, how budgets break down across logo, identity, packaging, website and launch content, and how to phase spend."
 date: 2026-11-21
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["branding cost for startup in india", "startup branding cost", "brand identity cost india", "branding agency price"]
 faqs:
   - q: 'How much should a startup spend on branding in India?'

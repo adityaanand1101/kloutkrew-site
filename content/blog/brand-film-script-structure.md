@@ -3,7 +3,7 @@ title: "How to Structure a Brand Film Script"
 description: "A simple structure for brand film and ad scripts: hook, tension, turn, proof and close, with examples for 15, 30 and 60-second films."
 date: 2027-01-27
 category: "AI Filmmaking"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["brand film script", "ad film script", "video script structure", "brand storytelling"]
 faqs:
   - q: 'How long should a brand film be?'

@@ -3,7 +3,7 @@ title: "AI Video vs Traditional Shoot: Which Should Your Brand Choose?"
 description: "When AI video beats a traditional shoot, when it doesn't, and how hybrid production gives brands the best of both."
 date: 2027-01-07
 category: "AI Filmmaking"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["ai video vs traditional", "ai brand film", "video production", "ai video production"]
 faqs:
   - q: 'Is AI video cheaper than a shoot?'

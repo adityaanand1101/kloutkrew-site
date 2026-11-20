@@ -3,7 +3,7 @@ title: "Graphics Design Trends That Will Define 2026"
 description: "From AI-generated visuals to nostalgic revival and kinetic typography — here are the design movements shaping this year."
 date: 2026-06-15
 category: "Design"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["graphic design trends 2026", "design trends", "AI design"]
 ---
 

@@ -3,7 +3,7 @@ title: "The Ultimate Guide to Scroll-Stopping Content"
 description: "What makes people stop scrolling? We break down the hooks, visuals, and pacing that turn casual scrollers into engaged viewers."
 date: 2026-07-08
 category: "Content Strategy"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["scroll stopping content", "content strategy", "social media content"]
 ---
 

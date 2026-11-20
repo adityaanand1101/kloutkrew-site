@@ -3,7 +3,7 @@ title: "UX Writing and Microcopy: Small Words, Big Impact"
 description: "How to write buttons, labels, error messages, empty states and confirmations that make websites and apps easier to use."
 date: 2027-02-08
 category: "UI/UX"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["ux writing", "microcopy", "button copy", "error messages"]
 faqs:
   - q: 'What is microcopy?'

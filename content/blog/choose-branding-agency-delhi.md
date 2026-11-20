@@ -3,7 +3,7 @@ title: "How to Choose a Branding Agency in Delhi"
 description: "A practical guide to choosing a branding agency in Delhi NCR: what to look for, portfolio checks, questions, pricing and red flags."
 date: 2026-11-21
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["branding agency delhi", "branding agency in delhi", "brand identity agency delhi", "best branding agency delhi"]
 faqs:
   - q: 'How do I find the right branding agency in Delhi?'

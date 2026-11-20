@@ -3,7 +3,7 @@ title: "The Future of Content: AI and Human Collaboration"
 description: "AI won't replace creators — but creators who use AI will replace those who don't. Here's the hybrid workflow of tomorrow."
 date: 2026-04-22
 category: "Future"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["AI content creation", "future of content", "AI human collaboration"]
 ---
 

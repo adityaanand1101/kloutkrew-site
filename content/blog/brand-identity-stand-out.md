@@ -3,7 +3,7 @@ title: "How to Create a Brand Identity That Stands Out"
 description: "A strong brand identity is more than a logo. Here's how to build a visual and verbal identity that cuts through the noise and sticks in people's minds."
 date: 2026-07-22
 category: "Brand Strategy"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["brand identity", "branding strategy", "visual identity", "brand design"]
 ---
 

@@ -3,7 +3,7 @@ title: "Wireframe vs Mockup vs Prototype: What's the Difference?"
 description: "Plain-English definitions of wireframes, mockups and prototypes, what each is for, and when you need them in a website or app project."
 date: 2027-02-16
 category: "UI/UX"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["wireframe vs mockup vs prototype", "wireframe", "prototype", "ui design process"]
 faqs:
   - q: 'What is a wireframe?'

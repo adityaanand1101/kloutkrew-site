@@ -3,7 +3,7 @@ title: "Design Systems for Startups: When and How to Build One"
 description: "What a design system is, when a startup needs one, what to include first, and how it speeds up product and marketing design."
 date: 2026-12-28
 category: "UI/UX"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["design system", "design system for startups", "ui components", "figma design system"]
 faqs:
   - q: 'What is a design system?'

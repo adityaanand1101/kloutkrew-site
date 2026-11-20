@@ -3,7 +3,7 @@ title: "Restaurant Website Design: What Diners Look For"
 description: "What a restaurant or café website needs: menu, hours, location, booking, ordering, photos, speed and local SEO basics."
 date: 2027-02-11
 category: "Web Development"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["restaurant website design", "cafe website", "restaurant website", "hospitality web design"]
 faqs:
   - q: 'Does a restaurant need a website if it''s on Zomato and Swiggy?'

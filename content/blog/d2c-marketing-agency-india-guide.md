@@ -3,7 +3,7 @@ title: "Choosing a D2C Marketing Agency in India"
 description: "What a D2C marketing agency should handle, how to evaluate one, questions to ask and how to structure the relationship for growth."
 date: 2026-12-25
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["d2c marketing agency india", "d2c agency", "ecommerce marketing agency", "performance marketing india"]
 faqs:
   - q: 'What does a D2C marketing agency do?'

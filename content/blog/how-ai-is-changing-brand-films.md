@@ -3,7 +3,7 @@ title: "How AI Is Changing Brand Films Forever"
 description: "From concept to final cut, AI tools are reshaping how brand films are made — faster, cheaper, and more creatively limitless than ever before."
 date: 2026-07-15
 category: "AI Filmmaking"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["AI brand films", "AI video production", "AI filmmaking", "brand storytelling"]
 ---
 

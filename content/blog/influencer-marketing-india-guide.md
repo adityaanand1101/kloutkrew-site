@@ -3,7 +3,7 @@ title: "Influencer Marketing in India: A Guide for Small Brands"
 description: "How small and D2C brands in India can work with influencers: choosing creators, nano vs macro, briefs, pricing models, disclosure and measuring results."
 date: 2027-01-13
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["influencer marketing india", "micro influencers india", "creator marketing", "d2c marketing"]
 faqs:
   - q: 'Should small brands work with nano or micro influencers?'

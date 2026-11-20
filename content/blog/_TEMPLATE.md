@@ -5,7 +5,7 @@ title: "Your headline here"
 description: "One or two sentences. Shown on the blog page, in Google and in link previews."
 date: 2026-01-31            # YYYY-MM-DD — newest posts appear first
 category: "Brand Strategy"  # becomes a filter on the blog page
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 cover: ./images/your-post-name/cover.jpg   # optional; delete this line for a generated cover
 coverAlt: "Describe the cover image"
 tags: ["branding", "design"]

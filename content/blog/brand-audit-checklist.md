@@ -3,7 +3,7 @@ title: "Brand Audit Checklist: Review Your Brand in One Afternoon"
 description: "A practical brand audit checklist covering identity, consistency, website, social, packaging, reviews and competitors, with a simple scoring sheet."
 date: 2026-12-14
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["brand audit", "brand audit checklist", "brand review", "brand consistency"]
 faqs:
   - q: 'What is a brand audit?'

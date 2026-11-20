@@ -3,7 +3,7 @@ title: "Email Marketing for D2C Brands: The Flows That Matter"
 description: "The essential email flows for D2C brands (welcome, abandoned cart, post-purchase, win-back), with design and content tips."
 date: 2026-12-16
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["email marketing d2c", "ecommerce email flows", "abandoned cart email", "retention marketing"]
 faqs:
   - q: 'Which email flows should a D2C brand set up first?'

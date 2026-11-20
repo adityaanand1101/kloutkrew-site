@@ -3,7 +3,7 @@ title: "Startup Branding in India: A Checklist for Founders"
 description: "A founder's checklist for startup branding in India: what to do before launch, what can wait, and how to work with a startup branding agency."
 date: 2026-12-09
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["startup branding agency india", "startup branding", "branding for startups", "brand checklist"]
 faqs:
   - q: 'When should a startup invest in branding?'

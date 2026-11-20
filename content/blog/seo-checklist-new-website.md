@@ -3,7 +3,7 @@ title: "SEO Checklist for a New Website (2026)"
 description: "Everything a new website needs to be found on Google and AI search: technical setup, on-page basics, local SEO, content and measurement."
 date: 2027-03-03
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["seo checklist", "new website seo", "on page seo", "technical seo"]
 faqs:
   - q: 'How long does it take a new website to rank?'

@@ -3,7 +3,7 @@ title: "Usability Testing on a Budget: A Five-User Method"
 description: "How small teams can run quick usability tests with five users, simple tasks and free tools to find the biggest problems before launch."
 date: 2027-01-19
 category: "UI/UX"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["usability testing", "user testing", "ux research", "startup ux"]
 faqs:
   - q: 'How many users do I need for a usability test?'

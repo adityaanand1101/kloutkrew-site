@@ -3,7 +3,7 @@ title: "Packaging for Quick Commerce: Designing for Blinkit, Zepto and Instamart
 description: "How to design packaging that sells on quick-commerce and marketplace apps, where shoppers see your product as a tiny thumbnail."
 date: 2027-01-26
 category: "Packaging"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["quick commerce packaging", "packaging design for blinkit", "thumbnail packaging", "d2c packaging"]
 faqs:
   - q: 'Why does packaging matter on quick-commerce apps?'

@@ -3,7 +3,7 @@ title: "Google Business Profile: The Complete Setup Guide for 2026"
 description: "How to set up and optimise a Google Business Profile: categories, service areas, hidden addresses, photos, posts, reviews and common mistakes."
 date: 2026-11-21
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["google business profile", "google my business guide", "local seo", "gmb optimisation"]
 faqs:
   - q: 'Can I hide my address on Google Business Profile?'

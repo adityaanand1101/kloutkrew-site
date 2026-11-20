@@ -3,7 +3,7 @@ title: "Website for Architects: What It Needs to Win Clients"
 description: "The pages, features and technical basics every architecture firm's website needs in 2026, from project pages to speed, SEO and enquiries, with a checklist."
 date: 2026-11-19
 category: "Web Development"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["website for architects", "architect website design", "architecture portfolio website", "interior designer website"]
 faqs:
   - q: 'What should an architect''s website include?'

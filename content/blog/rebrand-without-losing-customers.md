@@ -3,7 +3,7 @@ title: "How to Rebrand Without Losing Customers"
 description: "A step-by-step plan for rolling out a rebrand: what to keep, how to announce it, updating every touchpoint and protecting search rankings."
 date: 2027-03-17
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["rebrand rollout", "rebranding strategy", "brand launch", "rebrand seo"]
 faqs:
   - q: 'Should I announce a rebrand?'

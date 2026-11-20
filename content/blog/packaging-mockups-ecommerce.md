@@ -3,7 +3,7 @@ title: "Packaging Mockups for E-commerce: When Renders Beat Photos"
 description: "How brands use 3D packaging mockups and renders for websites, marketplaces and ads, and when real photography is still better."
 date: 2027-02-04
 category: "Packaging"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["packaging mockups", "3d product render", "product images", "ecommerce packaging"]
 faqs:
   - q: 'What is a packaging mockup?'

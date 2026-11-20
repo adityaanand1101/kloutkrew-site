@@ -3,7 +3,7 @@ title: "Branding Agency vs Freelancer: Which Should You Hire?"
 description: "An honest comparison of hiring a branding agency or a freelance designer: cost, speed, range, risk and which suits your stage."
 date: 2027-02-17
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["branding agency vs freelancer", "hire branding agency", "freelance designer", "branding agency"]
 faqs:
   - q: 'Is a freelancer cheaper than a branding agency?'

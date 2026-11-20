@@ -3,7 +3,7 @@ title: "Why Your Brand Needs an AI-First Creative Strategy"
 description: "AI-first isn't just about using new tools — it's a fundamental shift in how brands approach creativity, speed, and scale."
 date: 2026-06-22
 category: "Creative Strategy"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["AI creative strategy", "AI marketing", "AI first creative"]
 ---
 

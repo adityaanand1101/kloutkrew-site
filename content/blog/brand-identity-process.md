@@ -3,7 +3,7 @@ title: "The Brand Identity Process, Step by Step"
 description: "What happens in a brand identity project, from brief and research to logo, colour, type and guidelines, how long each stage takes and what you should get at the end."
 date: 2026-11-17
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["brand identity process", "branding for startups", "logo design process", "brand guidelines"]
 faqs:
   - q: 'What are the steps in a brand identity project?'

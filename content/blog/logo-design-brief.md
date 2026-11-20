@@ -3,7 +3,7 @@ title: "How to Write a Logo Design Brief (Template Inside)"
 description: "The questions a logo design brief should answer, a simple template you can copy, and the mistakes that lead to endless revisions."
 date: 2027-03-02
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["logo design brief", "logo brief template", "logo design", "branding brief"]
 faqs:
   - q: 'What should a logo design brief include?'

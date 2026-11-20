@@ -3,7 +3,7 @@ title: "Real Estate Website Design: What Buyers and Developers Need"
 description: "How to design a real estate developer or project website that builds trust and generates site-visit enquiries: pages, features, speed, compliance details and a checklist."
 date: 2026-11-18
 category: "Web Development"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["real estate website design", "real estate website design company", "property website", "project microsite"]
 faqs:
   - q: 'What should a real estate project website include?'

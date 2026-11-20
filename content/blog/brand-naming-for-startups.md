@@ -3,7 +3,7 @@ title: "Brand Naming for Startups: A Practical Guide"
 description: "How to name a startup or product: naming styles, a step-by-step process, checks for domains and trademarks, and common mistakes."
 date: 2027-01-21
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["brand naming", "startup name ideas", "how to name a brand", "naming agency"]
 faqs:
   - q: 'How do I choose a name for my startup?'

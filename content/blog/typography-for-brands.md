@@ -3,7 +3,7 @@ title: "Typography for Brands: Choosing Fonts That Fit"
 description: "How to choose brand typefaces, pair headline and body fonts, check licences and set up type for websites, packaging and social."
 date: 2027-03-26
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["brand typography", "brand fonts", "font pairing", "typeface"]
 faqs:
   - q: 'How many fonts should a brand use?'

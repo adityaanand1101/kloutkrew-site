@@ -3,7 +3,7 @@ title: "An Instagram Content Plan for D2C Brands"
 description: "A practical weekly Instagram content plan for D2C brands: content pillars, formats, posting rhythm, templates and what to measure."
 date: 2027-01-22
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["instagram content plan", "instagram marketing d2c", "social media plan", "content pillars"]
 faqs:
   - q: 'How often should a D2C brand post on Instagram?'

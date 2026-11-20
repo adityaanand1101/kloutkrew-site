@@ -3,7 +3,7 @@ title: "FMCG Packaging Design: How to Win on Shelf and Online"
 description: "What FMCG packaging design agencies focus on: shelf impact, range systems, cost-efficient printing and designs that work in modern trade, kiranas and apps."
 date: 2026-11-21
 category: "Packaging"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["fmcg packaging design agency", "fmcg packaging design", "packaging design agency india", "consumer goods packaging"]
 faqs:
   - q: 'What is FMCG packaging design?'

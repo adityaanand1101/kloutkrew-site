@@ -3,7 +3,7 @@ title: "Contact Form Best Practices: Get More Enquiries"
 description: "How to design contact and enquiry forms that people complete: fewer fields, clear labels, spam protection, confirmation and tracking."
 date: 2026-11-30
 category: "Web Development"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["contact form best practices", "enquiry form design", "lead form", "conversion rate"]
 faqs:
   - q: 'How many fields should a contact form have?'

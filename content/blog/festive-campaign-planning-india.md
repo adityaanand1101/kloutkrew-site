@@ -3,7 +3,7 @@ title: "Festive Campaign Planning for Indian Brands"
 description: "How Indian brands plan Diwali, Holi, Raksha Bandhan and other festive campaigns: timelines, creative, packaging, offers and logistics."
 date: 2027-01-04
 category: "Marketing"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["festive campaign india", "diwali marketing", "festive packaging", "seasonal marketing"]
 faqs:
   - q: 'How early should festive campaigns be planned?'

@@ -3,7 +3,7 @@ title: "Pitch Deck Design Tips: Make Investors Read Every Slide"
 description: "How to design a clear, credible pitch deck: structure, one idea per slide, charts, typography, brand consistency and sending vs presenting versions."
 date: 2027-01-11
 category: "Studio Notes"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["pitch deck design", "investor deck", "startup pitch deck", "presentation design"]
 faqs:
   - q: 'How many slides should a pitch deck have?'

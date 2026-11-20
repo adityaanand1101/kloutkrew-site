@@ -3,7 +3,7 @@ title: "AI Video Production Agencies in India: What They Do and How to Choose"
 description: "What an AI video production agency offers, how it differs from a traditional production house, and what to check before hiring one in India."
 date: 2026-12-17
 category: "AI Filmmaking"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["ai video production agency india", "ai video production company india", "ai film agency", "ai brand films"]
 faqs:
   - q: 'What does an AI video production agency do?'

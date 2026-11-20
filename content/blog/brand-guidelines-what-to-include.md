@@ -3,7 +3,7 @@ title: "Brand Guidelines: What to Include (With a Checklist)"
 description: "What a brand guidelines document should contain, how long it should be and how to make sure your team actually uses it."
 date: 2027-01-12
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["brand guidelines", "brand guide", "brand book", "brand identity"]
 faqs:
   - q: 'What are brand guidelines?'

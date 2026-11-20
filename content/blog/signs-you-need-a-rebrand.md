@@ -3,7 +3,7 @@ title: "8 Signs Your Business Needs a Rebrand"
 description: "How to tell whether your brand needs a refresh or a full rebrand, the warning signs to watch for, and what to do first."
 date: 2027-03-24
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["rebrand", "brand refresh", "rebranding", "brand strategy"]
 faqs:
   - q: 'What is the difference between a brand refresh and a rebrand?'

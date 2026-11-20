@@ -3,7 +3,7 @@ title: "App Onboarding UX: Get Users to Their First Win Fast"
 description: "How to design app and SaaS onboarding that turns sign-ups into active users: first value, progressive set-up, empty states and nudges."
 date: 2026-12-08
 category: "UI/UX"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["app onboarding ux", "user onboarding", "saas onboarding", "mobile app ux"]
 faqs:
   - q: 'What is app onboarding?'

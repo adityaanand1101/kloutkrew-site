@@ -3,7 +3,7 @@ title: "Creative Agency vs Branding Agency vs Ad Agency: Which Do You Need?"
 description: "The difference between creative, branding, advertising and digital agencies, what each delivers, and how Delhi businesses can choose the right partner."
 date: 2026-11-23
 category: "Branding"
-author: "KloutKrew Studio"
+author: "Shudhanshu Jha"
 tags: ["creative agency delhi", "creative agency in delhi", "branding agency vs ad agency", "types of agencies"]
 faqs:
   - q: 'What does a creative agency do?'
