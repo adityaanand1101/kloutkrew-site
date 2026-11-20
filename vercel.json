@@ -115,7 +115,7 @@
       ]
     },
     {
-      "source": "/assets/(blog\\.css|blog\\.js|forms\\.js)",
+      "source": "/assets/(blog\\.css|blog\\.js|forms\\.js|a11y\\.js)",
       "headers": [
         {
           "key": "Cache-Control",
