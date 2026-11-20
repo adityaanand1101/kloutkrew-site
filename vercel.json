@@ -99,7 +99,7 @@
       ]
     },
     {
-      "source": "/assets/(video-posters/.*|og-default\\.jpg)",
+      "source": "/assets/(video-posters/.*|hero/.*|og-default\\.jpg)",
       "headers": [
         {
           "key": "Cache-Control",
