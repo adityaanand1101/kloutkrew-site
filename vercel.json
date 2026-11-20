@@ -44,6 +44,14 @@
       "destination": "/favicon.svg"
     },
     {
+      "source": "/branding-agency-delhi",
+      "destination": "/branding-agency-delhi.html"
+    },
+    {
+      "source": "/international",
+      "destination": "/international.html"
+    },
+    {
       "source": "/blog/:slug([^/.]+)",
       "destination": "/blog/:slug.html"
     }

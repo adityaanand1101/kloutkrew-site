@@ -21,16 +21,18 @@ import sharp from 'sharp';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
 const POSTS_DIR = path.join(ROOT, 'content', 'blog');
+const PAGES_DIR = path.join(ROOT, 'content', 'pages');
 const MEDIA_URL = '/blog-media';
 const CACHE_DIR = path.join(ROOT, 'node_modules', '.cache', 'kk-images');
 const SITE = 'https://kloutkrew.in';
 const SITE_NAME = 'KloutKrew Studio';
 const DEFAULT_OG = `${SITE}/assets/og-default.jpg`;
+const INDEXNOW_KEY = '869664391aa65bf9d042173902dff1d6';
 const INCLUDE_DRAFTS = process.argv.includes('--drafts') || process.env.VERCEL_ENV === 'preview';
 
 // Files at the repo root that are part of the site.
 const STATIC_EXT = new Set(['.html', '.mp4', '.webm', '.svg', '.ico', '.txt', '.xml', '.jpg', '.jpeg', '.png', '.webp', '.woff2', '.ttf']);
-const STATIC_SKIP = new Set(['blog.html']); // generated
+const STATIC_SKIP = new Set(['blog.html', 'profiles.json']); // generated
 const STATIC_DIRS = ['assets'];
 
 const WIDTHS = [480, 960, 1440, 1920];
@@ -419,7 +421,7 @@ ${items}
 `;
 }
 
-function sitemap(posts) {
+function sitemap(posts, landings = []) {
   const src = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8');
   const keep = [...src.matchAll(/<url>[\s\S]*?<\/url>/g)].map(m => m[0]).filter(u => !/<loc>[^<]*\/blog\/[^<]+<\/loc>/.test(u));
   const today = isoDate(new Date());
@@ -430,11 +432,71 @@ function sitemap(posts) {
     <priority>0.7</priority>
   </url>`);
   const all = keep.map(u => '  ' + u.replace(/(<loc>https:\/\/kloutkrew\.in\/blog<\/loc>\s*<lastmod>)[^<]*/, `$1${today}`));
+  const lpUrls = landings.map(l => `  <url>
+    <loc>${SITE}/${l.slug}</loc>
+    <lastmod>${isoDate(l.updated)}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`);
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...all, ...blogUrls].join('\n')}
+${[...all, ...lpUrls, ...blogUrls].join('\n')}
 </urlset>
 `;
+}
+
+// ---------------------------------------------------------------- landing pages (content/pages/*.md -> /<slug>)
+async function loadLandingPages() {
+  if (!fs.existsSync(PAGES_DIR)) return [];
+  const files = (await fsp.readdir(PAGES_DIR)).filter(f => f.endsWith('.md') && !f.startsWith('_'));
+  const out = [];
+  for (const file of files) {
+    const abs = path.join(PAGES_DIR, file);
+    const { data, content } = matter(await fsp.readFile(abs, 'utf8'));
+    const slug = data.slug ? slugify(data.slug) : path.basename(file, '.md');
+    for (const k of ['title', 'h1', 'description']) if (!data[k]) throw new Error(`${file}: missing front matter field: ${k}`);
+    out.push({ slug, data, html: await renderMarkdown(content, abs, slug), updated: data.updated ? new Date(data.updated) : new Date() });
+  }
+  return out;
+}
+
+function landingPage(lp) {
+  const d = lp.data, url = `${SITE}/${lp.slug}`;
+  const faqs = Array.isArray(d.faqs) ? d.faqs : [];
+  const faqHTML = faqs.length ? `<section class="kb-faq" aria-labelledby="faq-title"><div class="kb-narrow">
+<h2 id="faq-title">Frequently asked questions</h2>
+${faqs.map(f => `<details><summary>${esc(f.q)}</summary><div>${md.render(String(f.a))}</div></details>`).join('\n')}
+</div></section>` : '';
+  const content = `<main class="kb kb-article kb-landing">
+<article>
+<header class="kb-post-head"><div class="kb-narrow">
+${d.eyebrow ? `<span class="kb-pill">${esc(d.eyebrow)}</span>` : ''}
+<h1 class="kb-post-title">${esc(d.h1)}</h1>
+<p class="kb-post-dek">${esc(d.description)}</p>
+<p class="kb-landing-cta"><a href="/contact-us" class="kb-btn">Get a quote</a> <a href="/works" class="kb-link">See our work</a></p>
+</div></header>
+<div class="kb-post-body">
+${lp.html}
+</div>
+</article>
+${faqHTML}
+${CTA}
+</main>`;
+  const graph = [{
+    '@type': 'Service', name: d.serviceName || d.h1, url, description: d.description,
+    provider: { '@type': 'ProfessionalService', name: SITE_NAME, url: SITE },
+    areaServed: (d.areaServed || ['Worldwide']).map(n => ({ '@type': 'Place', name: n })),
+    serviceType: d.serviceTypes || ['Branding', 'Packaging design', 'Website design', 'AI brand films'],
+  }, {
+    '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 2, name: d.breadcrumb || d.h1, item: url },
+    ],
+  }];
+  if (faqs.length) graph.push({ '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: String(f.a) } })) });
+  const head = headHTML({ title: d.title, description: d.metaDescription || d.description, url, image: DEFAULT_OG,
+    jsonLd: { '@context': 'https://schema.org', '@graph': graph } });
+  return page(head, content, `<script src="/assets/blog.js" defer></script>`);
 }
 
 // ---------------------------------------------------------------- main
@@ -454,10 +516,34 @@ async function main() {
   await fsp.writeFile(path.join(DIST, 'blog.html'), listingPage(posts));
   for (const post of posts) await fsp.writeFile(path.join(DIST, 'blog', `${post.slug}.html`), postPage(post, posts));
   await fsp.writeFile(path.join(DIST, 'blog', 'rss.xml'), rss(posts));
-  await fsp.writeFile(path.join(DIST, 'sitemap.xml'), sitemap(posts));
+  const landings = await loadLandingPages();
+  for (const lp of landings) await fsp.writeFile(path.join(DIST, `${lp.slug}.html`), landingPage(lp));
+  await fsp.writeFile(path.join(DIST, 'sitemap.xml'), sitemap(posts, landings));
   const llms = fs.readFileSync(path.join(ROOT, 'llms.txt'), 'utf8').trimEnd()
+    + (landings.length ? '\n\n## Pages\n\n' + landings.map(l => `- [${l.data.h1}](${SITE}/${l.slug}): ${l.data.description}`).join('\n') : '')
     + '\n\n## Blog\n\n' + posts.filter(p => !p.draft).map(p => `- [${p.title}](${SITE}/blog/${p.slug}): ${p.description}`).join('\n') + '\n';
   await fsp.writeFile(path.join(DIST, 'llms.txt'), llms);
+
+  // Link the studio's third-party profiles (profiles.json) into every page's ProfessionalService schema.
+  const profiles = Object.entries(JSON.parse(fs.readFileSync(path.join(ROOT, 'profiles.json'), 'utf8')))
+    .filter(([k, v]) => !k.startsWith('_') && /^https?:\/\//.test(v)).map(([, v]) => v);
+  if (profiles.length) {
+    for (const f of (await fsp.readdir(DIST)).filter(f => f.endsWith('.html'))) {
+      const fp = path.join(DIST, f), html = await fsp.readFile(fp, 'utf8');
+      if (html.includes('"@type":"ProfessionalService","name"') && !html.includes('"sameAs"'))
+        await fsp.writeFile(fp, html.replace('"knowsAbout":', `"sameAs":${JSON.stringify(profiles)},"knowsAbout":`));
+    }
+  }
+
+  // Tell Bing, Yandex and other IndexNow engines about every URL on production deploys.
+  if (process.env.VERCEL_ENV === 'production') {
+    const urlList = [...fs.readFileSync(path.join(DIST, 'sitemap.xml'), 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+    try {
+      const r = await fetch('https://api.indexnow.org/indexnow', { method: 'POST', headers: { 'Content-Type': 'application/json; charset=utf-8' },
+        body: JSON.stringify({ host: 'kloutkrew.in', key: INDEXNOW_KEY, keyLocation: `${SITE}/${INDEXNOW_KEY}.txt`, urlList }) });
+      console.log(`IndexNow: submitted ${urlList.length} URLs (HTTP ${r.status})`);
+    } catch (e) { console.log(`IndexNow: skipped (${e.message})`); }
+  }
 
   console.log(`Built ${posts.length} post(s)${INCLUDE_DRAFTS ? ' (drafts included)' : ''} and ${imageJobs.size} image(s) in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
 }

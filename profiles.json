@@ -1,0 +1,11 @@
+{
+  "_help": "Paste the full public URL of each profile. Empty ones are ignored. These are added to the site's schema (sameAs) so Google and AI search link the profiles to KloutKrew Studio.",
+  "googleBusinessProfile": "",
+  "clutch": "",
+  "techBehemoths": "",
+  "shortlist": "",
+  "instagram": "",
+  "linkedin": "",
+  "behance": "",
+  "dribbble": ""
+}

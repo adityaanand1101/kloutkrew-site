@@ -243,3 +243,18 @@ body, .page_wrapper { background: #fff; }
 @media (prefers-reduced-motion: reduce) {
   .kb *, .kb-progress { transition: none !important; }
 }
+
+/* landing pages + FAQ */
+.kb-landing-cta{display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap;margin-top:1.5rem}
+.kb-faq{padding:3rem 0 1rem}
+.kb-faq h2{font-size:clamp(1.6rem,3vw,2.4rem);margin:0 0 1.25rem;color:inherit}
+.kb-faq details{border-top:1px solid rgba(127,127,127,.35);padding:1.1rem 0}
+.kb-faq details:last-of-type{border-bottom:1px solid rgba(127,127,127,.35)}
+.kb-faq summary{cursor:pointer;font-weight:600;font-size:1.1rem;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.kb-faq summary::-webkit-details-marker{display:none}
+.kb-faq summary::after{content:"+";font-weight:400;font-size:1.4rem;line-height:1;transition:transform .2s}
+.kb-faq details[open] summary::after{transform:rotate(45deg)}
+.kb-faq summary:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.kb-faq details>div{padding-top:.6rem;opacity:.85;line-height:1.65}
+.kb-faq details>div p{margin:0}
+@media (prefers-reduced-motion:reduce){.kb-faq summary::after{transition:none}}
