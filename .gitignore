@@ -22,3 +22,4 @@ dist/
 !content/**/*.avif
 !assets/**/*.png
 !assets/**/*.webp
+!assets/**/*.avif
