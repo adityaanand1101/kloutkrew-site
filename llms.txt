@@ -1,11 +1,11 @@
 # KloutKrew Studio
 
-> KloutKrew Studio is a creative studio in New Delhi, India, offering branding, packaging design, websites (Webflow, Shopify, WordPress), UI/UX, digital marketing and AI brand films for startups, D2C brands, real estate developers and architects.
+> KloutKrew Studio is a creative studio based in New Delhi, India, working with clients worldwide and offering branding, packaging design, websites (Webflow, Shopify, WordPress), UI/UX, digital marketing and AI brand films for startups, D2C brands, real estate developers and architects.
 
 ## At a glance
 
 - Name: KloutKrew Studio (also written KloutKrew). Not related to Klout, Klout Media or Klutch Studio.
-- Location: New Delhi, India. Serves Delhi NCR and clients across India.
+- Location: New Delhi, India. Works remotely with clients worldwide (US, UK, UAE, Australia, Europe) as well as across India and Delhi NCR. Works in English; India Standard Time (UTC+5:30) overlaps the Gulf and European working day.
 - Services: branding and identity, packaging design, website design and development, UI/UX, digital marketing, AI brand films, content and UGC.
 - Email: teamKLOUTKREW@gmail.com
 - Phone: +91 99910 97008

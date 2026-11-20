@@ -332,7 +332,7 @@ ${CTA}
 </main>`;
   const head = headHTML({
     title: `Branding, Web & Marketing Blog | ${SITE_NAME}`,
-    description: 'Guides on branding, packaging, websites, AI brand films and marketing from KloutKrew Studio, a New Delhi creative studio.',
+    description: 'Guides on branding, packaging, websites, AI brand films and marketing from KloutKrew Studio, an independent creative studio working with brands worldwide.',
     url: `${SITE}/blog`,
     image: featured?.cover?.og ? SITE + featured.cover.og : DEFAULT_OG,
     jsonLd: {
