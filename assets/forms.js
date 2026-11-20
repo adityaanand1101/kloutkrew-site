@@ -29,7 +29,7 @@
 
     fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(payload) })
       .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) === 'false') throw new Error(j.message || 'failed'); }); })
-      .then(function () { form.style.display = 'none'; show(done, true); })
+      .then(function () { form.style.display = 'none'; show(done, true); if (window.gtag) gtag('event', isNewsletter ? 'sign_up' : 'generate_lead', { form_location: location.pathname }); })
       .catch(function () { show(fail, true); })
       .finally(function () { if (btn) { btn.disabled = false; if (btn.value) btn.value = label; } });
   }, true);
