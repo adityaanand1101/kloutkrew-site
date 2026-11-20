@@ -79,6 +79,15 @@
       ]
     },
     {
+      "source": "/assets/(video-posters/.*|og-default\\.jpg)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
       "source": "/assets/fonts/(.*)",
       "headers": [
         {
@@ -106,7 +115,7 @@
       ]
     },
     {
-      "source": "/assets/(blog\\.css|blog\\.js|og-default\\.jpg|video-posters/.*)",
+      "source": "/assets/(blog\\.css|blog\\.js|forms\\.js)",
       "headers": [
         {
           "key": "Cache-Control",
