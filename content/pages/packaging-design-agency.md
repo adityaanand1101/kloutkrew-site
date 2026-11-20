@@ -10,16 +10,16 @@ serviceTypes: [Packaging design, Label design, Box design, Pouch design, Packagi
 areaServed: [India, Delhi NCR, Worldwide]
 updated: 2026-11-20
 faqs:
-  - q: What does a packaging design agency do?
-    a: A packaging design agency designs the outside of your product, including the structure, labels, graphics and copy layout, so it stands out on a shelf or a marketplace listing and gives buyers the information they need to choose it.
-  - q: How long does packaging design take?
-    a: Most packaging projects take 4 to 6 weeks from kickoff to print-ready files, and a large range can take longer. You see the first concepts within 7 days.
-  - q: Do you work with our printer?
-    a: Yes. We design to your printer's dieline, check bleed, finishes and colour mode, and hand over print-ready files. If you don't have a printer yet, we'll tell you what to ask for.
-  - q: Do you design packaging for Amazon, Flipkart and quick-commerce listings?
-    a: Yes. Small thumbnails on Amazon, Flipkart, Blinkit and Zepto need bold, simple packs, so we test every design at thumbnail size and supply listing images and mockups.
-  - q: Can you include the label regulations?
-    a: We lay out all the mandatory information you supply, such as FSSAI details, ingredients, net quantity and MRP, so it's legible and compliant with the space rules. You or your compliance advisor confirm the content itself.
+  - q: 'What does a packaging design agency do?'
+    a: 'A packaging design agency designs the outside of your product, including the structure, labels, graphics and copy layout, so it stands out on a shelf or a marketplace listing and gives buyers the information they need to choose it.'
+  - q: 'How long does packaging design take?'
+    a: 'Most packaging projects take 4 to 6 weeks from kickoff to print-ready files, and a large range can take longer. You see the first concepts within 7 days.'
+  - q: 'Do you work with our printer?'
+    a: 'Yes. We design to your printer''s dieline, check bleed, finishes and colour mode, and hand over print-ready files. If you don''t have a printer yet, we''ll tell you what to ask for.'
+  - q: 'Do you design packaging for Amazon, Flipkart and quick-commerce listings?'
+    a: 'Yes. Small thumbnails on Amazon, Flipkart, Blinkit and Zepto need bold, simple packs, so we test every design at thumbnail size and supply listing images and mockups.'
+  - q: 'Can you include the label regulations?'
+    a: 'We lay out all the mandatory information you supply, such as FSSAI details, ingredients, net quantity and MRP, so it''s legible and compliant with the space rules. You or your compliance advisor confirm the content itself.'
 ---
 
 KloutKrew Studio is a **packaging design agency** based in New Delhi. We design labels, boxes, pouches, bottles and mailer boxes for D2C, food, beverage, personal care and beauty brands across India, and for brands abroad that print in India or elsewhere.

@@ -10,16 +10,16 @@ serviceTypes: [Brand strategy, Logo design, Visual identity, Brand guidelines, B
 areaServed: [Worldwide, India, Delhi NCR]
 updated: 2026-11-20
 faqs:
-  - q: What is a brand identity?
-    a: A brand identity is the set of visual and verbal tools that make a business recognisable, including its logo, colours, typefaces, imagery style, tone of voice and the rules for using them together.
-  - q: What's the difference between a logo and a brand identity?
-    a: A logo is one mark. A brand identity is the whole system around it, so your website, packaging, social posts and pitch deck all look like they come from the same company.
-  - q: How long does a brand identity project take?
-    a: Most branding projects take 4 to 6 weeks. You see the first concepts within 7 days of the kickoff call.
-  - q: What do I get at the end?
-    a: Logo files in every format you need, a colour palette, type choices, sample applications and a brand guide that explains how to use it all. Every source file is handed over.
-  - q: Can you also design our packaging and website?
-    a: Yes. The same team designs [packaging](/packaging-design-agency) and [websites](/website-design-agency), so everything launches as one brand.
+  - q: 'What is a brand identity?'
+    a: 'A brand identity is the set of visual and verbal tools that make a business recognisable, including its logo, colours, typefaces, imagery style, tone of voice and the rules for using them together.'
+  - q: 'What''s the difference between a logo and a brand identity?'
+    a: 'A logo is one mark. A brand identity is the whole system around it, so your website, packaging, social posts and pitch deck all look like they come from the same company.'
+  - q: 'How long does a brand identity project take?'
+    a: 'Most branding projects take 4 to 6 weeks. You see the first concepts within 7 days of the kickoff call.'
+  - q: 'What do I get at the end?'
+    a: 'Logo files in every format you need, a colour palette, type choices, sample applications and a brand guide that explains how to use it all. Every source file is handed over.'
+  - q: 'Can you also design our packaging and website?'
+    a: 'Yes. The same team designs [packaging](/packaging-design-agency) and [websites](/website-design-agency), so everything launches as one brand.'
 ---
 
 KloutKrew Studio is an independent creative studio based in New Delhi. We design **brand identities and logos** for startups and D2C brands, in India and around the world. A good brand identity makes a young company look established, helps customers remember it and makes every later piece of design faster to make.

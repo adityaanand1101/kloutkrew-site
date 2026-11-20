@@ -6,16 +6,16 @@ category: "Web Development"
 author: "KloutKrew Studio"
 tags: ["website for architects", "architect website design", "architecture portfolio website", "interior designer website"]
 faqs:
-  - q: What should an architect's website include?
-    a: A strong home page with your best project, a filterable project portfolio, individual project pages with photos and short write-ups, an about page with the team and approach, a services page, and a simple enquiry form with your contact details.
-  - q: Which platform is best for an architect's website?
-    a: Webflow suits most architecture firms because it handles large image-led layouts well and lets the team add projects without a developer. WordPress works if you need a specific plugin. Squarespace is fine for a very small practice.
-  - q: How many projects should an architect show online?
-    a: Quality beats quantity. Eight to fifteen strong, well-documented projects usually work better than fifty thumbnails. Show the kind of work you want more of.
-  - q: How do architects get found on Google?
-    a: Give every project its own page with a descriptive title, location and building type, write useful image alt text, set up a Google Business Profile, and publish occasional articles that answer questions your clients ask.
-  - q: How long does it take to build an architect's website?
-    a: A typical architecture website takes 4 to 6 weeks, depending on how many projects need to be written up and photographed.
+  - q: 'What should an architect''s website include?'
+    a: 'A strong home page with your best project, a filterable project portfolio, individual project pages with photos and short write-ups, an about page with the team and approach, a services page, and a simple enquiry form with your contact details.'
+  - q: 'Which platform is best for an architect''s website?'
+    a: 'Webflow suits most architecture firms because it handles large image-led layouts well and lets the team add projects without a developer. WordPress works if you need a specific plugin. Squarespace is fine for a very small practice.'
+  - q: 'How many projects should an architect show online?'
+    a: 'Quality beats quantity. Eight to fifteen strong, well-documented projects usually work better than fifty thumbnails. Show the kind of work you want more of.'
+  - q: 'How do architects get found on Google?'
+    a: 'Give every project its own page with a descriptive title, location and building type, write useful image alt text, set up a Google Business Profile, and publish occasional articles that answer questions your clients ask.'
+  - q: 'How long does it take to build an architect''s website?'
+    a: 'A typical architecture website takes 4 to 6 weeks, depending on how many projects need to be written up and photographed.'
 ---
 
 For an architecture practice, the website is the portfolio, the first meeting and the reference check all at once. Clients, developers and competition juries look at it before they ever call. Yet many **architect websites** are slow, hard to navigate on a phone and impossible to find on Google. Here's what a good one needs.

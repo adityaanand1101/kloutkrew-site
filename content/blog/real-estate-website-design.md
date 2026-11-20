@@ -6,16 +6,16 @@ category: "Web Development"
 author: "KloutKrew Studio"
 tags: ["real estate website design", "real estate website design company", "property website", "project microsite"]
 faqs:
-  - q: What should a real estate project website include?
-    a: A hero with the project name, location and configuration, a gallery and walkthrough video, floor plans, amenities, a location map with nearby landmarks, specifications, payment plan or price on request, RERA details where applicable, and a short enquiry form.
-  - q: Should a developer have one website or a microsite per project?
-    a: Most developers do best with a main brand website that lists every project, plus a dedicated project page or microsite for each major launch that can be used in ads.
-  - q: How do real estate websites generate leads?
-    a: Short enquiry forms, click-to-call and WhatsApp buttons on mobile, brochure downloads, and site-visit booking, all tracked in analytics so you know which ads and pages bring buyers.
-  - q: Why is speed important for property websites?
-    a: Most property enquiries now start from ads on a phone. If the page takes more than a few seconds to load, the visitor leaves before seeing the project, and you pay for the click anyway.
-  - q: Which platform is best for a real estate website?
-    a: Webflow works well for brand and project sites with rich galleries and easy editing. For large listing portals with search and filters, a custom build or WordPress with a property plugin may fit better.
+  - q: 'What should a real estate project website include?'
+    a: 'A hero with the project name, location and configuration, a gallery and walkthrough video, floor plans, amenities, a location map with nearby landmarks, specifications, payment plan or price on request, RERA details where applicable, and a short enquiry form.'
+  - q: 'Should a developer have one website or a microsite per project?'
+    a: 'Most developers do best with a main brand website that lists every project, plus a dedicated project page or microsite for each major launch that can be used in ads.'
+  - q: 'How do real estate websites generate leads?'
+    a: 'Short enquiry forms, click-to-call and WhatsApp buttons on mobile, brochure downloads, and site-visit booking, all tracked in analytics so you know which ads and pages bring buyers.'
+  - q: 'Why is speed important for property websites?'
+    a: 'Most property enquiries now start from ads on a phone. If the page takes more than a few seconds to load, the visitor leaves before seeing the project, and you pay for the click anyway.'
+  - q: 'Which platform is best for a real estate website?'
+    a: 'Webflow works well for brand and project sites with rich galleries and easy editing. For large listing portals with search and filters, a custom build or WordPress with a property plugin may fit better.'
 ---
 
 A property buyer will look at a project's website several times before booking a site visit, and their family and banker will often look too. A good **real estate website** makes the project easy to understand, builds trust in the developer and makes it easy to enquire. A poor one wastes your ad budget.

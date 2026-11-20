@@ -10,16 +10,16 @@ serviceTypes: [Website design, Webflow development, Framer development, Shopify 
 areaServed: [Worldwide, India, Delhi NCR]
 updated: 2026-11-20
 faqs:
-  - q: Which platform should my website be built on?
-    a: Webflow suits marketing sites that need strong design and easy editing. Shopify is best when you sell products online. Framer is fast for simple launch sites. WordPress makes sense when you need a specific plugin or a very large blog. Our [Webflow vs Framer vs WordPress comparison](/blog/webflow-vs-framer-vs-wordpress) explains the trade-offs.
-  - q: How long does a website take?
-    a: Most websites go live in 4 to 6 weeks. You see the first design concepts within 7 days of the kickoff call.
-  - q: Will we be able to edit the site ourselves?
-    a: Yes. We set up the content management system so your team can edit text, images, blog posts and products without touching code, and we show you how.
-  - q: Do you build websites for architects and real estate firms?
-    a: Yes. Portfolio-led sites for architects and project sites for real estate developers need large images, fast loading and clear enquiry paths. See [what an architect's website needs](/blog/website-for-architects).
-  - q: Do you design apps and SaaS products as well?
-    a: Yes. We do UI/UX design for apps, SaaS dashboards and design systems, from wireframes to final interface files ready for your developers.
+  - q: 'Which platform should my website be built on?'
+    a: 'Webflow suits marketing sites that need strong design and easy editing. Shopify is best when you sell products online. Framer is fast for simple launch sites. WordPress makes sense when you need a specific plugin or a very large blog. Our [Webflow vs Framer vs WordPress comparison](/blog/webflow-vs-framer-vs-wordpress) explains the trade-offs.'
+  - q: 'How long does a website take?'
+    a: 'Most websites go live in 4 to 6 weeks. You see the first design concepts within 7 days of the kickoff call.'
+  - q: 'Will we be able to edit the site ourselves?'
+    a: 'Yes. We set up the content management system so your team can edit text, images, blog posts and products without touching code, and we show you how.'
+  - q: 'Do you build websites for architects and real estate firms?'
+    a: 'Yes. Portfolio-led sites for architects and project sites for real estate developers need large images, fast loading and clear enquiry paths. See [what an architect''s website needs](/blog/website-for-architects).'
+  - q: 'Do you design apps and SaaS products as well?'
+    a: 'Yes. We do UI/UX design for apps, SaaS dashboards and design systems, from wireframes to final interface files ready for your developers.'
 ---
 
 KloutKrew Studio designs and builds **websites that look like your brand and turn visitors into enquiries and sales**. We build on Webflow, Framer, WordPress and Shopify, and design interfaces for apps and SaaS products, for clients in India and worldwide.

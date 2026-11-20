@@ -10,16 +10,16 @@ areaServed: [New Delhi, Delhi NCR, Gurugram, Noida, Faridabad, Ghaziabad]
 serviceTypes: [Brand identity design, Logo design, Packaging design, Website design, Social media creatives, AI brand films]
 updated: 2026-11-20
 faqs:
-  - q: Do you work with brands outside Delhi?
-    a: Yes. We're based in New Delhi and meet Delhi NCR clients in person when it helps, but most of our projects run remotely, with clients across India and abroad. See [how we work with international brands](/international).
-  - q: How long does a branding project take?
-    a: Most projects go live in 4 to 6 weeks. You see the first concepts within 7 days of the kickoff call.
-  - q: Can you design packaging and get it print-ready?
-    a: Yes. We design packaging from the dieline up and hand over print-ready files for your printer, including mockups for your website and marketplace listings.
-  - q: Do you build the website as well as the brand?
-    a: Yes. We design and build websites on Webflow and Shopify, so your brand, packaging and website are made by one team and look like one brand.
-  - q: How do I get a quote?
-    a: Tell us about your brand on the [contact page](/contact-us). We reply within 24 hours with questions, ideas and a clear quote.
+  - q: 'Do you work with brands outside Delhi?'
+    a: 'Yes. We''re based in New Delhi and meet Delhi NCR clients in person when it helps, but most of our projects run remotely, with clients across India and abroad. See [how we work with international brands](/international).'
+  - q: 'How long does a branding project take?'
+    a: 'Most projects go live in 4 to 6 weeks. You see the first concepts within 7 days of the kickoff call.'
+  - q: 'Can you design packaging and get it print-ready?'
+    a: 'Yes. We design packaging from the dieline up and hand over print-ready files for your printer, including mockups for your website and marketplace listings.'
+  - q: 'Do you build the website as well as the brand?'
+    a: 'Yes. We design and build websites on Webflow and Shopify, so your brand, packaging and website are made by one team and look like one brand.'
+  - q: 'How do I get a quote?'
+    a: 'Tell us about your brand on the [contact page](/contact-us). We reply within 24 hours with questions, ideas and a clear quote.'
 ---
 
 KloutKrew Studio is an independent creative studio in **New Delhi**. We help startups and D2C brands across **Delhi, Gurugram, Noida and the rest of NCR** look sharper and sell better, with branding, packaging, websites and films made by one team.

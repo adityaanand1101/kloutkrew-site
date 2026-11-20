@@ -10,16 +10,16 @@ serviceTypes: [AI video production, Brand films, Ad films, Product videos, Video
 areaServed: [Worldwide, India, Delhi NCR]
 updated: 2026-11-20
 faqs:
-  - q: What is an AI brand film?
-    a: An AI brand film is a short brand or product video where some or all of the footage is generated with AI tools, then directed, edited, sound-designed and colour-graded by people, so it looks intentional rather than generated.
-  - q: Is AI video good enough for a brand film?
-    a: For launch films, concept films, product visualisation and social ads, yes. For close-up shots of real people using your actual product, a traditional shoot or a mix of shoot and AI usually works better. We'll tell you which suits your brief.
-  - q: How long does an AI film take?
-    a: A short film or ad usually takes 2 to 4 weeks from brief to final cut, including a storyboard you approve before production starts.
-  - q: What formats do I get?
-    a: We deliver the master film plus cut-downs for every channel you use, such as 16:9 for YouTube and your website, 9:16 for Reels and Shorts, and 1:1 or 4:5 for feed ads.
-  - q: Can you shoot real footage too?
-    a: Yes. We combine AI footage with real product shots, UGC and existing brand footage when a project needs it.
+  - q: 'What is an AI brand film?'
+    a: 'An AI brand film is a short brand or product video where some or all of the footage is generated with AI tools, then directed, edited, sound-designed and colour-graded by people, so it looks intentional rather than generated.'
+  - q: 'Is AI video good enough for a brand film?'
+    a: 'For launch films, concept films, product visualisation and social ads, yes. For close-up shots of real people using your actual product, a traditional shoot or a mix of shoot and AI usually works better. We''ll tell you which suits your brief.'
+  - q: 'How long does an AI film take?'
+    a: 'A short film or ad usually takes 2 to 4 weeks from brief to final cut, including a storyboard you approve before production starts.'
+  - q: 'What formats do I get?'
+    a: 'We deliver the master film plus cut-downs for every channel you use, such as 16:9 for YouTube and your website, 9:16 for Reels and Shorts, and 1:1 or 4:5 for feed ads.'
+  - q: 'Can you shoot real footage too?'
+    a: 'Yes. We combine AI footage with real product shots, UGC and existing brand footage when a project needs it.'
 ---
 
 KloutKrew Studio makes **brand films, ad films and product videos** using AI production alongside traditional direction, editing and colour. You get cinematic launch films and campaign ads, sized for every channel, without the cost and time of a full shoot.

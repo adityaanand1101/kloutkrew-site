@@ -10,18 +10,18 @@ areaServed: [Worldwide, United States, United Kingdom, United Arab Emirates, Aus
 serviceTypes: [Brand identity design, Logo design, Packaging design, Webflow website design, Shopify website design, AI brand films]
 updated: 2026-11-20
 faqs:
-  - q: Can a studio in India work with a brand in the US, UK or UAE?
-    a: Yes. Our whole process runs remotely, with video calls, shared design files and written updates at each milestone. Clients don't need to be in the same city, or the same time zone.
-  - q: What time zone do you work in?
-    a: We're on India Standard Time (UTC+5:30). That overlaps the full working day in the UAE, the afternoon in the UK and Europe, and early morning or evening in the US, so calls are easy to schedule.
-  - q: How long does a project take?
-    a: Most projects go live in 4 to 6 weeks. You see the first concepts within 7 days of the kickoff call.
-  - q: Do you build websites for international brands?
-    a: Yes. We design and build on Webflow and Shopify, so the site is fast, easy for your team to edit and hosted wherever you sell.
-  - q: Do you handle packaging for brands that print abroad?
-    a: Yes. We design to your printer's dieline and hand over print-ready files, so packaging can be printed wherever you manufacture.
-  - q: How do I start?
-    a: Tell us about your brand on the [contact page](/contact-us). We reply within 24 hours with questions, ideas and a clear quote.
+  - q: 'Can a studio in India work with a brand in the US, UK or UAE?'
+    a: 'Yes. Our whole process runs remotely, with video calls, shared design files and written updates at each milestone. Clients don''t need to be in the same city, or the same time zone.'
+  - q: 'What time zone do you work in?'
+    a: 'We''re on India Standard Time (UTC+5:30). That overlaps the full working day in the UAE, the afternoon in the UK and Europe, and early morning or evening in the US, so calls are easy to schedule.'
+  - q: 'How long does a project take?'
+    a: 'Most projects go live in 4 to 6 weeks. You see the first concepts within 7 days of the kickoff call.'
+  - q: 'Do you build websites for international brands?'
+    a: 'Yes. We design and build on Webflow and Shopify, so the site is fast, easy for your team to edit and hosted wherever you sell.'
+  - q: 'Do you handle packaging for brands that print abroad?'
+    a: 'Yes. We design to your printer''s dieline and hand over print-ready files, so packaging can be printed wherever you manufacture.'
+  - q: 'How do I start?'
+    a: 'Tell us about your brand on the [contact page](/contact-us). We reply within 24 hours with questions, ideas and a clear quote.'
 ---
 
 KloutKrew Studio is an independent creative studio based in New Delhi, working with **startups and D2C brands around the world**. We design brand identities, packaging, websites and AI brand films, all made by one team, so everything looks like one brand.

@@ -1,0 +1,27 @@
+# Publishes blog posts whose `date:` is today (India time).
+# The build hides posts dated in the future. This job runs every morning at
+# 06:05 IST and, only if a post is due today, pushes an empty commit so Vercel
+# rebuilds the site and the post goes live. Approved by the site owner, Nov 2026.
+name: Publish scheduled posts
+on:
+  schedule:
+    - cron: '35 0 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild if a post is due today
+        run: |
+          TODAY=$(TZ=Asia/Kolkata date +%F)
+          if grep -lE "^date: \"?${TODAY}\"?\s*$" content/blog/*.md; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git commit --allow-empty -m "Publish scheduled blog posts for ${TODAY}"
+            git push
+          else
+            echo "No posts scheduled for ${TODAY}"
+          fi

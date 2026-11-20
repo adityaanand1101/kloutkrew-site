@@ -218,6 +218,9 @@ async function loadPosts() {
     if (data.draft && !INCLUDE_DRAFTS) { console.log(`  skip draft  ${file}`); continue; }
     const date = new Date(data.date);
     if (Number.isNaN(+date)) throw new Error(`${file}: date "${data.date}" is not a valid date (use YYYY-MM-DD)`);
+    // Scheduled posts: a future date keeps the post off the live site until a build on or after that day (India time).
+    const todayIST = new Date(Date.now() + 5.5 * 3600e3).toISOString().slice(0, 10);
+    if (!INCLUDE_DRAFTS && isoDate(date) > todayIST) { console.log(`  scheduled   ${file} (${isoDate(date)})`); continue; }
     const words = content.replace(/```[\s\S]*?```/g, '').split(/\s+/).filter(Boolean).length;
     const html = await renderMarkdown(content, abs, slug);
     let cover = null;
@@ -529,11 +532,15 @@ async function main() {
   for (const d of STATIC_DIRS) await copyDir(path.join(ROOT, d), path.join(DIST, d));
 
   const posts = await loadPosts();
+  // Links to posts that aren't live yet (scheduled for a later date) become plain text until they publish.
+  const live = new Set(posts.map(p => p.slug));
+  const unlinkScheduled = html => html.replace(/<a [^>]*href="\/blog\/([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/a>/g, (m, slug, text) => live.has(slug) ? m : text);
+  for (const p of posts) p.html = unlinkScheduled(p.html);
   await fsp.writeFile(path.join(DIST, 'blog.html'), listingPage(posts));
   for (const post of posts) await fsp.writeFile(path.join(DIST, 'blog', `${post.slug}.html`), postPage(post, posts));
   await fsp.writeFile(path.join(DIST, 'blog', 'rss.xml'), rss(posts));
   const landings = await loadLandingPages();
-  for (const lp of landings) await fsp.writeFile(path.join(DIST, `${lp.slug}.html`), landingPage(lp));
+  for (const lp of landings) { lp.html = unlinkScheduled(lp.html); await fsp.writeFile(path.join(DIST, `${lp.slug}.html`), unlinkScheduled(landingPage(lp))); }
   await fsp.writeFile(path.join(DIST, 'sitemap.xml'), sitemap(posts, landings));
   const llms = fs.readFileSync(path.join(ROOT, 'llms.txt'), 'utf8').trimEnd()
     + (landings.length ? '\n\n## Pages\n\n' + landings.map(l => `- [${l.data.h1}](${SITE}/${l.slug}): ${l.data.description}`).join('\n') : '')

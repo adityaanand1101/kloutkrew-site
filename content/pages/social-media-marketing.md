@@ -10,16 +10,16 @@ serviceTypes: [Social media management, Content creation, UGC production, Meta A
 areaServed: [Worldwide, India, Delhi NCR]
 updated: 2026-11-20
 faqs:
-  - q: What's included in social media management?
-    a: A content plan, designed posts and Reels in your brand's look, captions, scheduling and a monthly report on what worked. We can also manage community replies if you need it.
-  - q: What is UGC and does my brand need it?
-    a: UGC (user-generated content) is video made by real customers or creators showing your product in use. It usually works well as ad creative because it looks like the content people already watch. Read [why UGC works for brands](/blog/power-of-ugc-for-brands).
-  - q: Do you run the ads as well as make them?
-    a: Yes. We make the ad creatives and can run Meta and Google campaigns, testing several creatives at once and moving budget to the ones that perform.
-  - q: Do you do SEO?
-    a: Yes. We handle on-page SEO, technical fixes, content planning and local SEO, including Google Business Profile setup.
-  - q: Is there a minimum commitment?
-    a: Social and marketing work is usually planned month by month. Tell us your goals and budget and we'll suggest the right scope.
+  - q: 'What''s included in social media management?'
+    a: 'A content plan, designed posts and Reels in your brand''s look, captions, scheduling and a monthly report on what worked. We can also manage community replies if you need it.'
+  - q: 'What is UGC and does my brand need it?'
+    a: 'UGC (user-generated content) is video made by real customers or creators showing your product in use. It usually works well as ad creative because it looks like the content people already watch. Read [why UGC works for brands](/blog/power-of-ugc-for-brands).'
+  - q: 'Do you run the ads as well as make them?'
+    a: 'Yes. We make the ad creatives and can run Meta and Google campaigns, testing several creatives at once and moving budget to the ones that perform.'
+  - q: 'Do you do SEO?'
+    a: 'Yes. We handle on-page SEO, technical fixes, content planning and local SEO, including Google Business Profile setup.'
+  - q: 'Is there a minimum commitment?'
+    a: 'Social and marketing work is usually planned month by month. Tell us your goals and budget and we''ll suggest the right scope.'
 ---
 
 KloutKrew Studio plans, makes and distributes **content that sells**. We design social posts and Reels in your brand's look, produce UGC and ad creatives, and run Meta Ads, Google Ads and SEO so the content reaches the right people.

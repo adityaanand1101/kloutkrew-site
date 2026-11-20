@@ -246,7 +246,7 @@ body, .page_wrapper { background: #fff; }
 
 /* landing pages + FAQ */
 .kb-landing-cta{display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap;margin-top:1.5rem}
-.kb-faq{padding:3rem 0 1rem}
+.kb-faq{padding:3rem var(--kb-gutter) 1rem}
 .kb-faq h2{font-size:clamp(1.6rem,3vw,2.4rem);margin:0 0 1.25rem;color:inherit}
 .kb-faq details{border-top:1px solid rgba(127,127,127,.35);padding:1.1rem 0}
 .kb-faq details:last-of-type{border-bottom:1px solid rgba(127,127,127,.35)}
