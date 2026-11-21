@@ -37,7 +37,7 @@ Your store is where browsing becomes buying. KloutKrew Studio designs and builds
 
 ## Designed for mobile
 
-Most D2C traffic is on phones. We design and test mobile first. See [Shopify store design for D2C brands](/blog/shopify-store-design-d2c).
+Most D2C traffic is on phones, and in our [2026 speed study of 53 Indian D2C homepages](/blog/indian-d2c-website-speed-study-2026) none scored "good" on mobile. We design and test mobile first, with a speed budget for every app and image. See [Shopify store design for D2C brands](/blog/shopify-store-design-d2c).
 
 ## How it runs
 

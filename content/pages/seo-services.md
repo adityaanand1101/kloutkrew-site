@@ -42,6 +42,8 @@ KloutKrew Studio helps businesses get **found on Google, Google Maps and AI assi
 | AI search | Fact blocks, FAQs, schema and third-party mentions |
 | Measurement | Search Console, GA4 and rank tracking |
 
+Speed is part of SEO. Our [Indian D2C website speed study](/blog/indian-d2c-website-speed-study-2026) found the median D2C homepage takes about 7 seconds to show its main content on mobile.
+
 ## How we work
 
 1. **Audit** to find what's holding you back
