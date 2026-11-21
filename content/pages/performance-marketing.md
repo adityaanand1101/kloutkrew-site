@@ -1,10 +1,10 @@
 ---
-title: Performance Marketing, Meta Ads and Google Ads | KloutKrew Studio
+title: "Meta Ads & Google Ads Agency | KloutKrew Studio"
 h1: Performance marketing on Meta and Google
 breadcrumb: Performance marketing
 eyebrow: Performance marketing
 description: KloutKrew Studio plans and runs Meta Ads and Google Ads for D2C brands, real estate projects and service businesses, with creatives made in-house and tested every week.
-metaDescription: Performance marketing agency for Meta Ads and Google Ads. Campaign setup, in-house ad creatives, weekly testing and clear reporting for D2C, real estate and service brands.
+metaDescription: "Performance marketing on Meta and Google: in-house ad creatives, ongoing testing, conversion tracking and clear reporting for D2C and service brands."
 serviceName: Performance marketing
 serviceTypes: [Meta Ads, Google Ads, Performance creative, Conversion tracking, Landing pages]
 areaServed: [Worldwide, India, Delhi NCR]

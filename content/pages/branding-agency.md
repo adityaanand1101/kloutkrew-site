@@ -4,7 +4,7 @@ h1: Brand identity and logo design for startups and D2C brands
 breadcrumb: Branding
 eyebrow: Branding
 description: KloutKrew Studio designs brand identities and logos for startups and D2C brands in India and worldwide, from strategy and naming to logo, colour, type and a brand guide your team can use.
-metaDescription: Brand identity and logo design agency for startups and D2C brands. Strategy, logo, colours, type and brand guidelines. Based in New Delhi, working worldwide. Reply within 24 hours.
+metaDescription: "Brand identity and logo design for startups and D2C brands: strategy, logo, colour, type and brand guidelines. New Delhi studio, working worldwide."
 serviceName: Brand identity and logo design
 serviceTypes: [Brand strategy, Logo design, Visual identity, Brand guidelines, Brand naming]
 areaServed: [Worldwide, India, Delhi NCR]

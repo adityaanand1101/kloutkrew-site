@@ -4,7 +4,7 @@ h1: Graphic design for campaigns, print, social and presentations
 breadcrumb: Graphic design
 eyebrow: Graphic design
 description: KloutKrew Studio provides graphic design for brands, from posters, brochures and illustrations to pitch decks, social media creatives and campaign graphics, all consistent with your brand identity.
-metaDescription: Graphic design services for startups and brands. Posters, brochures, illustrations, pitch decks, social creatives and campaign graphics. Based in New Delhi, working worldwide.
+metaDescription: "Graphic design for brands: posters, brochures, illustrations, pitch decks, social creatives and campaign graphics. New Delhi studio, working worldwide."
 serviceName: Graphic design
 serviceTypes: [Graphic design, Poster design, Brochure design, Illustration, Pitch deck design, Social media creatives]
 areaServed: [Worldwide, India, Delhi NCR]

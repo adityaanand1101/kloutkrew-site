@@ -4,7 +4,7 @@ h1: Branding, packaging and website agency in Delhi NCR
 breadcrumb: Branding agency in Delhi
 eyebrow: Delhi NCR
 description: KloutKrew Studio is a creative studio in New Delhi that designs brand identities, logos, packaging, websites and AI brand films for startups and D2C brands across Delhi, Gurugram and Noida.
-metaDescription: Branding, logo, packaging and website design agency in New Delhi. KloutKrew Studio works with startups and D2C brands across Delhi, Gurugram and Noida. Reply within 24 hours.
+metaDescription: "Branding, logo, packaging and website design agency in New Delhi for startups and D2C brands across Delhi, Gurugram and Noida. Reply within 24 hours."
 serviceName: Branding and packaging design in Delhi NCR
 areaServed: [New Delhi, Delhi NCR, Gurugram, Noida, Faridabad, Ghaziabad]
 serviceTypes: [Brand identity design, Logo design, Packaging design, Website design, Social media creatives, AI brand films]

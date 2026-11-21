@@ -1,10 +1,10 @@
 ---
-title: SEO Services, Local SEO and AI Search Optimisation | KloutKrew Studio
+title: "SEO & AI Search Optimisation Services | KloutKrew"
 h1: SEO services for Google and AI search
 breadcrumb: SEO
 eyebrow: SEO
 description: KloutKrew Studio improves how businesses are found on Google, Google Maps and AI assistants like ChatGPT, through technical SEO, on-page optimisation, content, local SEO and structured data.
-metaDescription: SEO services for startups and businesses. Technical SEO, on-page SEO, content, local SEO, Google Business Profile and AI search (GEO) optimisation. Based in New Delhi, working worldwide.
+metaDescription: "Technical, on-page and local SEO plus AI search optimisation, so your business is found on Google, Google Maps and assistants like ChatGPT."
 serviceName: SEO and AI search optimisation
 serviceTypes: [Technical SEO, On-page SEO, Content SEO, Local SEO, Google Business Profile optimisation, Generative engine optimisation]
 areaServed: [Worldwide, India, Delhi NCR]

@@ -1,10 +1,10 @@
 ---
-title: UI/UX Design Agency for Apps, SaaS and Websites | KloutKrew Studio
+title: "UI/UX Design Agency for Apps & SaaS | KloutKrew"
 h1: UI/UX design for apps, SaaS products and websites
 breadcrumb: UI/UX design
 eyebrow: UI/UX design
 description: KloutKrew Studio designs user experiences and interfaces for mobile apps, SaaS dashboards and websites, from research and wireframes to polished UI, prototypes and design systems your developers can build from.
-metaDescription: UI/UX design agency for apps, SaaS and websites. User research, wireframes, UI design, prototypes and design systems. Based in New Delhi, working with startups worldwide.
+metaDescription: "UI/UX design for apps, SaaS products and websites: research, wireframes, UI, prototypes and design systems your developers can build from."
 serviceName: UI/UX design
 serviceTypes: [UX research, Wireframing, UI design, Prototyping, Design systems, App design, SaaS dashboard design]
 areaServed: [Worldwide, India, Delhi NCR]

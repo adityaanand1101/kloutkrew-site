@@ -562,7 +562,7 @@ ${faqs.map(f => `<details><summary>${esc(f.q)}</summary><div>${md.render(String(
 <ul>${others.map(([s, n]) => `<li><a href="/${s}">${esc(n)}</a></li>`).join('')}</ul></nav>
 ${CTA}
 </main>
-<script>(function(){var r=matchMedia('(prefers-reduced-motion: reduce)').matches;var vs=document.querySelectorAll('.kl video[data-src]');if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){if(!v.src){v.src=v.dataset.src;}if(!r)v.play().catch(function(){});}else{v.pause();}});},{rootMargin:'200px'});vs.forEach(function(v){io.observe(v);});})();</script>`;
+<script>(function(){var r=matchMedia('(prefers-reduced-motion: reduce)').matches;var vs=document.querySelectorAll('.kl video[data-src]');if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){if(!v.src){v.src=v.dataset.src;}if(!r)v.play().catch(function(){});}else{v.pause();}});},{rootMargin:'200px'});function go(){vs.forEach(function(v){io.observe(v);});}if(document.readyState==='complete')setTimeout(go,1200);else addEventListener('load',function(){setTimeout(go,1200);});})();</script>`;
   const graph = [{
     '@type': 'Service', name: d.serviceName || d.h1, url, description: d.description,
     provider: { '@type': 'ProfessionalService', name: SITE_NAME, url: SITE },

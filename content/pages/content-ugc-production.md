@@ -1,10 +1,10 @@
 ---
-title: Content Creation and UGC Video Production | KloutKrew Studio
+title: "Content Creation & UGC Video Production | KloutKrew"
 h1: Content creation and UGC videos that sell
 breadcrumb: Content & UGC
 eyebrow: Content & UGC
 description: KloutKrew Studio produces Reels, short-form videos, UGC creator content, product photography and ad creatives for D2C brands and startups, planned around what your audience actually watches.
-metaDescription: Content creation and UGC video production for D2C brands. Reels, creator videos, product photography and ad creatives, briefed, produced and edited by one team. Based in New Delhi.
+metaDescription: "Reels, UGC creator videos, product photography and ad creatives for D2C brands, briefed, produced and edited by one team in New Delhi."
 serviceName: Content creation and UGC production
 serviceTypes: [UGC video production, Reels production, Short-form video, Product photography, Ad creatives]
 areaServed: [Worldwide, India, Delhi NCR]

@@ -4,7 +4,7 @@ h1: AI brand films, ad films and product videos
 breadcrumb: AI brand films
 eyebrow: Brand films
 description: KloutKrew Studio makes brand films, ad films and product videos using AI production alongside direction, editing and colour, for launches, campaigns and social, without the cost of a full shoot.
-metaDescription: AI brand films and ad film production for startups and D2C brands. Launch films, product videos and social ads made with AI, directed and edited by designers. Based in New Delhi, working worldwide.
+metaDescription: "AI brand films, ad films and product videos for launches and social. Directed, edited and graded by designers. New Delhi studio, working worldwide."
 serviceName: AI brand film and ad film production
 serviceTypes: [AI video production, Brand films, Ad films, Product videos, Video editing, Colour grading]
 areaServed: [Worldwide, India, Delhi NCR]

@@ -1,10 +1,10 @@
 ---
-title: Social Media, Content & Performance Marketing | KloutKrew Studio
+title: "Social Media & Content Marketing | KloutKrew Studio"
 h1: Social media, content and performance marketing
 breadcrumb: Social & marketing
 eyebrow: Social & marketing
 description: KloutKrew Studio plans and makes social media content, UGC and performance ads for D2C brands and startups, and runs Meta Ads, Google Ads and SEO so the content reaches the right people.
-metaDescription: Social media content, UGC, performance ads and SEO for D2C brands and startups. Reels, creatives, Meta Ads and Google Ads from one studio. Based in New Delhi, working worldwide.
+metaDescription: "Social media content, UGC, performance ads and SEO for D2C brands and startups, planned, made and measured by one team in New Delhi."
 serviceName: Social media and digital marketing
 serviceTypes: [Social media management, Content creation, UGC production, Meta Ads, Google Ads, SEO]
 areaServed: [Worldwide, India, Delhi NCR]

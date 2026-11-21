@@ -1,10 +1,10 @@
 ---
-title: Branding & Web Design Studio for International Brands | KloutKrew Studio
+title: "Branding & Web Design Studio for Global Brands | KloutKrew"
 h1: A branding and web design studio for brands worldwide
 breadcrumb: Work with us from anywhere
 eyebrow: Worldwide
 description: KloutKrew Studio designs brand identities, packaging, websites and AI brand films for startups and D2C brands in the US, UK, UAE, Australia and Europe, working remotely from New Delhi.
-metaDescription: Remote branding, packaging and website design studio for startups and D2C brands in the US, UK, UAE, Australia and Europe. One team for brand, packaging and web, clear process, reply within 24 hours.
+metaDescription: "Remote branding, packaging and website design for startups and D2C brands in the US, UK, UAE, Australia and Europe. Reply within 24 hours."
 serviceName: Remote branding, packaging and website design
 areaServed: [Worldwide, United States, United Kingdom, United Arab Emirates, Australia, Europe]
 serviceTypes: [Brand identity design, Logo design, Packaging design, Webflow website design, Shopify website design, AI brand films]

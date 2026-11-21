@@ -4,7 +4,7 @@ h1: Packaging design agency for D2C, food and beauty brands
 breadcrumb: Packaging design
 eyebrow: Packaging
 description: KloutKrew Studio designs labels, boxes, pouches and bottles for D2C, food, beverage and beauty brands, from shelf strategy to print-ready files. Based in New Delhi, working across India and worldwide.
-metaDescription: Packaging design agency in India for D2C, FMCG, food, beverage and beauty brands. Labels, boxes and pouches designed to sell on shelf and online, delivered print-ready. Based in New Delhi.
+metaDescription: "Packaging design agency in India for D2C, FMCG, food, beverage and beauty brands. Labels, boxes and pouches that sell on shelf and online."
 serviceName: Packaging design
 serviceTypes: [Packaging design, Label design, Box design, Pouch design, Packaging mockups]
 areaServed: [India, Delhi NCR, Worldwide]

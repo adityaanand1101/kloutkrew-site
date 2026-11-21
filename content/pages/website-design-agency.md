@@ -4,7 +4,7 @@ h1: Website design and development on Webflow, Framer and Shopify
 breadcrumb: Website design
 eyebrow: Websites & UI/UX
 description: KloutKrew Studio designs and builds fast websites on Webflow, Framer, WordPress and Shopify for startups, D2C brands, architects and real estate firms, with UI/UX design for apps and SaaS products.
-metaDescription: Website design and Webflow, Framer and Shopify development for startups, D2C brands, architects and real estate. UI/UX for apps and SaaS. Based in New Delhi, working worldwide.
+metaDescription: "Website design and development on Webflow, Framer and Shopify for startups, D2C brands, architects and real estate. New Delhi studio, worldwide."
 serviceName: Website design and development
 serviceTypes: [Website design, Webflow development, Framer development, Shopify development, WordPress development, UI/UX design]
 areaServed: [Worldwide, India, Delhi NCR]
