@@ -479,6 +479,17 @@ async function loadLandingPages() {
   return out;
 }
 
+const SERVICES = [
+  ['branding-agency', 'Brand identity'], ['logo-design', 'Logo design'], ['packaging-design-agency', 'Packaging design'],
+  ['graphic-design', 'Graphic design'], ['website-design-agency', 'Website design'], ['ui-ux-design-agency', 'UI/UX design'],
+  ['shopify-store-design', 'Shopify stores'], ['ai-brand-films', 'AI brand films'], ['content-ugc-production', 'Content & UGC'],
+  ['social-media-marketing', 'Social media'], ['performance-marketing', 'Performance marketing'], ['seo-services', 'SEO & AI search'],
+];
+const servicesNav = self => `<section class="kb-services-nav" aria-labelledby="svc-nav-title"><div class="kb-narrow">
+<h2 id="svc-nav-title">${self ? 'Other services' : 'Our services'}</h2>
+<ul>${SERVICES.filter(([s]) => s !== self).map(([s, n]) => `<li><a href="/${s}">${esc(n)}</a></li>`).join('')}</ul>
+</div></section>`;
+
 function landingPage(lp) {
   const d = lp.data, url = `${SITE}/${lp.slug}`;
   const faqs = Array.isArray(d.faqs) ? d.faqs : [];
@@ -499,6 +510,7 @@ ${lp.html}
 </div>
 </article>
 ${faqHTML}
+${servicesNav(SERVICES.some(([x]) => x === lp.slug) ? lp.slug : null)}
 ${CTA}
 </main>`;
   const graph = [{

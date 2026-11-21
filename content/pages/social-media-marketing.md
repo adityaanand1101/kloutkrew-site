@@ -43,6 +43,12 @@ When the people making the creative also see the ad results, the next round of c
 3. **Publish and promote.** Scheduling, community replies if needed, and paid campaigns.
 4. **Report and improve.** A monthly report on reach, engagement and sales, with the next month's plan.
 
+## Specialist services
+
+- [Content and UGC production](/content-ugc-production)
+- [Performance marketing on Meta and Google](/performance-marketing)
+- [SEO and AI search optimisation](/seo-services)
+
 ## Work we've done
 
 The Off We Glow campaign and content in [our work](/works). For ideas you can use straight away, read our [guide to scroll-stopping content](/blog/scroll-stopping-content-guide).

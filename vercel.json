@@ -72,6 +72,34 @@
       "destination": "/website-design-agency.html"
     },
     {
+      "source": "/content-ugc-production",
+      "destination": "/content-ugc-production.html"
+    },
+    {
+      "source": "/graphic-design",
+      "destination": "/graphic-design.html"
+    },
+    {
+      "source": "/logo-design",
+      "destination": "/logo-design.html"
+    },
+    {
+      "source": "/performance-marketing",
+      "destination": "/performance-marketing.html"
+    },
+    {
+      "source": "/seo-services",
+      "destination": "/seo-services.html"
+    },
+    {
+      "source": "/shopify-store-design",
+      "destination": "/shopify-store-design.html"
+    },
+    {
+      "source": "/ui-ux-design-agency",
+      "destination": "/ui-ux-design-agency.html"
+    },
+    {
       "source": "/blog/:slug([^/.]+)",
       "destination": "/blog/:slug.html"
     }
