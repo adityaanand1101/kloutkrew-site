@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://kloutkrew.in/sitemap.xml
+Sitemap: https://kloutkrew.in/blog/rss.xml
