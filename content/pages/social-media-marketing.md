@@ -20,6 +20,12 @@ faqs:
     a: 'Yes. We handle on-page SEO, technical fixes, content planning and local SEO, including Google Business Profile setup.'
   - q: 'Is there a minimum commitment?'
     a: 'Social and marketing work is usually planned month by month. Tell us your goals and budget and we''ll suggest the right scope.'
+hero: owg-remaster
+work: [owg-campaign, magnific-creation, drink-different]
+facts:
+  - {big: '24h', label: 'Reply to every enquiry'}
+  - {big: 'Monthly', label: 'Content plan and report'}
+  - {big: '1 team', label: 'For content, ads and SEO'}
 ---
 
 KloutKrew Studio plans, makes and distributes **content that sells**. We design social posts and Reels in your brand's look, produce UGC and ad creatives, and run Meta Ads, Google Ads and SEO so the content reaches the right people.

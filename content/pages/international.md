@@ -22,6 +22,8 @@ faqs:
     a: 'Yes. We design to your printer''s dieline and hand over print-ready files, so packaging can be printed wherever you manufacture.'
   - q: 'How do I start?'
     a: 'Tell us about your brand on the [contact page](/contact-us). We reply within 24 hours with questions, ideas and a clear quote.'
+hero: magnific-final
+work: [drink-different, owg-campaign, on-demand-experts]
 ---
 
 KloutKrew Studio is an independent creative studio based in New Delhi, working with **startups and D2C brands around the world**. We design brand identities, packaging, websites and AI brand films, all made by one team, so everything looks like one brand.

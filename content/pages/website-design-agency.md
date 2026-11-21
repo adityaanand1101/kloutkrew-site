@@ -20,6 +20,8 @@ faqs:
     a: 'Yes. Portfolio-led sites for architects and project sites for real estate developers need large images, fast loading and clear enquiry paths. See [what an architect''s website needs](/blog/website-for-architects).'
   - q: 'Do you design apps and SaaS products as well?'
     a: 'Yes. We do UI/UX design for apps, SaaS dashboards and design systems, from wireframes to final interface files ready for your developers.'
+hero: plenova
+work: [plenova, drink-different, push-past]
 ---
 
 KloutKrew Studio designs and builds **websites that look like your brand and turn visitors into enquiries and sales**. We build on Webflow, Framer, WordPress and Shopify, and design interfaces for apps and SaaS products, for clients in India and worldwide.

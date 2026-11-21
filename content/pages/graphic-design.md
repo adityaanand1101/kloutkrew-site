@@ -18,6 +18,8 @@ faqs:
     a: 'Yes. Many brands work with us monthly for a steady flow of creatives, campaigns and presentations.'
   - q: 'Can you prepare files for printing?'
     a: 'Yes. We deliver print-ready files with correct colour mode, bleed and finishes marked for your printer.'
+hero: on-demand-experts
+work: [owg-campaign, waku-waku, push-past]
 ---
 
 Most brands need a steady stream of design: a new deck, a festival campaign, a brochure for an event, a week of social posts. KloutKrew Studio handles **graphic design that stays on-brand**, whatever the format.

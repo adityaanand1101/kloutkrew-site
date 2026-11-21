@@ -20,6 +20,12 @@ faqs:
     a: 'Yes, including Google Business Profile setup, local pages, citations and review strategy. See our [Google Business Profile guide](/blog/google-business-profile-guide).'
   - q: 'How do you report progress?'
     a: 'Through Search Console, Analytics and rank tracking, with a monthly summary of what changed and what''s next.'
+hero: plenova
+work: [plenova, drink-different, push-past]
+facts:
+  - {big: '24h', label: 'Reply to every enquiry'}
+  - {big: 'Monthly', label: 'Progress report'}
+  - {big: 'Google + AI', label: 'Search, Maps and AI assistants'}
 ---
 
 KloutKrew Studio helps businesses get **found on Google, Google Maps and AI assistants**. We fix the technical foundations, make every page clear to search engines, and build content that answers what your customers are asking.

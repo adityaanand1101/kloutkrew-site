@@ -20,6 +20,8 @@ faqs:
     a: 'Logo files in every format you need, a colour palette, type choices, sample applications and a brand guide that explains how to use it all. Every source file is handed over.'
   - q: 'Can you also design our packaging and website?'
     a: 'Yes. The same team designs [packaging](/packaging-design-agency) and [websites](/website-design-agency), so everything launches as one brand.'
+hero: waku-waku
+work: [tou-fist, waku-waku, on-demand-experts]
 ---
 
 KloutKrew Studio is an independent creative studio based in New Delhi. We design **brand identities and logos** for startups and D2C brands, in India and around the world. A good brand identity makes a young company look established, helps customers remember it and makes every later piece of design faster to make.

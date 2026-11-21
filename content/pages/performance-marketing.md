@@ -20,6 +20,12 @@ faqs:
     a: 'Yes. Campaigns run in your own Meta and Google accounts, and you keep all data and access.'
   - q: 'Do you set up tracking?'
     a: 'Yes. We set up conversion tracking in GA4, Meta and Google Ads so results are measured properly.'
+hero: owg-campaign
+work: [owg-remaster, on-demand-experts, push-past]
+facts:
+  - {big: '24h', label: 'Reply to every enquiry'}
+  - {big: 'Always on', label: 'Creative testing and iteration'}
+  - {big: 'Your accounts', label: 'You own every ad account and its data'}
 ---
 
 Ads work when strong creative meets disciplined testing. KloutKrew Studio runs **Meta Ads and Google Ads** with creatives made by our own design and video team.

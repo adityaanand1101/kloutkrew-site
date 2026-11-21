@@ -18,6 +18,12 @@ faqs:
     a: 'Usage rights are agreed upfront for organic and paid use, so you know exactly where and how long you can use each video.'
   - q: 'How much content can you produce each month?'
     a: 'It depends on your goals and budget. Many brands start with a monthly batch of Reels, UGC videos and static creatives, then scale what performs.'
+hero: owg-campaign
+work: [owg-campaign, owg-remaster, magnific-final]
+facts:
+  - {big: '24h', label: 'Reply to every enquiry'}
+  - {big: 'Monthly', label: 'Batches of Reels, UGC and creatives'}
+  - {big: '1 team', label: 'Plans, shoots and edits'}
 ---
 
 Brands that post consistently, with content people actually want to watch, stay top of mind. KloutKrew Studio plans and produces **Reels, UGC videos, product photography and ad creatives** in batches, so you always have fresh content ready.

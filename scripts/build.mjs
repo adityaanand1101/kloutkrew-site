@@ -490,29 +490,79 @@ const servicesNav = self => `<section class="kb-services-nav" aria-labelledby="s
 <ul>${SERVICES.filter(([s]) => s !== self).map(([s, n]) => `<li><a href="/${s}">${esc(n)}</a></li>`).join('')}</ul>
 </div></section>`;
 
+// Real project work shown on service pages (assets/work/*). Logo-only marks are shown on their brand colour.
+const WORK = {
+  'drink-different': { name: 'Drink Different', cat: 'Web', img: '/assets/work/drink-different.webp' },
+  'plenova': { name: 'Plenova', cat: 'Web & Dev', img: '/assets/work/plenova.webp' },
+  'push-past': { name: 'Push Past', cat: 'Packaging', img: '/assets/work/push-past.webp' },
+  'on-demand-experts': { name: 'On-Demand Experts', cat: 'Packaging', img: '/assets/work/on-demand-experts.webp' },
+  'tou-fist': { name: 'Tou Fist', cat: 'Branding', img: '/assets/work/tou-fist.png', mark: 'rgb(207,23,31)' },
+  'waku-waku': { name: 'Waku Waku', cat: 'Branding', img: '/assets/work/waku-waku.png', mark: 'rgb(140,198,62)' },
+  'owg-campaign': { name: 'OWG Campaign', cat: 'Campaign', img: '/assets/work/owg-campaign.webp', video: '/OWG%20Campaign.mp4' },
+  'owg-remaster': { name: 'OWG 4K Remaster', cat: 'Brand Film', img: '/assets/work/owg-remaster.webp', video: '/Owg%204K%20remastered.mp4' },
+  'magnific-creation': { name: 'Magnific Creation', cat: 'AI Film', img: '/assets/work/magnific-creation.webp', video: '/magnific_creation-7_uq81p0BQLD.mp4' },
+  'magnific-final': { name: 'Magnific Final', cat: 'AI Film', img: '/assets/work/magnific-final.webp', video: '/magnific_final-3_VdKUFjRMMU.mp4' },
+  'visual-style-baseline': { name: 'Visual Style Baseline', cat: 'Brand Film', img: '/assets/work/visual-style-baseline.webp', video: '/magnific_visual-style-baseline-35m_UyB1VApwny.mp4' },
+};
+const DEFAULT_FACTS = [['24h', 'Reply to every enquiry'], ['7 days', 'To your first concepts'], ['4–6 wks', 'For most projects to go live']];
+
+function workMedia(w, { eager = false, playable = false } = {}) {
+  if (w.mark) return `<div class="kl-mark" style="--mark:${w.mark}"><img src="${w.img}" alt="${esc(w.name)} logo" width="260" height="260" loading="${eager ? 'eager' : 'lazy'}"></div>`;
+  if (w.video && playable) return `<video class="kl-video" muted loop playsinline preload="none" poster="${w.img}" data-src="${w.video}" aria-label="${esc(w.name)} film"></video>`;
+  return `<img src="${w.img}" alt="${esc(w.name)}, ${esc(w.cat.toLowerCase())} project by KloutKrew Studio" loading="${eager ? 'eager' : 'lazy'}" ${eager ? 'fetchpriority="high"' : ''}>`;
+}
+
+// Wrap each "## Heading" section of the markdown in a two-column block.
+function sectionize(html) {
+  const parts = html.split(/(?=<h2[\s>])/);
+  const intro = parts[0].trim();
+  const secs = parts.slice(1).map(p => {
+    const m = p.match(/^<h2[^>]*>[\s\S]*?<\/h2>/);
+    let body = p.slice(m[0].length)
+      // card lists: "<strong>Title.</strong>, rest" -> clean title + capitalised description
+      .replace(/<li><strong>([\s\S]*?)\.?<\/strong>[,.:;]?\s*([a-z])?/g, (_, t, c) => `<li><strong>${t}</strong>${c ? c.toUpperCase() : ''}`)
+      // ordered steps: wrap content so the number and text sit in two clean columns
+      .replace(/<ol>([\s\S]*?)<\/ol>/g, (_, items) => `<ol>${items.replace(/<li>([\s\S]*?)<\/li>/g, '<li><div>$1</div></li>')}</ol>`);
+    return `<section class="kl-sec"><div class="kl-sec-head">${m[0]}</div><div class="kl-sec-body">${body}</div></section>`;
+  }).join('\n');
+  return { intro, secs };
+}
+
 function landingPage(lp) {
   const d = lp.data, url = `${SITE}/${lp.slug}`;
   const faqs = Array.isArray(d.faqs) ? d.faqs : [];
-  const faqHTML = faqs.length ? `<section class="kb-faq" aria-labelledby="faq-title"><div class="kb-narrow">
-<h2 id="faq-title">Frequently asked questions</h2>
-${faqs.map(f => `<details><summary>${esc(f.q)}</summary><div>${md.render(String(f.a))}</div></details>`).join('\n')}
-</div></section>` : '';
-  const content = `<main class="kb kb-article kb-landing">
-<article>
-<header class="kb-post-head"><div class="kb-narrow">
-${d.eyebrow ? `<span class="kb-pill">${esc(d.eyebrow)}</span>` : ''}
-<h1 class="kb-post-title">${esc(d.h1)}</h1>
-<p class="kb-post-dek">${esc(d.description)}</p>
-<p class="kb-landing-cta"><a href="/contact-us" class="kb-btn">Get a quote</a> <a href="/works" class="kb-link">See our work</a></p>
-</div></header>
-<div class="kb-post-body">
-${lp.html}
+  const facts = Array.isArray(d.facts) ? d.facts.map(f => [f.big, f.label]) : DEFAULT_FACTS;
+  const hero = WORK[d.hero];
+  const work = (d.work || []).map(k => WORK[k]).filter(Boolean);
+  const { intro, secs } = sectionize(lp.html);
+  const isService = SERVICES.some(([x]) => x === lp.slug);
+  const others = SERVICES.filter(([s]) => s !== lp.slug);
+
+  const content = `<main class="kb kl">
+<header class="kl-hero"><div class="kl-hero-in">
+<div class="kl-hero-text">
+<p class="kb-eyebrow"><span class="kb-dot"></span>${esc(d.eyebrow || 'Service')} <em>(by KloutKrew)</em></p>
+<h1 class="kl-title">${esc(d.h1)}</h1>
+<p class="kl-dek">${esc(d.description)}</p>
+<p class="kl-ctas"><a href="/contact-us" class="kb-btn">Get a quote</a> <a href="/works" class="kl-link">See our work</a></p>
 </div>
-</article>
-${faqHTML}
-${servicesNav(SERVICES.some(([x]) => x === lp.slug) ? lp.slug : null)}
+${hero ? `<figure class="kl-hero-media">${workMedia(hero, { eager: true, playable: true })}<figcaption><span>${esc(hero.name)}</span>${esc(hero.cat)}</figcaption></figure>` : ''}
+</div></header>
+<section class="kl-facts" aria-label="How we work"><ul>${facts.map(([big, label]) => `<li><b>${esc(big)}</b><span>${esc(label)}</span></li>`).join('')}</ul></section>
+<div class="kl-body">
+${intro ? `<div class="kl-intro">${intro}</div>` : ''}
+${secs}
+</div>
+${work.length ? `<section class="kl-work" aria-labelledby="kl-work-title"><div class="kl-work-head"><h2 id="kl-work-title">Selected work</h2><a href="/works" class="kl-link">See all projects</a></div>
+<ul class="kl-work-grid">${work.map(w => `<li><a href="/works"><div class="kl-work-media">${workMedia(w, { playable: true })}</div><p><b>${esc(w.name)}</b><span>${esc(w.cat)}</span></p></a></li>`).join('')}</ul></section>` : ''}
+${faqs.length ? `<section class="kl-sec kl-faq" aria-labelledby="faq-title"><div class="kl-sec-head"><h2 id="faq-title">Questions <em>(we get)</em></h2></div><div class="kl-sec-body">
+${faqs.map(f => `<details><summary>${esc(f.q)}</summary><div>${md.render(String(f.a))}</div></details>`).join('\n')}
+</div></section>` : ''}
+<nav class="kl-services" aria-labelledby="kl-svc-title"><p id="kl-svc-title" class="kb-eyebrow"><span class="kb-dot"></span>${isService ? 'Other services' : 'Our services'}</p>
+<ul>${others.map(([s, n]) => `<li><a href="/${s}">${esc(n)}</a></li>`).join('')}</ul></nav>
 ${CTA}
-</main>`;
+</main>
+<script>(function(){var r=matchMedia('(prefers-reduced-motion: reduce)').matches;var vs=document.querySelectorAll('.kl video[data-src]');if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){if(!v.src){v.src=v.dataset.src;}if(!r)v.play().catch(function(){});}else{v.pause();}});},{rootMargin:'200px'});vs.forEach(function(v){io.observe(v);});})();</script>`;
   const graph = [{
     '@type': 'Service', name: d.serviceName || d.h1, url, description: d.description,
     provider: { '@type': 'ProfessionalService', name: SITE_NAME, url: SITE },
@@ -525,7 +575,9 @@ ${CTA}
     ],
   }];
   if (faqs.length) graph.push({ '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: String(f.a).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') } })) });
-  const head = headHTML({ title: d.title, description: d.metaDescription || d.description, url, image: DEFAULT_OG,
+  const image = hero && !hero.mark ? SITE + hero.img : DEFAULT_OG;
+  const head = headHTML({ title: d.title, description: d.metaDescription || d.description, url, image,
+    extra: hero && !hero.mark && !(hero.video) ? `<link rel="preload" as="image" href="${hero.img}" fetchpriority="high">` : '',
     jsonLd: { '@context': 'https://schema.org', '@graph': graph } });
   return page(head, content, `<script src="/assets/blog.js" defer></script>`);
 }

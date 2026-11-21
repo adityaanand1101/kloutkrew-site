@@ -20,6 +20,8 @@ faqs:
     a: 'Yes. Small thumbnails on Amazon, Flipkart, Blinkit and Zepto need bold, simple packs, so we test every design at thumbnail size and supply listing images and mockups.'
   - q: 'Can you include the label regulations?'
     a: 'We lay out all the mandatory information you supply, such as FSSAI details, ingredients, net quantity and MRP, so it''s legible and compliant with the space rules. You or your compliance advisor confirm the content itself.'
+hero: push-past
+work: [push-past, on-demand-experts, waku-waku]
 ---
 
 KloutKrew Studio is a **packaging design agency** based in New Delhi. We design labels, boxes, pouches, bottles and mailer boxes for D2C, food, beverage, personal care and beauty brands across India, and for brands abroad that print in India or elsewhere.

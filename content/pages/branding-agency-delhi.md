@@ -20,6 +20,8 @@ faqs:
     a: 'Yes. We design and build websites on Webflow and Shopify, so your brand, packaging and website are made by one team and look like one brand.'
   - q: 'How do I get a quote?'
     a: 'Tell us about your brand on the [contact page](/contact-us). We reply within 24 hours with questions, ideas and a clear quote.'
+hero: waku-waku
+work: [push-past, plenova, magnific-final]
 ---
 
 KloutKrew Studio is an independent creative studio in **New Delhi**. We help startups and D2C brands across **Delhi, Gurugram, Noida and the rest of NCR** look sharper and sell better, with branding, packaging, websites and films made by one team.

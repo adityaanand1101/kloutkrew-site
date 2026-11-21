@@ -20,6 +20,8 @@ faqs:
     a: 'Yes. We design [packaging](/packaging-design-agency), product images and [listing images](/blog/amazon-listing-images-guide) so the store and products look like one brand.'
   - q: 'Shopify or WooCommerce?'
     a: 'For most new D2C brands Shopify is easier to run. Read our [Shopify vs WooCommerce comparison](/blog/shopify-vs-woocommerce).'
+hero: plenova
+work: [plenova, drink-different, push-past]
 ---
 
 Your store is where browsing becomes buying. KloutKrew Studio designs and builds **Shopify stores that look like your brand and make purchasing easy on a phone**.

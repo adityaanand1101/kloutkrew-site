@@ -20,6 +20,8 @@ faqs:
     a: 'Yes. We can refresh a logo while keeping what customers recognise, or design a new one if the business has changed.'
   - q: 'Do I own the logo?'
     a: 'Yes. Once the project is paid, you own the final logo and receive all source files.'
+hero: tou-fist
+work: [tou-fist, waku-waku, push-past]
 ---
 
 Your logo is the most repeated piece of your brand. KloutKrew Studio designs **original, simple and memorable logos** that work everywhere from a 16-pixel favicon to a shop sign.

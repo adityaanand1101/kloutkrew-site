@@ -20,6 +20,8 @@ faqs:
     a: 'Yes. Designs, prototypes and design systems are delivered as organised Figma files your team can keep using.'
   - q: 'How long does a UI/UX project take?'
     a: 'It depends on the number of screens and flows. You see first directions within 7 days of kickoff, and we agree a full timeline after discovery.'
+hero: drink-different
+work: [drink-different, plenova, tou-fist]
 ---
 
 KloutKrew Studio designs **apps, SaaS products and websites that people understand and enjoy using**. We combine UX thinking with strong visual design, so your product is easy to use and looks like your brand.

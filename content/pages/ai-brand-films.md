@@ -20,6 +20,12 @@ faqs:
     a: 'We deliver the master film plus cut-downs for every channel you use, such as 16:9 for YouTube and your website, 9:16 for Reels and Shorts, and 1:1 or 4:5 for feed ads.'
   - q: 'Can you shoot real footage too?'
     a: 'Yes. We combine AI footage with real product shots, UGC and existing brand footage when a project needs it.'
+hero: magnific-final
+work: [magnific-creation, visual-style-baseline, owg-remaster]
+facts:
+  - {big: '24h', label: 'Reply to every enquiry'}
+  - {big: '2–4 wks', label: 'From brief to final cut'}
+  - {big: 'Every format', label: '16:9, 9:16, 1:1 and 4:5 cut-downs'}
 ---
 
 KloutKrew Studio makes **brand films, ad films and product videos** using AI production alongside traditional direction, editing and colour. You get cinematic launch films and campaign ads, sized for every channel, without the cost and time of a full shoot.
