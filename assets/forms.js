@@ -4,6 +4,7 @@
   var INBOX = 'teamKLOUTKREW@gmail.com';
   var ENDPOINT = 'https://formsubmit.co/ajax/' + INBOX;
 
+  var LOADED_AT = Date.now();
   function show(el, on) { if (el) el.style.display = on ? 'block' : 'none'; }
 
   document.addEventListener('submit', function (ev) {
@@ -20,6 +21,7 @@
 
     var data = new FormData(form);
     if (data.get('_honey')) return; // bot filled the hidden field
+    if (Date.now() - LOADED_AT < 3000) return; // submitted faster than a person can type: almost certainly a bot
     var isNewsletter = form.classList.contains('footer_cta_form') || form.id === 'email-form';
     var payload = { _subject: isNewsletter ? 'New newsletter signup - kloutkrew.in' : 'New enquiry - kloutkrew.in', _template: 'table', _captcha: 'false', page: location.href };
     data.forEach(function (v, k) { if (k !== '_honey' && k !== 'cf-turnstile-response') payload[k === 'field' ? 'Message' : k] = v; });
