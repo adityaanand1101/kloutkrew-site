@@ -5,6 +5,8 @@ date: 2026-07-08
 category: "Content Strategy"
 author: "Shudhanshu Jha"
 tags: ["scroll stopping content", "content strategy", "social media content"]
+cover: ./images/scroll-stopping-content-guide/cover.jpg
+coverAlt: "Illustration of scroll-stopping content: engagement, visual impact and storytelling"
 ---
 
 You have 1.7 seconds to stop a scroll. That is the average attention span of a social media user before they keep swiping. If your content does not arrest that motion, you are invisible. Here is the playbook for making content that people actually stop and watch.

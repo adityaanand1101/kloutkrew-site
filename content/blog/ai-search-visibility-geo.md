@@ -12,6 +12,8 @@ faqs:
     a: 'They draw on information across the web, so clear facts on your site, consistent details, reviews, directory profiles and mentions on other sites all help.'
   - q: 'Can I track whether AI mentions my brand?'
     a: 'Yes. Some SEO tools now track how often brands appear in AI answers for chosen prompts.'
+cover: ./images/ai-search-visibility-geo/cover.jpg
+coverAlt: "Illustration of AI assistants recommending a brand in their answers"
 ---
 
 More people now ask ChatGPT, Gemini or Google's AI features for recommendations. **AI search visibility** is the new extension of SEO.

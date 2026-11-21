@@ -12,6 +12,8 @@ faqs:
     a: 'Many use "price on request" to encourage conversations, but they should still explain configurations, sizes and the payment structure.'
   - q: 'How do luxury sites capture leads without feeling pushy?'
     a: 'Offer a private viewing, brochure download or call-back request instead of aggressive pop-ups.'
+cover: ./images/luxury-real-estate-website-design/cover.jpg
+coverAlt: "A luxury real estate website on a tablet with virtual tour and amenities panels"
 ---
 
 Luxury buyers judge the project by the experience of the website. **Luxury real estate website design** should feel as considered as the homes.

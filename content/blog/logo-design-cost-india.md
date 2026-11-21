@@ -12,6 +12,8 @@ faqs:
     a: 'Price depends on research and strategy, the designer''s experience, number of concepts and revisions, deliverables and whether it''s a logo alone or a full brand identity.'
   - q: 'Is a cheap logo good enough?'
     a: 'For testing an idea, maybe. For a brand you''ll print on packaging and invest in, a professionally designed, trademark-safe logo usually pays for itself.'
+cover: ./images/logo-design-cost-india/cover.jpg
+coverAlt: "A logo design budget sheet comparing freelancer and agency prices in India"
 ---
 
 "How much does a logo cost?" has no single answer in India. Here's what the market looks like in 2026 and what you get at each level.

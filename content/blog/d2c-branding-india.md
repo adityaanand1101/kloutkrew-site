@@ -12,6 +12,8 @@ faqs:
     a: 'A clear positioning, logo and identity, packaging, product photography or renders, a fast Shopify or Webflow website, marketplace listing images and a first month of social content.'
   - q: 'How is D2C branding different from traditional branding?'
     a: 'D2C brands are judged mostly on small screens, so identity, packaging and content must work at thumbnail size and be built for constant testing in ads.'
+cover: ./images/d2c-branding-india/cover.jpg
+coverAlt: "Illustration of D2C branding themes: storytelling, brand trust, custom packaging and quick commerce"
 ---
 
 India's D2C market is crowded. In beauty, snacks, coffee, supplements and home goods, a shopper scrolling Instagram or Blinkit sees dozens of new brands a week. **D2C branding** is how one of them gets remembered.

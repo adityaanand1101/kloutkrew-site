@@ -12,6 +12,8 @@ faqs:
     a: 'Strategy, logo suite, colours, typography, imagery style, tone of voice, brand guidelines and launch templates.'
   - q: 'Can I phase branding costs?'
     a: 'Yes. Start with strategy, logo and core identity, then add packaging, website and campaign assets as you grow, using the same system.'
+cover: ./images/branding-cost-startup-india/cover.jpg
+coverAlt: "A startup branding budget sheet on a desk next to a KloutKrew mug and sketchbook"
 ---
 
 Branding is one of the first big spends for a startup. Here's how to think about the budget.

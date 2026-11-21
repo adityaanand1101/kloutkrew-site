@@ -12,6 +12,8 @@ faqs:
     a: 'Yes. Webflow produces clean code and gives control over titles, meta descriptions, redirects, sitemaps and structured data. Content and links still decide rankings.'
   - q: 'Is Webflow more expensive than WordPress?'
     a: 'Webflow hosting plans cost more than basic shared hosting, but you avoid most plugin, security and maintenance costs, which often evens out.'
+cover: ./images/webflow-agency-india-guide/cover.jpg
+coverAlt: "Webflow website builder interface with CMS, hosting and SEO features"
 ---
 
 Webflow has become a popular choice for startups, SaaS companies and design-led brands. A **Webflow agency in India** can build world-class sites at a competitive cost for both Indian and international clients.

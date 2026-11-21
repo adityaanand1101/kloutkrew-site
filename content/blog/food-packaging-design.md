@@ -12,6 +12,8 @@ faqs:
     a: 'Usually, yes, through a window, photography or illustration. Shoppers want to see what they''re buying.'
   - q: 'How do food brands differentiate when everyone uses similar visuals?'
     a: 'Own a distinctive colour or illustration style, use an unexpected structure, or lead with a story, such as origin or ingredients.'
+cover: ./images/food-packaging-design/cover.jpg
+coverAlt: "Indian snack packs with veg and non-veg marks illustrating food packaging design"
 ---
 
 Food is bought with the eyes. **Food packaging design** has to make the product look delicious, signal quality and give practical information, all on a small surface.

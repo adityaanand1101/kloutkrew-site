@@ -5,6 +5,8 @@ date: 2026-07-15
 category: "AI Filmmaking"
 author: "Shudhanshu Jha"
 tags: ["AI brand films", "AI video production", "AI filmmaking", "brand storytelling"]
+cover: ./images/how-ai-is-changing-brand-films/cover.jpg
+coverAlt: "Illustration of AI in brand film production: content generation, editing and personalisation"
 ---
 
 Brand films are no longer the exclusive domain of big-budget production houses. Over the past eighteen months, artificial intelligence has quietly — and then very loudly — rewritten the playbook for how brand stories are conceived, produced, and distributed.

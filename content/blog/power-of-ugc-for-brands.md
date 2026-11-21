@@ -5,6 +5,8 @@ date: 2026-05-22
 category: "Marketing"
 author: "Shudhanshu Jha"
 tags: ["UGC", "user generated content", "brand marketing", "social proof"]
+cover: ./images/power-of-ugc-for-brands/cover.jpg
+coverAlt: "User-generated content and testimonials spiralling upward around a phone"
 ---
 
 User-generated content converts 4x better than brand-produced content. That number comes from multiple studies and it holds across industries. Here is why UGC is the most powerful content strategy most brands are not using to its full potential.

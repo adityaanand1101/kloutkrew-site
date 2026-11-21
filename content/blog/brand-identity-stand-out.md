@@ -5,6 +5,8 @@ date: 2026-07-22
 category: "Brand Strategy"
 author: "Shudhanshu Jha"
 tags: ["brand identity", "branding strategy", "visual identity", "brand design"]
+cover: ./images/brand-identity-stand-out/cover.jpg
+coverAlt: "Illustration of brand identity elements: voice, positioning, visuals and consistency"
 ---
 
 A brand identity is the DNA of how your business is perceived. It is not just a logo or a color palette — it is the entire system of visual and verbal cues that tells the world who you are and why they should care.

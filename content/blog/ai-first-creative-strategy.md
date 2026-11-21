@@ -5,6 +5,8 @@ date: 2026-06-22
 category: "Creative Strategy"
 author: "Shudhanshu Jha"
 tags: ["AI creative strategy", "AI marketing", "AI first creative"]
+cover: ./images/ai-first-creative-strategy/cover.jpg
+coverAlt: "Illustration of an AI-first creative strategy with AI-driven content generation"
 ---
 
 AI-first is not a technology trend. It is a creative philosophy. And the difference will determine which brands lead their industries for the next decade and which ones look back and wonder what happened.

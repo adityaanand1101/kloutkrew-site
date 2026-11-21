@@ -5,6 +5,8 @@ date: 2026-05-15
 category: "Web Development"
 author: "Shudhanshu Jha"
 tags: ["Webflow", "Framer", "WordPress", "website builder comparison"]
+cover: ./images/webflow-vs-framer-vs-wordpress/cover.jpg
+coverAlt: "Webflow, Framer and WordPress compared as three glowing blocks"
 ---
 
 Choosing a platform is one of the biggest decisions in building a digital presence. Webflow, Framer, and WordPress are the three leading options in 2026 — but they are fundamentally different tools for fundamentally different needs.

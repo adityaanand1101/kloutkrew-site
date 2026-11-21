@@ -12,6 +12,8 @@ faqs:
     a: 'The primary category that best matches your main service, plus relevant secondary categories. Categories strongly affect which searches you appear for.'
   - q: 'How do I get more Google reviews?'
     a: 'Ask happy customers directly with a short link, at the moment they''re most satisfied, and reply to every review.'
+cover: ./images/google-business-profile-guide/cover.jpg
+coverAlt: "Google Business Profile listing and map search results illustration"
 ---
 
 For local searches and map results, your **Google Business Profile** is often the first impression. Here's how to set it up well.

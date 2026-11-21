@@ -5,6 +5,8 @@ date: 2026-06-15
 category: "Design"
 author: "Shudhanshu Jha"
 tags: ["graphic design trends 2026", "design trends", "AI design"]
+cover: ./images/graphics-design-trends-2026/cover.jpg
+coverAlt: "Collage of 2026 graphic design trends: Y2K, maximalist typography, 3D UI and sustainable design"
 ---
 
 Graphic design in 2026 is defined by tension: between AI-generated precision and human imperfection, between maximalist color and minimalist restraint, between nostalgia and futurism. Here are the movements shaping the year ahead.

@@ -16,6 +16,8 @@ faqs:
     a: 'Your product and its price point, where it will be sold, your target customer, competitor packs you admire or want to beat, the mandatory label text, your printer''s dielines if you have them, and your launch date.'
   - q: 'Does packaging need to work on Amazon and quick-commerce apps?'
     a: 'Yes. On Amazon, Flipkart, Blinkit and Zepto your pack is often seen as a thumbnail a few centimetres wide, so it needs one clear focal point and a brand mark that reads at small sizes.'
+cover: ./images/packaging-design-agency-india/cover.jpg
+coverAlt: "Illustration of choosing a packaging design agency in India: portfolio, compliance and pricing"
 ---
 
 Packaging is the one piece of design every customer touches. In India's crowded D2C, food, beverage and beauty categories, it often decides whether someone picks your product or the one next to it, on a shelf or a phone screen. This guide explains what a **packaging design agency** does, how to choose one, and what a good process looks like.

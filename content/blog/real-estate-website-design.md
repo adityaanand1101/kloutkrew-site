@@ -16,6 +16,8 @@ faqs:
     a: 'Most property enquiries now start from ads on a phone. If the page takes more than a few seconds to load, the visitor leaves before seeing the project, and you pay for the click anyway.'
   - q: 'Which platform is best for a real estate website?'
     a: 'Webflow works well for brand and project sites with rich galleries and easy editing. For large listing portals with search and filters, a custom build or WordPress with a property plugin may fit better.'
+cover: ./images/real-estate-website-design/cover.jpg
+coverAlt: "A real estate website with property search, 3D walkthroughs and lead capture"
 ---
 
 A property buyer will look at a project's website several times before booking a site visit, and their family and banker will often look too. A good **real estate website** makes the project easy to understand, builds trust in the developer and makes it easy to enquire. A poor one wastes your ad budget.

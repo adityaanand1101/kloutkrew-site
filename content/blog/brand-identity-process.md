@@ -16,6 +16,8 @@ faqs:
     a: 'A logo is a single mark. Branding is the whole system around it, including colours, type, imagery, voice and how they work together on every touchpoint.'
   - q: 'When should a startup invest in brand identity?'
     a: 'Before a public launch, a fundraise, a move from marketplaces to your own website, or a packaging run, because changing the identity after those moments costs much more.'
+cover: ./images/brand-identity-process/cover.jpg
+coverAlt: "Five steps of the brand identity process: research, strategy, visual identity, guidelines and rollout"
 ---
 
 A **brand identity** is the set of visual and verbal tools that make a company recognisable: logo, colours, typefaces, imagery, tone of voice and the rules that hold them together. Here's how a professional brand identity project works, what each stage is for and what you should have at the end.
