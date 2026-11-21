@@ -506,6 +506,52 @@ const WORK = {
 };
 const DEFAULT_FACTS = [['24h', 'Reply to every enquiry'], ['7 days', 'To your first concepts'], ['4–6 wks', 'For most projects to go live']];
 
+
+// Free budget planner (content/pages/brand-budget-calculator.md, `tool: budget`). Market ranges in INR, sourced in the page body.
+const BUDGET_ITEMS = [
+  { id: 'logo', name: 'Logo & identity', kind: 'once', opts: [['Basic professional logo', 5000, 20000], ['Agency brand identity', 100000, null]] },
+  { id: 'pack', name: 'Packaging design', kind: 'sku', opts: [['Freelancer, per SKU', 4400, 70400], ['Studio, per SKU', 132000, 440000]] },
+  { id: 'web', name: 'Website', kind: 'once', opts: [['Template site', 5000, 50000], ['Custom design', 100000, 500000]] },
+  { id: 'shop', name: 'Shopify store', kind: 'once', opts: [['Basic setup', 35000, 75000], ['Custom store', 200000, 500000]] },
+  { id: 'film', name: 'Brand film', kind: 'once', opts: [['AI-led brand film', 50000, 75000], ['Traditional 30s ad film', 200000, 2000000]] },
+  { id: 'social', name: 'Social media', kind: 'month', opts: [['Freelancer', 15000, 50000], ['Boutique agency', 30000, 150000]] },
+  { id: 'ads', name: 'Ads management fee', kind: 'month', opts: [['Single channel', 20000, 40000], ['Multi-channel', 40000, 100000]] },
+  { id: 'seo', name: 'SEO', kind: 'month', opts: [['Local SEO', 8000, 20000], ['National / ecommerce', 15000, 150000]] },
+];
+const budgetTool = () => `<section class="kbt" aria-labelledby="kbt-title"><div class="kbt-in">
+<form class="kbt-form" id="kbt" onsubmit="return false">
+<h2 id="kbt-title" class="kbt-h">Pick what you need</h2>
+${BUDGET_ITEMS.map(it => `<fieldset class="kbt-row" data-kind="${it.kind}"><legend>${esc(it.name)} <small>${it.kind === 'month' ? 'per month' : it.kind === 'sku' ? 'per SKU' : 'one-time'}</small></legend>
+<div class="kbt-opts"><label><input type="radio" name="${it.id}" value="" checked><span>Skip</span></label>${it.opts.map(([n, lo, hi], i) => `<label><input type="radio" name="${it.id}" value="${i}" data-lo="${lo}" data-hi="${hi ?? ''}"><span>${esc(n)}<em data-lo="${lo}" data-hi="${hi ?? ''}"></em></span></label>`).join('')}</div>
+${it.kind === 'sku' ? `<label class="kbt-num">Number of SKUs <input type="number" id="kbt-skus" min="1" max="200" value="3" inputmode="numeric"></label>` : ''}
+</fieldset>`).join('\n')}
+<fieldset class="kbt-row kbt-plan"><legend>Plan</legend>
+<label class="kbt-num">Months of marketing <input type="number" id="kbt-months" min="1" max="36" value="6" inputmode="numeric"></label>
+<label class="kbt-num">Monthly ad spend, <span class="kbt-cur">₹</span> <input type="number" id="kbt-spend" min="0" step="1000" value="0" inputmode="numeric"></label>
+<div class="kbt-cur-switch" role="group" aria-label="Currency"><label><input type="radio" name="cur" value="INR" checked><span>₹ INR</span></label><label><input type="radio" name="cur" value="USD"><span>$ USD</span></label></div>
+</fieldset>
+</form>
+<aside class="kbt-out" aria-live="polite">
+<p class="kbt-lab">Launch (one-time)</p><p class="kbt-val" id="kbt-once">—</p>
+<p class="kbt-lab">Marketing fees <span id="kbt-mlab"></span></p><p class="kbt-val" id="kbt-month">—</p>
+<p class="kbt-lab">Ad spend</p><p class="kbt-val kbt-sm" id="kbt-ads">—</p>
+<p class="kbt-lab kbt-tot-lab">Estimated total</p><p class="kbt-val kbt-tot" id="kbt-tot">Pick a line item</p>
+<p class="kbt-note">Market ranges from published 2026 Indian pricing guides, not a KloutKrew quote. $ at about ₹88.</p>
+<a class="kb-btn" id="kbt-cta" href="/contact-us">Get an exact quote</a>
+</aside>
+</div></section>
+<script>(function(){var f=document.getElementById('kbt');if(!f)return;var R=88;function cur(){return f.querySelector('[name=cur]:checked').value}
+function fmt(n){if(cur()==='USD'){n=n/R;return '$'+(n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?Math.round(n/100)/10+'k':Math.round(n))}if(n>=1e7)return '₹'+(n/1e7).toFixed(1).replace(/\\.0$/,'')+' Cr';if(n>=1e5)return '₹'+(n/1e5).toFixed(1).replace(/\\.0$/,'')+' L';return '₹'+Math.round(n).toLocaleString('en-IN')}
+function rng(lo,hi,open){return lo===hi&&!open?fmt(lo):fmt(lo)+' – '+fmt(hi)+(open?'+':'')}
+function num(id,d){var v=parseFloat(document.getElementById(id).value);return isFinite(v)&&v>=0?v:d}
+function calc(){f.querySelectorAll('em[data-lo]').forEach(function(e){var h=e.dataset.hi;e.textContent=h?fmt(+e.dataset.lo)+'–'+fmt(+h):fmt(+e.dataset.lo)+'+'});document.querySelectorAll('.kbt-cur').forEach(function(e){e.textContent=cur()==='USD'?'$':'₹'});
+var sk=Math.max(1,num('kbt-skus',1)),mo=Math.max(1,num('kbt-months',1)),sp=num('kbt-spend',0)*(cur()==='USD'?R:1),o=[0,0,false],m=[0,0,false],any=false,items=[];
+f.querySelectorAll('fieldset[data-kind]').forEach(function(fs){var r=fs.querySelector('input[type=radio]:checked');if(!r||r.value==='')return;any=true;var lo=+r.dataset.lo,hi=r.dataset.hi?+r.dataset.hi:lo,op=!r.dataset.hi,k=fs.dataset.kind,x=k==='sku'?sk:k==='month'?mo:1,t=k==='month'?m:o;t[0]+=lo*x;t[1]+=hi*x;t[2]=t[2]||op;items.push(fs.querySelector('legend').firstChild.textContent.trim()+': '+r.nextElementSibling.firstChild.textContent)});
+var g=function(id,s){document.getElementById(id).textContent=s};g('kbt-mlab','('+mo+' mo)');g('kbt-once',o[1]?rng(o[0],o[1],o[2]):'—');g('kbt-month',m[1]?rng(m[0],m[1],m[2]):'—');g('kbt-ads',sp?fmt(sp*mo):'—');
+g('kbt-tot',any||sp?rng(o[0]+m[0]+sp*mo,o[1]+m[1]+sp*mo,o[2]||m[2]):'Pick a line item');
+document.getElementById('kbt-cta').href='/contact-us'+(items.length?'?brief='+encodeURIComponent(items.join('; ')):'');}
+var fired=false;f.addEventListener('input',function(){calc();if(!fired&&window.gtag){fired=true;gtag('event','tool_use',{tool:'budget_calculator'})}});var last='INR';f.addEventListener('change',function(e){if(e.target.name==='cur'){var c=cur(),s=document.getElementById('kbt-spend'),v=parseFloat(s.value)||0;if(c!==last){s.value=Math.round(c==='USD'?v/R:v*R);s.step=c==='USD'?50:1000;last=c}}calc()});calc();})();</script>`;
+
 function workMedia(w, { eager = false, playable = false } = {}) {
   if (w.mark) return `<div class="kl-mark" style="--mark:${w.mark}"><img src="${w.img}" alt="${esc(w.name)} logo" width="260" height="260" loading="${eager ? 'eager' : 'lazy'}"></div>`;
   if (w.video && playable) return `<video class="kl-video" muted loop playsinline preload="none" poster="${w.img}" data-src="${w.video}" aria-label="${esc(w.name)} film"></video>`;
@@ -544,11 +590,12 @@ function landingPage(lp) {
 <p class="kb-eyebrow"><span class="kb-dot"></span>${esc(d.eyebrow || 'Service')} <em>(by KloutKrew)</em></p>
 <h1 class="kl-title">${esc(d.h1)}</h1>
 <p class="kl-dek">${esc(d.description)}</p>
-<p class="kl-ctas"><a href="/contact-us" class="kb-btn">Get a quote</a> <a href="/works" class="kl-link">See our work</a></p>
+<p class="kl-ctas"><a href="${d.tool ? '#kbt' : '/contact-us'}" class="kb-btn">${d.tool ? 'Start planning' : 'Get a quote'}</a> <a href="/works" class="kl-link">See our work</a></p>
 </div>
 ${hero ? `<figure class="kl-hero-media">${workMedia(hero, { eager: true, playable: true })}<figcaption><span>${esc(hero.name)}</span>${esc(hero.cat)}</figcaption></figure>` : ''}
 </div></header>
-<section class="kl-facts" aria-label="How we work"><ul>${facts.map(([big, label]) => `<li><b>${esc(big)}</b><span>${esc(label)}</span></li>`).join('')}</ul></section>
+<section class="kl-facts" aria-label="${d.tool ? 'About this tool' : 'How we work'}"><ul>${facts.map(([big, label]) => `<li><b>${esc(big)}</b><span>${esc(label)}</span></li>`).join('')}</ul></section>
+${d.tool === 'budget' ? budgetTool() : ''}
 <div class="kl-body">
 ${intro ? `<div class="kl-intro">${intro}</div>` : ''}
 ${secs}
@@ -574,6 +621,7 @@ ${CTA}
       { '@type': 'ListItem', position: 2, name: d.breadcrumb || d.h1, item: url },
     ],
   }];
+  if (d.tool) graph.push({ '@type': 'WebApplication', name: d.h1, url, applicationCategory: 'BusinessApplication', operatingSystem: 'Any', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' }, publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE } });
   if (faqs.length) graph.push({ '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: String(f.a).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') } })) });
   const image = hero && !hero.mark ? SITE + hero.img : DEFAULT_OG;
   const head = headHTML({ title: d.title, description: d.metaDescription || d.description, url, image,

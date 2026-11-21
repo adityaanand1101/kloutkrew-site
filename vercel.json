@@ -102,6 +102,10 @@
     {
       "source": "/blog/:slug([^/.]+)",
       "destination": "/blog/:slug.html"
+    },
+    {
+      "source": "/brand-budget-calculator",
+      "destination": "/brand-budget-calculator.html"
     }
   ],
   "headers": [

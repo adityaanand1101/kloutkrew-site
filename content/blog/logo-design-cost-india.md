@@ -30,6 +30,8 @@ coverAlt: "A logo design budget sheet comparing freelancer and agency prices in 
 
 Sources: [Makers Design on Medium](https://medium.com/makersdesign/logo-design-cost-in-india-96e0fb926d3), [Internshala hiring guide](https://internshala.com/blog/employer-cost-to-hire-graphic-designer/), [Foduu](https://www.foduu.com/blog/factors-that-affect-logo-design-pricing-in-india). Globally, [ManyPixels](https://www.manypixels.co/blog/brand-design/logo-design-cost-guide) puts most small-business logos at $300–$2,000.
 
+Want a quick total for logo, packaging, website and launch marketing together? Try our free [brand launch budget calculator](/brand-budget-calculator).
+
 ## What drives the price
 
 - Research and strategy before design

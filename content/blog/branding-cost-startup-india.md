@@ -22,6 +22,8 @@ Branding is one of the first big spends for a startup. Here's how to think about
 
 Indian logo-only work ranges from a few thousand rupees to around ₹20,000 for a basic professional mark, while agency brand identity work for larger businesses commonly starts around ₹1,00,000 ([Foduu](https://www.foduu.com/blog/factors-that-affect-logo-design-pricing-in-india), [Internshala](https://internshala.com/blog/employer-cost-to-hire-graphic-designer/)). Websites add more: published guides put custom design anywhere from about ₹1,00,000 to ₹5,00,000+ ([DEV Community](https://dev.to/secuodsoft/website-development-cost-in-india-2026-complete-pricing-guide-1ld4)).
 
+To add up identity, packaging, a store and monthly marketing in one place, use the free [brand launch budget calculator](/brand-budget-calculator).
+
 ## Where the budget goes
 
 | Item | When you need it |

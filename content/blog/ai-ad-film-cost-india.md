@@ -24,6 +24,8 @@ AI has changed ad film budgets in India. Here's what the market looks like and w
 
 These are examples, not price lists. Your cost depends on scope.
 
+To see how a film fits next to the rest of a launch budget, try the free [brand launch budget calculator](/brand-budget-calculator).
+
 ## What drives the cost
 
 | Factor | Effect |

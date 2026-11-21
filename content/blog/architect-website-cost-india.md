@@ -30,6 +30,8 @@ Sources: [Hostinger India](https://www.hostinger.com/in/tutorials/website-cost),
 
 An architecture firm's portfolio site usually falls in the custom design range.
 
+For a quick total across website, branding and marketing, use our free [budget calculator](/brand-budget-calculator).
+
 ## What drives the cost
 
 - Number of projects to set up and write

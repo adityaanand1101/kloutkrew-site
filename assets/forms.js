@@ -36,3 +36,16 @@
       .finally(function () { if (btn) { btn.disabled = false; if (btn.value) btn.value = label; } });
   }, true);
 })();
+
+// Prefill the contact message when arriving from the budget calculator (?brief=...).
+(function () {
+  try {
+    var b = new URLSearchParams(location.search).get('brief');
+    if (!b) return;
+    var go = function () {
+      var t = document.getElementById('message-area') || document.querySelector('textarea[name="field"]');
+      if (t && !t.value) t.value = 'From the budget calculator, I need: ' + b.slice(0, 600) + '\n\nAbout my brand: ';
+    };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', go); else go();
+  } catch (e) {}
+})();
