@@ -3,6 +3,8 @@
 (function () {
   var INBOX = 'connect@kloutkrew.in';
   var ENDPOINT = 'https://formsubmit.co/ajax/' + INBOX;
+  // Everyone on the team gets a copy of every form submission.
+  var CC = 'aditya.kloutkrew@gmail.com,kartik.kloutkrew@gmail.com,shudhanshu.kloutkrew@gmail.com,aditya.anand.kloutkrew@gmail.com,mayank.kloutkrew@gmail.com,aditya.anand1101@gmail.com';
 
   var LOADED_AT = Date.now();
   function show(el, on) { if (el) el.style.display = on ? 'block' : 'none'; }
@@ -23,7 +25,7 @@
     if (data.get('_honey')) return; // bot filled the hidden field
     if (Date.now() - LOADED_AT < 3000) return; // submitted faster than a person can type: almost certainly a bot
     var isNewsletter = form.classList.contains('footer_cta_form') || form.id === 'email-form';
-    var payload = { _subject: isNewsletter ? 'New newsletter signup - kloutkrew.in' : 'New enquiry - kloutkrew.in', _template: 'table', _captcha: 'false', page: location.href };
+    var payload = { _subject: isNewsletter ? 'New newsletter signup - kloutkrew.in' : 'New enquiry - kloutkrew.in', _template: 'table', _captcha: 'false', _cc: CC, page: location.href };
     data.forEach(function (v, k) { if (k !== '_honey' && k !== 'cf-turnstile-response') payload[k === 'field' ? 'Message' : k] = v; });
 
     if (btn) { btn.disabled = true; if (btn.value) btn.value = 'Sending...'; }
