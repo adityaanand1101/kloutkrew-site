@@ -49,7 +49,8 @@
     }).observe(box, { subtree: true, attributes: true, attributeFilter: ['style'] });
   }
   function open(trigger) {
-    if (shown) return; shown = true;
+    if (shown) return;
+    if (window.kkConsentOpen && window.kkConsentOpen() && trigger !== 'test') return; // don't stack with the cookie bar; try again on the next check shown = true;
     cleanup(); build();
     lastFocus = document.activeElement;
     requestAnimationFrame(function () { box.classList.add('is-in'); });

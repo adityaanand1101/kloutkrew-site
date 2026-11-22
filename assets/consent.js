@@ -46,39 +46,54 @@
   function show(detail) {
     if (box) return;
     box = document.createElement('div');
-    box.className = 'kk-consent'; box.setAttribute('role', 'dialog'); box.setAttribute('aria-label', 'Cookie settings');
-    box.innerHTML = '<p class="kk-consent-t">We use cookies to understand how people use this site, improve it and, with your permission, show you relevant ads elsewhere. <a href="/privacy">Privacy policy</a></p>'
+    box.className = 'kk-consent'; box.setAttribute('role', 'region'); box.setAttribute('aria-label', 'Cookie preferences');
+    box.innerHTML = '<p class="kk-consent-t">We use cookies to improve this site. <a href="/privacy">Learn more</a></p>'
       + '<div class="kk-consent-opts"' + (detail ? '' : ' hidden') + '>'
-      + '<label><input type="checkbox" checked disabled> Essential <span>Needed for the site to work</span></label>'
-      + '<label><input type="checkbox" name="a"' + (state.a === 'granted' ? ' checked' : '') + '> Analytics <span>Visits, clicks and heatmaps, to improve the site</span></label>'
-      + '<label><input type="checkbox" name="m"' + (state.m === 'granted' ? ' checked' : '') + '> Marketing <span>Ads on Instagram, Facebook and Google for past visitors</span></label></div>'
-      + '<p class="kk-consent-b"><button type="button" data-v="all">Accept all</button><button type="button" data-v="none" class="kk-consent-no">Reject all</button>'
-      + '<button type="button" data-v="' + (detail ? 'save' : 'more') + '" class="kk-consent-link">' + (detail ? 'Save choices' : 'Choose') + '</button></p>';
-    var st = document.createElement('style');
-    st.textContent = '.kk-consent{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:10000;width:min(600px,calc(100vw - 32px));box-sizing:border-box;background:#fff;color:#121212;border:1px solid #e4dad2;border-radius:6px;box-shadow:0 10px 30px rgba(0,0,0,.2);padding:16px 18px;font:15px/1.5 "DM Sans",Arial,sans-serif}.kk-consent p{margin:0}.kk-consent a{text-decoration:underline}.kk-consent-opts{display:grid;gap:8px;margin:12px 0 0}.kk-consent-opts[hidden]{display:none}.kk-consent-opts label{text-transform:none;letter-spacing:normal;font-size:15px;margin:0;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;font-weight:600}.kk-consent-opts span{text-transform:none;letter-spacing:normal;flex-basis:100%;margin-left:24px;font-weight:400;font-size:13px;color:#5c5c5c}.kk-consent-b{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px!important}.kk-consent button{font:inherit;font-weight:600;padding:9px 16px;border-radius:999px;border:1px solid #121212;background:#121212;color:#fff;cursor:pointer}.kk-consent .kk-consent-no{background:#fff;color:#121212}.kk-consent .kk-consent-link{background:none;border-color:transparent;color:#121212;text-decoration:underline}.kk-consent button:focus-visible,.kk-consent input:focus-visible{outline:2px solid #ff691e;outline-offset:2px}@media (max-width:600px){.kk-consent{bottom:10px;padding:14px;font-size:14px}}@media print{.kk-consent{display:none}}';
-    document.head.appendChild(st);
+      + '<label><input type="checkbox" name="a"' + (state.a === 'granted' ? ' checked' : '') + '> Analytics</label>'
+      + '<label><input type="checkbox" name="m"' + (state.m === 'granted' ? ' checked' : '') + '> Marketing</label></div>'
+      + '<p class="kk-consent-b"><button type="button" data-v="all">Accept</button><button type="button" data-v="none" class="kk-consent-no">Decline</button>'
+      + '<button type="button" data-v="' + (detail ? 'save' : 'more') + '" class="kk-consent-link">' + (detail ? 'Save' : 'Settings') + '</button></p>';
+    if (!document.getElementById('kk-consent-css')) {
+      var st = document.createElement('style'); st.id = 'kk-consent-css';
+      st.textContent = '.kk-consent{position:fixed;left:16px;bottom:16px;z-index:9997;max-width:min(380px,calc(100vw - 96px));box-sizing:border-box;background:rgba(18,18,18,.94);color:#fff;border:1px solid rgba(255,255,255,.14);border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.25);padding:12px 14px;font:13px/1.45 "DM Sans",Arial,sans-serif;opacity:0;transform:translateY(12px);transition:opacity .4s ease,transform .4s ease;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}.kk-consent.is-in{opacity:1;transform:none}.kk-consent p{margin:0}.kk-consent a{color:#fff;text-decoration:underline;text-underline-offset:2px;opacity:.85}.kk-consent-opts{display:flex;flex-wrap:wrap;gap:6px 16px;margin:10px 0 0}.kk-consent-opts[hidden]{display:none}.kk-consent-opts label{display:flex;align-items:center;gap:6px;margin:0;font:inherit;text-transform:none;letter-spacing:normal;color:#fff;cursor:pointer}.kk-consent-opts input{accent-color:#ff691e;margin:0}.kk-consent-b{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:10px!important}.kk-consent button{font:inherit;font-weight:600;font-size:13px;line-height:1;padding:8px 14px;border-radius:999px;border:1px solid #fff;background:#fff;color:#121212;cursor:pointer}.kk-consent .kk-consent-no{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}.kk-consent .kk-consent-link{background:none;border-color:transparent;color:rgba(255,255,255,.75);padding:8px 6px;text-decoration:underline;text-underline-offset:2px}.kk-consent button:focus-visible,.kk-consent input:focus-visible,.kk-consent a:focus-visible{outline:2px solid #ff691e;outline-offset:2px}@media (max-width:600px){.kk-consent{left:12px;bottom:12px;max-width:calc(100vw - 84px)}}@media (prefers-reduced-motion:reduce){.kk-consent{transition:none}}@media print{.kk-consent{display:none}}';
+      document.head.appendChild(st);
+    }
     document.body.appendChild(box);
+    requestAnimationFrame(function () { requestAnimationFrame(function () { if (box) box.classList.add('is-in'); }); });
     box.addEventListener('click', function (e) {
       var b = e.target.closest('button'); if (!b) return;
       var v = b.getAttribute('data-v');
-      if (v === 'more') { box.querySelector('.kk-consent-opts').hidden = false; b.setAttribute('data-v', 'save'); b.textContent = 'Save choices'; return; }
+      if (v === 'more') { box.querySelector('.kk-consent-opts').hidden = false; b.setAttribute('data-v', 'save'); b.textContent = 'Save'; return; }
       if (v === 'all') state = { a: 'granted', m: 'granted' };
       else if (v === 'none') state = { a: 'denied', m: 'denied' };
       else state = { a: box.querySelector('[name=a]').checked ? 'granted' : 'denied', m: box.querySelector('[name=m]').checked ? 'granted' : 'denied' };
       save(state); apply(); activate();
       if (state.a !== 'granted') { try { localStorage.removeItem('kk_journey'); localStorage.removeItem('kk_first_touch'); } catch (e2) {} }
       if (window.gtag) gtag('event', 'cookie_choice', { analytics: state.a, marketing: state.m });
-      box.parentNode.removeChild(box); box = null;
+      hide();
     });
   }
+  function hide() { if (!box) return; var b = box; box = null; b.classList.remove('is-in'); setTimeout(function () { if (b.parentNode) b.parentNode.removeChild(b); }, 400); }
+  window.kkConsentOpen = function () { return !!box; };
   document.addEventListener('click', function (e) {
     var t = e.target.closest && e.target.closest('[data-cookie-settings]');
     if (t) { e.preventDefault(); show(true); }
   });
   if (!state.defaulted) { apply(); }
   activate();
+  // Ask quietly: once per browsing session, a few seconds after the page has fully loaded, and stop asking
+  // after it's been ignored in 3 sessions (the defaults above then simply stay in place).
   if (state.defaulted) {
-    var go = function () { setTimeout(function () { show(false); }, europe ? 0 : 1500); };
-    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', go); else go();
+    var seenSessions = 0; try { seenSessions = +localStorage.getItem('kk_consent_asked') || 0; } catch (e) {}
+    var askedThisSession = false; try { askedThisSession = !!sessionStorage.getItem('kk_consent_asked'); } catch (e) {}
+    if (!askedThisSession && (seenSessions < 3 || europe)) {
+      var go = function () {
+        setTimeout(function () {
+          show(false);
+          try { sessionStorage.setItem('kk_consent_asked', '1'); localStorage.setItem('kk_consent_asked', String(seenSessions + 1)); } catch (e) {}
+        }, 3000);
+      };
+      if (document.readyState === 'complete') go(); else addEventListener('load', go);
+    }
   }
 })();
