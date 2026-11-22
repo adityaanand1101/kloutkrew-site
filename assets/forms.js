@@ -29,10 +29,24 @@
     if (btn) { btn.disabled = true; if (btn.value) btn.value = 'Sending...'; }
     show(fail, false);
 
-    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(payload) })
-      .then(function (r) { return r.json().then(function (j) { if (!r.ok || String(j.success) === 'false') throw new Error(j.message || 'failed'); }); })
+    function send() {
+      return fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(payload) })
+        .then(function (r) { return r.text().then(function (t) { var j = {}; try { j = JSON.parse(t); } catch (e) { throw new Error('bad response ' + r.status); } if (!r.ok || String(j.success) === 'false') throw new Error(j.message || ('status ' + r.status)); }); });
+    }
+    // One automatic retry; if it still fails, keep the lead by offering WhatsApp with their details filled in.
+    send().catch(function () { return new Promise(function (res) { setTimeout(res, 1500); }).then(send); })
       .then(function () { form.style.display = 'none'; show(done, true); if (window.gtag) gtag('event', isNewsletter ? 'sign_up' : 'generate_lead', { form_location: location.pathname }); })
-      .catch(function () { show(fail, true); })
+      .catch(function (err) {
+        if (window.gtag) gtag('event', 'form_error', { form_location: location.pathname, error: String(err && err.message || err).slice(0, 90) });
+        if (fail) {
+          var lines = []; Object.keys(payload).forEach(function (k) { if (k.charAt(0) !== '_' && k !== 'page') lines.push(k + ': ' + payload[k]); });
+          var wa = 'https://wa.me/918375035325?text=' + encodeURIComponent('Hi KloutKrew, your website form didn\u2019t go through, so here are my details:\n' + lines.join('\n'));
+          var link = fail.querySelector('.kk-wa-fallback');
+          if (!link) { link = document.createElement('a'); link.className = 'kk-wa-fallback'; link.target = '_blank'; link.rel = 'noopener'; link.textContent = 'Send it on WhatsApp instead'; link.style.cssText = 'display:inline-block;margin-top:8px;text-decoration:underline;font-weight:600'; fail.appendChild(link); }
+          link.href = wa;
+        }
+        show(fail, true);
+      })
       .finally(function () { if (btn) { btn.disabled = false; if (btn.value) btn.value = label; } });
   }, true);
 })();
