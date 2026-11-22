@@ -605,6 +605,7 @@ ${work.length ? `<section class="kl-work" aria-labelledby="kl-work-title"><div c
 <ul class="kl-work-grid">${work.map(w => `<li><a href="/works"><div class="kl-work-media">${workMedia(w, { playable: true })}</div><p><b>${esc(w.name)}</b><span>${esc(w.cat)}</span></p></a></li>`).join('')}</ul></section>` : ''}
 ${faqs.length ? `<section class="kl-sec kl-faq" aria-labelledby="faq-title"><div class="kl-sec-head"><h2 id="faq-title">Questions <em>(we get)</em></h2></div><div class="kl-sec-body">
 ${faqs.map(f => `<details><summary>${esc(f.q)}</summary><div>${md.render(String(f.a))}</div></details>`).join('\n')}
+<p class="kq-svc-more">${(FAQ_INDEX[lp.slug] || []).length ? `In depth: ${(FAQ_INDEX[lp.slug] || []).map(q => `<a href="/faq/${q.slug}">${esc(q.data.question)}</a>`).join(' · ')}. ` : ''}<a href="/faq" class="kl-link">All questions</a></p>
 </div></section>` : ''}
 <nav class="kl-services" aria-labelledby="kl-svc-title"><p id="kl-svc-title" class="kb-eyebrow"><span class="kb-dot"></span>${isService ? 'Other services' : 'Our services'}</p>
 <ul>${others.map(([s, n]) => `<li><a href="/${s}">${esc(n)}</a></li>`).join('')}</ul></nav>
@@ -631,6 +632,82 @@ ${CTA}
   return page(head, content, `<script src="/assets/blog.js" defer></script>`);
 }
 
+// ---------------------------------------------------------------- FAQ: question pages (content/faq/*.md) + hub (/faq)
+const FAQ_DIR = path.join(ROOT, 'content', 'faq');
+let FAQ_INDEX = {};
+async function loadFaqPages() {
+  if (!fs.existsSync(FAQ_DIR)) return [];
+  const out = [];
+  for (const file of (await fsp.readdir(FAQ_DIR)).filter(f => f.endsWith('.md') && !f.startsWith('_'))) {
+    const abs = path.join(FAQ_DIR, file);
+    const { data, content } = matter(await fsp.readFile(abs, 'utf8'));
+    for (const k of ['title', 'question', 'answer', 'metaDescription']) if (!data[k]) throw new Error(`faq/${file}: missing ${k}`);
+    const slug = path.basename(file, '.md');
+    out.push({ slug, data, html: await renderMarkdown(content, abs, 'faq-' + slug), updated: data.updated ? new Date(data.updated) : new Date() });
+  }
+  return out.sort((a, b) => a.data.question.localeCompare(b.data.question));
+}
+const svcName = slug => (SERVICES.find(([s]) => s === slug) || [])[1] || ({ international: 'International clients', 'branding-agency-delhi': 'Delhi NCR', 'brand-budget-calculator': 'Budget calculator' })[slug] || slug;
+
+function faqPage(q, all) {
+  const d = q.data, url = `${SITE}/faq/${q.slug}`;
+  const rel = (d.related || []).map(s => all.find(x => x.slug === s)).filter(Boolean);
+  const content = `<main class="kb kl kq">
+<header class="kl-hero kq-hero"><div class="kl-hero-in"><div class="kl-hero-text">
+<p class="kq-crumbs"><a href="/">Home</a> / <a href="/faq">FAQ</a></p>
+<p class="kb-eyebrow"><span class="kb-dot"></span>${esc(svcName(d.service))} <em>(FAQ)</em></p>
+<h1 class="kl-title kq-title">${esc(d.question)}</h1>
+<p class="kq-answer"><strong>Short answer:</strong> ${esc(d.answer)}</p>
+</div></div></header>
+<article class="kb-post-body kq-body">${q.html}</article>
+<section class="kq-more"><div class="kq-more-in">
+${d.service ? `<p class="kq-svc">Related service: <a href="/${d.service}" class="kl-link">${esc(svcName(d.service))}</a></p>` : ''}
+${rel.length ? `<h2>More questions</h2><ul>${rel.map(r => `<li><a href="/faq/${r.slug}">${esc(r.data.question)}</a></li>`).join('')}</ul>` : ''}
+<p><a href="/faq" class="kl-link">All questions</a></p>
+</div></section>
+${CTA}
+</main>`;
+  const graph = [
+    { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: d.question, acceptedAnswer: { '@type': 'Answer', text: d.answer } }] },
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 2, name: 'FAQ', item: `${SITE}/faq` },
+      { '@type': 'ListItem', position: 3, name: d.question, item: url }] },
+  ];
+  const head = headHTML({ title: d.title, description: d.metaDescription, url, image: DEFAULT_OG, jsonLd: { '@context': 'https://schema.org', '@graph': graph } });
+  return page(head, content, `<script src="/assets/blog.js" defer></script>`);
+}
+
+function faqHub(faqs, landings) {
+  const url = `${SITE}/faq`;
+  const order = [...SERVICES.map(([s]) => s), 'international', 'branding-agency-delhi', 'brand-budget-calculator'];
+  const groups = order.map(s => landings.find(l => l.slug === s)).filter(l => l && Array.isArray(l.data.faqs) && l.data.faqs.length);
+  const content = `<main class="kb kl kq">
+<header class="kl-hero kq-hero"><div class="kl-hero-in"><div class="kl-hero-text">
+<p class="kb-eyebrow"><span class="kb-dot"></span>Questions <em>(we get)</em></p>
+<h1 class="kl-title">Frequently asked questions</h1>
+<p class="kl-dek">Straight answers about branding, packaging, websites, AI films, content and marketing: timelines, files, ownership, budgets and how we work with brands in India and worldwide.</p>
+</div></div></header>
+<section class="kq-hub"><div class="kq-hub-in">
+<h2>In-depth answers</h2>
+<ul class="kq-cards">${faqs.map(q => `<li><a href="/faq/${q.slug}"><b>${esc(q.data.question)}</b><span>${esc(svcName(q.data.service))}</span></a></li>`).join('')}</ul>
+<nav class="kq-jump" aria-label="Jump to a service"><p>Quick answers by service:</p><ul>${groups.map(l => `<li><a href="#${l.slug}">${esc(svcName(l.slug))}</a></li>`).join('')}</ul></nav>
+${groups.map(l => `<section class="kq-group" id="${l.slug}"><h2>${esc(svcName(l.slug))} <a href="/${l.slug}" class="kl-link">See the service</a></h2>
+${l.data.faqs.map(f => `<details><summary>${esc(f.q)}</summary><div>${md.render(String(f.a))}</div></details>`).join('\n')}
+</section>`).join('\n')}
+</div></section>
+${CTA}
+</main>`;
+  const graph = [
+    { '@type': 'CollectionPage', name: 'Frequently asked questions', url, description: 'Answers about branding, packaging, websites, AI films, content and marketing from KloutKrew Studio.' },
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 2, name: 'FAQ', item: url }] },
+  ];
+  const head = headHTML({ title: 'FAQ: Branding, Packaging, Websites & Marketing | KloutKrew', description: 'Answers about branding, packaging, websites, AI films and marketing: timelines, costs, files, ownership and working with an Indian studio from abroad.', url, image: DEFAULT_OG, jsonLd: { '@context': 'https://schema.org', '@graph': graph } });
+  return page(head, content, `<script src="/assets/blog.js" defer></script>`);
+}
+
 // ---------------------------------------------------------------- main
 async function main() {
   const t0 = Date.now();
@@ -653,10 +730,17 @@ async function main() {
   for (const post of posts) await fsp.writeFile(path.join(DIST, 'blog', `${post.slug}.html`), postPage(post, posts));
   await fsp.writeFile(path.join(DIST, 'blog', 'rss.xml'), rss(posts));
   const landings = await loadLandingPages();
+  for (const q of await loadFaqPages()) (FAQ_INDEX[q.data.service] = FAQ_INDEX[q.data.service] || []).push(q);
   for (const lp of landings) { lp.html = unlinkScheduled(lp.html); await fsp.writeFile(path.join(DIST, `${lp.slug}.html`), unlinkScheduled(landingPage(lp))); }
-  await fsp.writeFile(path.join(DIST, 'sitemap.xml'), sitemap(posts, landings));
+  const faqs = await loadFaqPages();
+  await fsp.mkdir(path.join(DIST, 'faq'), { recursive: true });
+  for (const q of faqs) { q.html = unlinkScheduled(q.html); await fsp.writeFile(path.join(DIST, 'faq', `${q.slug}.html`), faqPage(q, faqs)); }
+  await fsp.writeFile(path.join(DIST, 'faq.html'), unlinkScheduled(faqHub(faqs, landings)));
+  const faqLandings = [{ slug: 'faq', updated: new Date() }, ...faqs.map(q => ({ slug: 'faq/' + q.slug, updated: q.updated }))];
+  await fsp.writeFile(path.join(DIST, 'sitemap.xml'), sitemap(posts, [...landings, ...faqLandings]));
   const llms = fs.readFileSync(path.join(ROOT, 'llms.txt'), 'utf8').trimEnd()
     + (landings.length ? '\n\n## Pages\n\n' + landings.map(l => `- [${l.data.h1}](${SITE}/${l.slug}): ${l.data.description}`).join('\n') : '')
+    + (faqs.length ? '\n\n## FAQ\n\n' + faqs.map(q => `- [${q.data.question}](${SITE}/faq/${q.slug}): ${q.data.answer}`).join('\n') : '')
     + '\n\n## Blog\n\n' + posts.filter(p => !p.draft).map(p => `- [${p.title}](${SITE}/blog/${p.slug}): ${p.description}`).join('\n') + '\n';
   await fsp.writeFile(path.join(DIST, 'llms.txt'), llms);
 

@@ -106,6 +106,14 @@
     {
       "source": "/brand-budget-calculator",
       "destination": "/brand-budget-calculator.html"
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html"
+    },
+    {
+      "source": "/faq/:slug([^/.]+)",
+      "destination": "/faq/:slug.html"
     }
   ],
   "headers": [
