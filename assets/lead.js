@@ -8,9 +8,13 @@
   if (matchMedia('print').matches) return;
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-  if (get(DONE)) return;
-  var seen = +get(KEY) || 0;
-  if (Date.now() - seen < 14 * 864e5) return;
+  // Add ?popup=1 to any page to show the card immediately (for testing), ignoring the limits below.
+  var force = /[?&]popup=1\b/.test(location.search);
+  if (!force) {
+    if (get(DONE)) return;
+    var seen = +get(KEY) || 0;
+    if (Date.now() - seen < 14 * 864e5) return;
+  }
 
   var onBlog = path.indexOf('/blog/') === 0;
   var title = onBlog ? 'Want this done for your brand?' : 'Get a free website review';
@@ -71,6 +75,7 @@
     removeEventListener('scroll', onScroll);
     document.removeEventListener('mouseout', onLeave);
   }
+  if (force) { setTimeout(function () { open('test'); }, 600); return; }
   addEventListener('scroll', onScroll, { passive: true });
   if (matchMedia('(pointer:fine)').matches) document.addEventListener('mouseout', onLeave);
 })();
