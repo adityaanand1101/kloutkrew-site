@@ -20,21 +20,25 @@ KloutKrew Studio is a branding, design and marketing studio in New Delhi, India.
 
 ## Cookies and similar storage
 
-- **Analytics cookies** (set by Google Analytics) help us count visits and understand how the site is used. Visitors in the EU, EEA, UK and Switzerland are asked before these are used; everyone can change their choice at any time with **Cookie settings** in the footer.
-- **Your browser's local storage** remembers a few things on your device so the site behaves sensibly: your cookie choice, whether you've already sent the website review form, and the page you first arrived on.
+When you first visit, we ask which kinds of cookies you're happy with. You can change your choice at any time with **Cookie settings** in the footer.
 
-We don't use advertising cookies, and we don't sell your information.
+- **Essential:** a small amount of storage in your browser so the site works, such as remembering your cookie choice.
+- **Analytics (optional):** Google Analytics and, where enabled, Microsoft Clarity, which show us how the site is used: visits, clicks, scrolling and anonymous heatmaps or session replays. With this on, your browser also keeps a short history of the pages you've viewed on this site and where you first came from; if you send us a form, that history is included with it so we understand what you were interested in. Visitors in the EU, EEA, UK and Switzerland start with analytics off until they choose.
+- **Marketing (optional, off until you accept):** Meta (Facebook and Instagram) and Google Ads tags, which let us show our ads to people who have visited the site and measure whether those ads lead to enquiries.
+
+We don't sell your information.
 
 ## How we use it
 
 - To reply to your enquiry and, if we work together, to run the project
 - To send the newsletter, if you signed up (every email has an unsubscribe link)
 - To understand which pages and services people are interested in, and improve the site
+- If you accept marketing cookies, to show you our ads on other websites and apps and measure how they perform
 - To keep the site secure and working
 
 ## Who else handles it
 
-We use a small number of services to run the site, and they process data on our behalf: **Vercel** (website hosting), **FormSubmit** (delivering form submissions to our inbox), **Google** (email and Google Analytics) and **Meta/WhatsApp** if you choose to message us there. Form submissions are shared within our team so the right person can reply.
+We use a small number of services to run the site, and they process data on our behalf: **Vercel** (website hosting), **FormSubmit** (delivering form submissions to our inbox), **Google** (email, Google Analytics and, if you accept marketing cookies, Google Ads), **Microsoft** (Clarity, if you accept analytics cookies) and **Meta** (the Meta pixel if you accept marketing cookies, and WhatsApp if you choose to message us there). Form submissions are shared within our team so the right person can reply.
 
 ## How long we keep it
 

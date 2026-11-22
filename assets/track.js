@@ -16,9 +16,30 @@
     return 'body';
   }
 
+  // ---- Only remember visit history for visitors whose analytics consent is on (see consent.js).
+  function analyticsOK() {
+    try { var v = localStorage.getItem('kk_consent'); if (v) { var c = v.charAt(0) === '{' ? JSON.parse(v) : { a: v }; return c.a === 'granted'; } } catch (e) {}
+    var tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    return !/^Europe\//.test(tz);
+  }
+  var okToStore = analyticsOK();
+
+  // ---- Visit history (first-party, on this device only): number of visits and the last pages viewed.
+  // Attached to enquiries so you can see what a lead read before getting in touch.
+  try {
+    if (okToStore) {
+      var j = JSON.parse(localStorage.getItem('kk_journey') || 'null') || { visits: 0, pages: [], last: 0 };
+      if (Date.now() - j.last > 30 * 60e3) j.visits++;
+      j.last = Date.now();
+      if (j.pages[j.pages.length - 1] !== path) j.pages.push(path);
+      if (j.pages.length > 20) j.pages = j.pages.slice(-20);
+      localStorage.setItem('kk_journey', JSON.stringify(j));
+    }
+  } catch (e) {}
+
   // ---- First-touch attribution: remembered so form emails can say where a lead first came from.
   try {
-    if (!localStorage.getItem('kk_first_touch')) {
+    if (okToStore && !localStorage.getItem('kk_first_touch')) {
       var q = new URLSearchParams(location.search), ref = document.referrer, refHost = '';
       try { refHost = ref ? new URL(ref).hostname : ''; } catch (e) {}
       if (refHost === location.hostname) refHost = '';

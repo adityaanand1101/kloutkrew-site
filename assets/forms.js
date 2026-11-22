@@ -26,7 +26,12 @@
     if (Date.now() - LOADED_AT < 3000) return; // submitted faster than a person can type: almost certainly a bot
     var isNewsletter = form.classList.contains('footer_cta_form') || form.id === 'email-form';
     var payload = { _subject: isNewsletter ? 'New newsletter signup - kloutkrew.in' : 'New enquiry - kloutkrew.in', _template: 'table', _captcha: 'false', _cc: CC, page: location.href };
-    try { var ft = JSON.parse(localStorage.getItem('kk_first_touch') || 'null'); if (ft) { payload['First visit from'] = ft.source; payload['First page visited'] = ft.landing + ' (' + ft.date + ')'; } } catch (e) {}
+    try {
+      var ft = JSON.parse(localStorage.getItem('kk_first_touch') || 'null');
+      if (ft) { payload['First visit from'] = ft.source; payload['First page visited'] = ft.landing + ' (' + ft.date + ')'; }
+      var jr = JSON.parse(localStorage.getItem('kk_journey') || 'null');
+      if (jr) { payload['Visits to the site'] = jr.visits; payload['Pages viewed (latest last)'] = jr.pages.join('  >  '); }
+    } catch (e) {}
     data.forEach(function (v, k) { if (k !== '_honey' && k !== 'cf-turnstile-response') payload[k === 'field' ? 'Message' : k] = v; });
 
     if (btn) { btn.disabled = true; if (btn.value) btn.value = 'Sending...'; }
@@ -38,7 +43,7 @@
     }
     // One automatic retry; if it still fails, keep the lead by offering WhatsApp with their details filled in.
     send().catch(function () { return new Promise(function (res) { setTimeout(res, 1500); }).then(send); })
-      .then(function () { form.style.display = 'none'; show(done, true); if (window.gtag) gtag('event', isNewsletter ? 'sign_up' : 'generate_lead', { form_location: location.pathname }); })
+      .then(function () { form.style.display = 'none'; show(done, true); if (window.gtag) gtag('event', isNewsletter ? 'sign_up' : 'generate_lead', { form_location: location.pathname }); if (!isNewsletter && window.kkLeadPixel) window.kkLeadPixel(); })
       .catch(function (err) {
         if (window.gtag) gtag('event', 'form_error', { form_location: location.pathname, error: String(err && err.message || err).slice(0, 90) });
         if (fail) {
