@@ -2,7 +2,8 @@
 //   Analytics: Google Analytics, Microsoft Clarity (heatmaps), visit history attached to enquiries.
 //   Marketing: Meta Pixel and Google Ads remarketing, so you can show ads to past visitors.
 // Visitors choose once (stored in localStorage "kk_consent" as {"a":"granted|denied","m":"granted|denied"}).
-// EU/EEA/UK/CH visitors start with everything off; elsewhere analytics starts on and marketing off.
+// No banner: EU/EEA/UK/CH visitors start with everything off; elsewhere both start on. Anyone can change it
+// from "Cookie settings" in the footer.
 (function () {
   // Paste IDs here to switch these tools on (they only load for visitors who accept that category).
   var IDS = {
@@ -17,7 +18,7 @@
     try { var v = localStorage.getItem(KEY); if (!v) return null; if (v === 'granted' || v === 'denied') return { a: v, m: 'denied' }; return JSON.parse(v); } catch (e) { return null; }
   }
   function save(c) { try { localStorage.setItem(KEY, JSON.stringify(c)); } catch (e) {} }
-  var state = read() || { a: europe ? 'denied' : 'granted', m: 'denied', defaulted: true };
+  var state = read() || { a: europe ? 'denied' : 'granted', m: europe ? 'denied' : 'granted', defaulted: true };
   window.kkConsent = function (cat) { return (cat === 'm' ? state.m : state.a) === 'granted'; };
 
   var loaded = {};
@@ -81,19 +82,5 @@
   });
   if (!state.defaulted) { apply(); }
   activate();
-  // Ask quietly: once per browsing session, a few seconds after the page has fully loaded, and stop asking
-  // after it's been ignored in 3 sessions (the defaults above then simply stay in place).
-  if (state.defaulted) {
-    var seenSessions = 0; try { seenSessions = +localStorage.getItem('kk_consent_asked') || 0; } catch (e) {}
-    var askedThisSession = false; try { askedThisSession = !!sessionStorage.getItem('kk_consent_asked'); } catch (e) {}
-    if (!askedThisSession && (seenSessions < 3 || europe)) {
-      var go = function () {
-        setTimeout(function () {
-          show(false);
-          try { sessionStorage.setItem('kk_consent_asked', '1'); localStorage.setItem('kk_consent_asked', String(seenSessions + 1)); } catch (e) {}
-        }, 3000);
-      };
-      if (document.readyState === 'complete') go(); else addEventListener('load', go);
-    }
-  }
+  // No automatic banner. Visitors can change their choice any time from "Cookie settings" in the footer.
 })();
