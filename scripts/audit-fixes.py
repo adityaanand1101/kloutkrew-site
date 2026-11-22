@@ -3,7 +3,7 @@ import json, re
 from pathlib import Path
 
 PAGES = ['index.html', 'about.html', 'services.html', 'works.html', 'contact-us.html', '404.html', 'templates/page.html']
-PHONE_DISPLAY = '+91 99910 97008'
+PHONE_DISPLAY = '+91 83750 35325'
 ORG = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
@@ -14,7 +14,7 @@ ORG = {
     "image": "https://kloutkrew.in/assets/og-default.jpg",
     "description": "New Delhi studio for branding, packaging, websites, digital marketing and AI brand films.",
     "email": "teamKLOUTKREW@gmail.com",
-    "telephone": "+91-9991097008",
+    "telephone": "+91-8375035325",
     "address": {"@type": "PostalAddress", "addressLocality": "New Delhi", "addressRegion": "Delhi", "addressCountry": "IN"},
     "areaServed": [{"@type": "City", "name": "Delhi NCR"}, {"@type": "Country", "name": "India"}],
     "knowsAbout": ["Branding", "Packaging design", "Website design", "UI/UX design", "Digital marketing", "AI brand films"],
@@ -46,12 +46,12 @@ def fix(path):
     name = p.name
 
     # Phone: one correct number everywhere
-    s = s.replace('99910 971008', '99910 97008')
-    s = s.replace('+91999910971008', '+919991097008')
+    s = s.replace('99910 971008', '83750 35325')
+    s = s.replace('+91999910971008', '+918375035325')
 
     # Organization schema -> ProfessionalService with location, no placeholder profiles
     s = re.sub(r'<script type="application/ld\+json">\s*\{"@context":"https://schema.org","@type":"Organization".*?</script>', ORG_LD, s, count=1, flags=re.S)
-    s = re.sub(r'(<script type="application/ld\+json">[^<]*?)"@type":"Organization","name":"KloutKrew Studio","url":"https://kloutkrew.in","logo":"https://kloutkrew.in/favicon.svg","description":"[^"]*","email":"[^"]*","telephone":"[^"]*","sameAs":\[[^\]]*\]', r'\1"@type":"ProfessionalService","name":"KloutKrew Studio","url":"https://kloutkrew.in","logo":"https://kloutkrew.in/favicon.svg","email":"teamKLOUTKREW@gmail.com","telephone":"+91-9991097008","address":{"@type":"PostalAddress","addressLocality":"New Delhi","addressCountry":"IN"}', s)
+    s = re.sub(r'(<script type="application/ld\+json">[^<]*?)"@type":"Organization","name":"KloutKrew Studio","url":"https://kloutkrew.in","logo":"https://kloutkrew.in/favicon.svg","description":"[^"]*","email":"[^"]*","telephone":"[^"]*","sameAs":\[[^\]]*\]', r'\1"@type":"ProfessionalService","name":"KloutKrew Studio","url":"https://kloutkrew.in","logo":"https://kloutkrew.in/favicon.svg","email":"teamKLOUTKREW@gmail.com","telephone":"+91-8375035325","address":{"@type":"PostalAddress","addressLocality":"New Delhi","addressCountry":"IN"}', s)
 
     # Titles and descriptions (title, og/twitter title, meta + og/twitter description)
     if name in META:

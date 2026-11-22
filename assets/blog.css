@@ -417,3 +417,8 @@ body, .page_wrapper { background: #fff; }
 .kbt-out a.kb-btn:hover { background: #fff; color: var(--kb-ink) !important; }
 @media (max-width: 900px) { .kbt-in { grid-template-columns: 1fr; } .kbt-out { position: static; } }
 @media (prefers-reduced-motion: reduce) { .kbt-opts span, .kbt-cur-switch span { transition: none; } }
+
+/* Lazy listing */
+.kb-more-wrap { text-align: center; margin: clamp(40px, 5vw, 64px) 0 0; }
+.kb-more-wrap[hidden], .kb-card[hidden] { display: none; }
+.kb-card { content-visibility: auto; contain-intrinsic-size: auto 420px; }

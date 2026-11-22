@@ -333,6 +333,7 @@ ${cats.map(c => `<button class="kb-chip" data-filter="${esc(slugify(c))}" aria-p
 </div>
 <div class="kb-grid">${rest.map(card).join('\n')}</div>
 <p class="kb-empty" hidden>Nothing here yet — check back soon.</p>
+${rest.length > 12 ? `<p class="kb-more-wrap"><button type="button" class="kb-btn kb-more">Show more articles</button></p>` : ''}
 </div></section>
 ${CTA}
 </main>`;

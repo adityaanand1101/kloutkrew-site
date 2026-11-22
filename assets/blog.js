@@ -1,9 +1,35 @@
 // Blog: category filter on the listing, reading progress + copy-link on posts.
 (function () {
+  // Lazy listing: show 12 cards, reveal 12 more when the reader nears the end (or taps the button).
+  // Every card stays in the HTML so search engines still see every link.
+  var PAGE = 12, limit = PAGE, filter = 'all';
+  var cards = document.querySelectorAll('.kb-archive .kb-card');
+  var more = document.querySelector('.kb-more');
+  var empty = document.querySelector('.kb-empty');
+  function render() {
+    var matched = 0, shown = 0;
+    cards.forEach(function (card) {
+      var match = filter === 'all' || card.getAttribute('data-cat') === filter;
+      if (match) matched++;
+      var vis = match && (filter !== 'all' || matched <= limit);
+      card.hidden = !vis;
+      if (vis) shown++;
+    });
+    if (empty) empty.hidden = shown > 0;
+    if (more) more.parentNode.hidden = !(filter === 'all' && matched > limit);
+  }
+  if (more) {
+    more.addEventListener('click', function () { limit += PAGE; render(); });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting && !more.parentNode.hidden) { limit += PAGE; render(); } });
+      }, { rootMargin: '600px 0px' }).observe(more.parentNode);
+    }
+  }
+  if (cards.length) render();
+
   var chips = document.querySelectorAll('.kb-chip');
   if (chips.length) {
-    var cards = document.querySelectorAll('.kb-archive .kb-card');
-    var empty = document.querySelector('.kb-empty');
     chips.forEach(function (chip) {
       chip.addEventListener('click', function () {
         var f = chip.getAttribute('data-filter');
@@ -12,13 +38,7 @@
           c.classList.toggle('is-active', on);
           c.setAttribute('aria-pressed', on ? 'true' : 'false');
         });
-        var shown = 0;
-        cards.forEach(function (card) {
-          var match = f === 'all' || card.getAttribute('data-cat') === f;
-          card.hidden = !match;
-          if (match) shown++;
-        });
-        if (empty) empty.hidden = shown > 0;
+        filter = f; limit = PAGE; render();
       });
     });
   }

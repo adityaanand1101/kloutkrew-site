@@ -1,7 +1,7 @@
 // Sends every site form (contact, quote, newsletter) to the studio inbox via FormSubmit.
 // Runs in the capture phase so Webflow's own form handler (which only works on Webflow hosting) never fires.
 (function () {
-  var INBOX = 'teamKLOUTKREW@gmail.com';
+  var INBOX = 'connect@gmail.com';
   var ENDPOINT = 'https://formsubmit.co/ajax/' + INBOX;
 
   var LOADED_AT = Date.now();
