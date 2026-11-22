@@ -758,7 +758,7 @@ async function main() {
   const MAIL = '<a href="mailto:connect@kloutkrew.in" class="link-primary text-18px">connect@kloutkrew.in</a>';
   for (const f of await (async function walk(d) { let out = []; for (const e of await fsp.readdir(d, { withFileTypes: true })) { const p = path.join(d, e.name); if (e.isDirectory()) out = out.concat(await walk(p)); else if (e.name.endsWith('.html')) out.push(p); } return out; })(DIST)) {
     let html = await fsp.readFile(f, 'utf8'), changed = false;
-    if (socialHTML && html.includes(MAIL) && !html.includes('kk-social')) { html = html.replace(MAIL, MAIL + socialHTML); changed = true; }
+    if (socialHTML && html.includes(MAIL) && !html.includes('kk-social')) { const i = html.lastIndexOf(MAIL) + MAIL.length; html = html.slice(0, i) + socialHTML + html.slice(i); changed = true; }
     if (profiles.length && html.includes('"@type":"ProfessionalService","name"') && !html.includes('"sameAs"')) { html = html.replace('"knowsAbout":', `"sameAs":${JSON.stringify(profiles)},"knowsAbout":`); changed = true; }
     if (changed) await fsp.writeFile(f, html);
   }
