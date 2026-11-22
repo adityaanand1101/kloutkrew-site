@@ -26,6 +26,7 @@
     if (Date.now() - LOADED_AT < 3000) return; // submitted faster than a person can type: almost certainly a bot
     var isNewsletter = form.classList.contains('footer_cta_form') || form.id === 'email-form';
     var payload = { _subject: isNewsletter ? 'New newsletter signup - kloutkrew.in' : 'New enquiry - kloutkrew.in', _template: 'table', _captcha: 'false', _cc: CC, page: location.href };
+    try { var ft = JSON.parse(localStorage.getItem('kk_first_touch') || 'null'); if (ft) { payload['First visit from'] = ft.source; payload['First page visited'] = ft.landing + ' (' + ft.date + ')'; } } catch (e) {}
     data.forEach(function (v, k) { if (k !== '_honey' && k !== 'cf-turnstile-response') payload[k === 'field' ? 'Message' : k] = v; });
 
     if (btn) { btn.disabled = true; if (btn.value) btn.value = 'Sending...'; }

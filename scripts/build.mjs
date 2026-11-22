@@ -708,6 +708,29 @@ ${CTA}
   return page(head, content, `<script src="/assets/blog.js" defer></script>`);
 }
 
+// ---------------------------------------------------------------- legal pages (content/legal/*.md)
+async function buildLegal() {
+  const dir = path.join(ROOT, 'content', 'legal'); if (!fs.existsSync(dir)) return [];
+  const out = [];
+  for (const file of (await fsp.readdir(dir)).filter(f => f.endsWith('.md'))) {
+    const abs = path.join(dir, file), slug = path.basename(file, '.md');
+    const { data, content } = matter(await fsp.readFile(abs, 'utf8'));
+    const html = await renderMarkdown(content, abs, 'legal-' + slug), url = `${SITE}/${slug}`;
+    const body = `<main class="kb kl kq">
+<header class="kl-hero kq-hero"><div class="kl-hero-in"><div class="kl-hero-text">
+<p class="kq-crumbs"><a href="/">Home</a></p>
+<h1 class="kl-title">${esc(data.h1)}</h1>
+<p class="kl-dek">${esc(data.description)}</p>
+</div></div></header>
+<article class="kb-post-body kq-body">${html}</article>
+</main>`;
+    const head = headHTML({ title: data.title, description: data.description, url, image: DEFAULT_OG, jsonLd: { '@context': 'https://schema.org', '@type': 'WebPage', name: data.h1, url } });
+    await fsp.writeFile(path.join(DIST, `${slug}.html`), page(head, body));
+    out.push({ slug, updated: data.updated ? new Date(data.updated) : new Date() });
+  }
+  return out;
+}
+
 // ---------------------------------------------------------------- main
 async function main() {
   const t0 = Date.now();
@@ -736,7 +759,8 @@ async function main() {
   await fsp.mkdir(path.join(DIST, 'faq'), { recursive: true });
   for (const q of faqs) { q.html = unlinkScheduled(q.html); await fsp.writeFile(path.join(DIST, 'faq', `${q.slug}.html`), faqPage(q, faqs)); }
   await fsp.writeFile(path.join(DIST, 'faq.html'), unlinkScheduled(faqHub(faqs, landings)));
-  const faqLandings = [{ slug: 'faq', updated: new Date() }, ...faqs.map(q => ({ slug: 'faq/' + q.slug, updated: q.updated }))];
+  const legal = await buildLegal();
+  const faqLandings = [...legal, { slug: 'faq', updated: new Date() }, ...faqs.map(q => ({ slug: 'faq/' + q.slug, updated: q.updated }))];
   await fsp.writeFile(path.join(DIST, 'sitemap.xml'), sitemap(posts, [...landings, ...faqLandings]));
   const llms = fs.readFileSync(path.join(ROOT, 'llms.txt'), 'utf8').trimEnd()
     + (landings.length ? '\n\n## Pages\n\n' + landings.map(l => `- [${l.data.h1}](${SITE}/${l.slug}): ${l.data.description}`).join('\n') : '')
@@ -762,7 +786,7 @@ async function main() {
   const RES_COL = `<div class="footer_link_col kk-fres"><p class="footer_link_col_heading">Resources</p><div class="footer_link_wrapper">${fl('/blog', 'Blog')}${fl('/blog/indian-d2c-website-speed-study-2026', 'D2C speed study 2026')}${fl('/faq', 'FAQ')}${fl('/brand-budget-calculator', 'Budget calculator')}</div>`
     + (latest.length ? `<p class="kk-flatest-h">Latest articles</p><ul class="kk-flatest">${latest.map(p => `<li><a href="/blog/${p.slug}">${esc(p.title)}</a></li>`).join('')}</ul>` : '') + `</div>`;
   const START = `<div class="kk-fstart"><p class="kk-fstart-h">Have a project in mind?</p><p class="kk-fstart-d">Tell us what you're building. We reply to every enquiry within 24 hours.</p><p class="kk-fstart-b"><a href="/contact-us" class="kk-fbtn">Start a project</a><a href="https://wa.me/918375035325?text=Hi%20KloutKrew%2C%20I%27d%20like%20to%20talk%20about%20a%20project." class="kk-fbtn kk-fbtn-ghost" target="_blank" rel="noopener">WhatsApp us</a><a href="mailto:connect@kloutkrew.in?subject=Project%20enquiry%20from%20kloutkrew.in" class="kk-fbtn kk-fbtn-ghost">Email us</a></p></div>`;
-  const FOOT_CSS = `<style>.footer_top_wrapper{margin-bottom:96px!important}.footer_links{flex-wrap:wrap}.kk-flatest-h{color:rgba(255,255,255,.6)!important;opacity:1!important;margin:28px 0 10px;font-size:14px;text-transform:none}.kk-flatest{list-style:none;margin:0;padding:0;max-width:240px}.kk-flatest li{margin:0 0 10px;font-size:14px;line-height:1.4}.kk-flatest a{color:rgba(255,255,255,.72)!important;opacity:1!important}.kk-flatest a:hover{color:#fff!important}.footer_top_wrapper>.footer_cta{flex:1 1 380px}.kk-fstart{flex:1 1 420px;border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:28px 30px;align-self:flex-start}.kk-fstart-h{color:#fff!important;opacity:1!important;font-family:'Bebas Neue','Bebasneue',Arial,sans-serif;font-size:clamp(34px,3vw,48px);line-height:1;margin:0 0 10px}.kk-fstart-d{color:rgba(255,255,255,.78)!important;opacity:1!important;margin:0 0 20px;font-size:16px;line-height:1.5}.kk-fstart-b{display:flex;flex-wrap:wrap;gap:10px;margin:0}.kk-fbtn{display:inline-block;padding:13px 22px;border-radius:999px;background:#ff691e;color:#121212!important;font-family:'Bebas Neue','Bebasneue',Arial,sans-serif;font-size:20px;letter-spacing:.02em;line-height:1}.kk-fbtn:hover{background:#fff}.kk-fbtn-ghost{background:transparent;color:#fff!important;border:1px solid rgba(255,255,255,.5)}.kk-fbtn-ghost:hover{background:#fff;color:#121212!important}.kk-fbtn:focus-visible,.kk-flatest a:focus-visible{outline:2px solid #ff691e;outline-offset:3px}@media (max-width:767px){.footer_top_wrapper{margin-bottom:56px!important;gap:44px!important}.footer_top_wrapper>.footer_cta,.kk-fstart{flex:none;width:100%;box-sizing:border-box}.kk-fstart{padding:22px}.kk-fres{flex:1 1 100%}}</style>`;
+  const FOOT_CSS = `<style>.footer_top_wrapper{margin-bottom:96px!important}.footer_links{flex-wrap:wrap}.kk-flatest-h{color:rgba(255,255,255,.6)!important;opacity:1!important;margin:28px 0 10px;font-size:14px;text-transform:none}.kk-flatest{list-style:none;margin:0;padding:0;max-width:240px}.kk-flatest li{margin:0 0 10px;font-size:14px;line-height:1.4}.kk-flatest a{color:rgba(255,255,255,.72)!important;opacity:1!important}.kk-flatest a:hover{color:#fff!important}.footer_top_wrapper>.footer_cta{flex:1 1 380px}.kk-fstart{flex:1 1 420px;border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:28px 30px;align-self:flex-start}.kk-fstart-h{color:#fff!important;opacity:1!important;font-family:'Bebas Neue','Bebasneue',Arial,sans-serif;font-size:clamp(34px,3vw,48px);line-height:1;margin:0 0 10px}.kk-fstart-d{color:rgba(255,255,255,.78)!important;opacity:1!important;margin:0 0 20px;font-size:16px;line-height:1.5}.kk-fstart-b{display:flex;flex-wrap:wrap;gap:10px;margin:0}.kk-fbtn{display:inline-block;padding:13px 22px;border-radius:999px;background:#ff691e;color:#121212!important;font-family:'Bebas Neue','Bebasneue',Arial,sans-serif;font-size:20px;letter-spacing:.02em;line-height:1}.kk-fbtn:hover{background:#fff}.kk-fbtn-ghost{background:transparent;color:#fff!important;border:1px solid rgba(255,255,255,.5)}.kk-fbtn-ghost:hover{background:#fff;color:#121212!important}.kk-legal a{color:inherit;text-decoration:underline;text-underline-offset:3px}.kk-fbtn:focus-visible,.kk-flatest a:focus-visible{outline:2px solid #ff691e;outline-offset:3px}@media (max-width:767px){.footer_top_wrapper{margin-bottom:56px!important;gap:44px!important}.footer_top_wrapper>.footer_cta,.kk-fstart{flex:none;width:100%;box-sizing:border-box}.kk-fstart{padding:22px}.kk-fres{flex:1 1 100%}}</style>`;
   const footerize = html => {
     if (!html.includes('<footer') || html.includes('kk-fres')) return html;
     // Budget calculator and FAQ move from Pages to Resources.
@@ -773,6 +797,7 @@ async function main() {
     const at = svcEnd + m[0].length;
     html = html.slice(0, at) + RES_COL + html.slice(at);
     html = html.replace(/(<\/div>\s*)(<div class="footer_bottom_wrapper")/, (_, a, b) => START + a + b);
+    html = html.replace(/(<p class="footer_legal_text">\s*© 2026\. ALL RIGHTS RESERVED\.\s*<\/p>)/, '$1<p class="footer_legal_text kk-legal"><a href="/privacy">Privacy policy</a> <span aria-hidden="true">/</span> <a href="#" data-cookie-settings>Cookie settings</a></p>');
     return html.replace('</footer>', '</footer>' + FOOT_CSS);
   };
   for (const f of await (async function walk(d) { let out = []; for (const e of await fsp.readdir(d, { withFileTypes: true })) { const p = path.join(d, e.name); if (e.isDirectory()) out = out.concat(await walk(p)); else if (e.name.endsWith('.html')) out.push(p); } return out; })(DIST)) {
