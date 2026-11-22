@@ -1,0 +1,18 @@
+.kk-lead{position:fixed;left:20px;bottom:20px;z-index:9998;width:min(360px,calc(100vw - 100px));background:#121212;color:#fff;border-radius:6px;padding:22px 22px 20px;box-shadow:0 12px 40px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.18);font-family:'DM Sans',Arial,sans-serif;transform:translateY(calc(100% + 40px));opacity:0;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .35s}
+.kk-lead.is-in{transform:none;opacity:1}
+.kk-lead-x{position:absolute;top:6px;right:8px;width:36px;height:36px;border:0;background:none;color:#fff;font-size:26px;line-height:1;cursor:pointer;opacity:.7}
+.kk-lead-x:hover,.kk-lead-x:focus-visible{opacity:1}
+.kk-lead-t{font-family:'Bebas Neue','Bebasneue',Arial,sans-serif;font-size:30px;line-height:1;margin:0 30px 10px 0;letter-spacing:.01em}
+.kk-lead-d{font-size:14.5px;line-height:1.45;margin:0 0 14px;color:rgba(255,255,255,.78)}
+.kk-lead-f{display:grid;gap:8px;margin:0}
+.kk-lead-f input[type=text],.kk-lead-f input[type=email]{width:100%;box-sizing:border-box;padding:11px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:#1c1c1c;color:#fff;font:inherit;font-size:15px}
+.kk-lead-f input::placeholder{color:rgba(255,255,255,.5)}
+.kk-lead-b{margin-top:4px;padding:12px 18px;border:0;border-radius:999px;background:#ff691e;color:#121212;font-family:'Bebas Neue','Bebasneue',Arial,sans-serif;font-size:20px;letter-spacing:.02em;cursor:pointer}
+.kk-lead-b:hover{background:#fff}
+.kk-lead :focus-visible{outline:2px solid #ff691e;outline-offset:2px}
+.kk-lead-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.kk-lead-ok,.kk-lead-err{margin:4px 0 0;font-size:15px}
+.kk-lead-err{color:#ffb58f}
+@media (max-width:600px){.kk-lead{left:12px;bottom:12px;width:calc(100vw - 88px);padding:14px 14px 14px}.kk-lead-t{font-size:22px;margin-bottom:8px}.kk-lead-d{display:none}.kk-lead-f{gap:6px}.kk-lead-f input[type=text],.kk-lead-f input[type=email]{padding:9px 12px;font-size:16px}.kk-lead-b{font-size:18px;padding:10px}}
+@media (prefers-reduced-motion:reduce){.kk-lead{transition:none}}
+@media print{.kk-lead{display:none}}
