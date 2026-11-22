@@ -661,14 +661,22 @@ async function main() {
   await fsp.writeFile(path.join(DIST, 'llms.txt'), llms);
 
   // Link the studio's third-party profiles (profiles.json) into every page's ProfessionalService schema.
-  const profiles = Object.entries(JSON.parse(fs.readFileSync(path.join(ROOT, 'profiles.json'), 'utf8')))
-    .filter(([k, v]) => !k.startsWith('_') && /^https?:\/\//.test(v)).map(([, v]) => v);
-  if (profiles.length) {
-    for (const f of (await fsp.readdir(DIST)).filter(f => f.endsWith('.html'))) {
-      const fp = path.join(DIST, f), html = await fsp.readFile(fp, 'utf8');
-      if (html.includes('"@type":"ProfessionalService","name"') && !html.includes('"sameAs"'))
-        await fsp.writeFile(fp, html.replace('"knowsAbout":', `"sameAs":${JSON.stringify(profiles)},"knowsAbout":`));
-    }
+  const profMap = JSON.parse(fs.readFileSync(path.join(ROOT, 'profiles.json'), 'utf8'));
+  const profiles = Object.entries(profMap).filter(([k, v]) => !k.startsWith('_') && /^https?:\/\//.test(v)).map(([, v]) => v);
+  // Social icons in every footer, only for the profiles that are filled in.
+  const SOCIAL = [['instagram', 'Instagram', 'M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM12 4.6c2.4 0 2.7 0 3.6.1 2.4.1 3.6 1.3 3.7 3.7.1.9.1 1.2.1 3.6s0 2.7-.1 3.6c-.1 2.4-1.3 3.6-3.7 3.7-.9.1-1.2.1-3.6.1s-2.7 0-3.6-.1c-2.4-.1-3.6-1.3-3.7-3.7-.1-.9-.1-1.2-.1-3.6s0-2.7.1-3.6c.1-2.4 1.3-3.6 3.7-3.7.9-.1 1.2-.1 3.6-.1zM12 3c-2.4 0-2.8 0-3.7.1-3.3.2-5 1.9-5.2 5.2C3 9.2 3 9.6 3 12s0 2.8.1 3.7c.2 3.3 1.9 5 5.2 5.2.9.1 1.3.1 3.7.1s2.8 0 3.7-.1c3.3-.2 5-1.9 5.2-5.2.1-.9.1-1.3.1-3.7s0-2.8-.1-3.7c-.2-3.3-1.9-5-5.2-5.2C14.8 3 14.4 3 12 3z'],
+    ['linkedin', 'LinkedIn', 'M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z'],
+    ['facebook', 'Facebook', 'M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.3H7.7V13h2.7v8z'],
+    ['x', 'X (Twitter)', 'M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z'],
+    ['youtube', 'YouTube', 'M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z']]
+    .filter(([k]) => /^https?:\/\//.test(profMap[k] || ''));
+  const socialHTML = SOCIAL.length ? `<ul class="kk-social" aria-label="KloutKrew Studio on social media">${SOCIAL.map(([k, n, d]) => `<li><a href="${esc(profMap[k])}" target="_blank" rel="noopener me" aria-label="KloutKrew Studio on ${n}"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="${d}"/></svg></a></li>`).join('')}</ul><style>.kk-social{list-style:none;display:flex;gap:10px;margin:18px 0 0;padding:0}.kk-social a{display:flex;width:42px;height:42px;align-items:center;justify-content:center;border:1px solid currentColor;border-radius:50%;color:inherit;opacity:.8;transition:opacity .2s}.kk-social a:hover,.kk-social a:focus-visible{opacity:1}</style>` : '';
+  const MAIL = '<a href="mailto:connect@kloutkrew.in" class="link-primary text-18px">connect@kloutkrew.in</a>';
+  for (const f of await (async function walk(d) { let out = []; for (const e of await fsp.readdir(d, { withFileTypes: true })) { const p = path.join(d, e.name); if (e.isDirectory()) out = out.concat(await walk(p)); else if (e.name.endsWith('.html')) out.push(p); } return out; })(DIST)) {
+    let html = await fsp.readFile(f, 'utf8'), changed = false;
+    if (socialHTML && html.includes(MAIL) && !html.includes('kk-social')) { html = html.replace(MAIL, MAIL + socialHTML); changed = true; }
+    if (profiles.length && html.includes('"@type":"ProfessionalService","name"') && !html.includes('"sameAs"')) { html = html.replace('"knowsAbout":', `"sameAs":${JSON.stringify(profiles)},"knowsAbout":`); changed = true; }
+    if (changed) await fsp.writeFile(f, html);
   }
 
   // Tell Bing, Yandex and other IndexNow engines about every URL on production deploys.
