@@ -13,7 +13,7 @@ ORG = {
     "logo": "https://kloutkrew.in/favicon.svg",
     "image": "https://kloutkrew.in/assets/og-default.jpg",
     "description": "New Delhi studio for branding, packaging, websites, digital marketing and AI brand films.",
-    "email": "teamKLOUTKREW@gmail.com",
+    "email": "connect@kloutkrew.in",
     "telephone": "+91-8375035325",
     "address": {"@type": "PostalAddress", "addressLocality": "New Delhi", "addressRegion": "Delhi", "addressCountry": "IN"},
     "areaServed": [{"@type": "City", "name": "Delhi NCR"}, {"@type": "Country", "name": "India"}],
@@ -51,7 +51,7 @@ def fix(path):
 
     # Organization schema -> ProfessionalService with location, no placeholder profiles
     s = re.sub(r'<script type="application/ld\+json">\s*\{"@context":"https://schema.org","@type":"Organization".*?</script>', ORG_LD, s, count=1, flags=re.S)
-    s = re.sub(r'(<script type="application/ld\+json">[^<]*?)"@type":"Organization","name":"KloutKrew Studio","url":"https://kloutkrew.in","logo":"https://kloutkrew.in/favicon.svg","description":"[^"]*","email":"[^"]*","telephone":"[^"]*","sameAs":\[[^\]]*\]', r'\1"@type":"ProfessionalService","name":"KloutKrew Studio","url":"https://kloutkrew.in","logo":"https://kloutkrew.in/favicon.svg","email":"teamKLOUTKREW@gmail.com","telephone":"+91-8375035325","address":{"@type":"PostalAddress","addressLocality":"New Delhi","addressCountry":"IN"}', s)
+    s = re.sub(r'(<script type="application/ld\+json">[^<]*?)"@type":"Organization","name":"KloutKrew Studio","url":"https://kloutkrew.in","logo":"https://kloutkrew.in/favicon.svg","description":"[^"]*","email":"[^"]*","telephone":"[^"]*","sameAs":\[[^\]]*\]', r'\1"@type":"ProfessionalService","name":"KloutKrew Studio","url":"https://kloutkrew.in","logo":"https://kloutkrew.in/favicon.svg","email":"connect@kloutkrew.in","telephone":"+91-8375035325","address":{"@type":"PostalAddress","addressLocality":"New Delhi","addressCountry":"IN"}', s)
 
     # Titles and descriptions (title, og/twitter title, meta + og/twitter description)
     if name in META:
@@ -84,7 +84,7 @@ def fix(path):
                       '<p class="footer_link_col_heading">Contact</p><div class="footer_contact_link_wrapper"><p class="footer_location text-18px" style="margin:0 0 12px;opacity:.75">New Delhi, India</p>', 1)
 
     # Forms: drop the dead /api/contact target and the unused Turnstile key; add a honeypot
-    s = s.replace('action="/api/contact"', 'action="https://formsubmit.co/teamKLOUTKREW@gmail.com"')
+    s = s.replace('action="/api/contact"', 'action="https://formsubmit.co/connect@kloutkrew.in"')
     s = re.sub(r'\sdata-turnstile-sitekey="[^"]*"', '', s)
     s = re.sub(r'(<form[^>]*>)(?!<input type="text" name="_honey")', r'\1<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">', s)
     if '/assets/forms.js' not in s and '<form' in s:
