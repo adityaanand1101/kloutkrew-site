@@ -1,7 +1,7 @@
 ---
 title: "Cosmetic and Skincare Packaging Design: What Sells"
 description: "How beauty and skincare brands design packaging that looks premium, photographs well, survives shipping and stays consistent across a range."
-date: 2026-12-22
+date: 2026-11-27
 category: "Packaging"
 author: "Shudhanshu Jha"
 tags: ["cosmetic packaging design", "skincare packaging", "beauty packaging", "d2c packaging"]

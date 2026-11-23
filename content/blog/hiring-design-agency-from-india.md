@@ -1,7 +1,7 @@
 ---
 title: "Hiring a Design Agency From India: A Guide for Global Brands"
 description: "Why brands in the US, UK, UAE, Australia and Europe hire design studios in India, how remote projects work, and how to choose the right partner."
-date: 2026-12-29
+date: 2026-11-30
 category: "Studio Notes"
 author: "Shudhanshu Jha"
 tags: ["hire design agency india", "offshore design agency", "remote branding agency", "design agency india for international clients"]

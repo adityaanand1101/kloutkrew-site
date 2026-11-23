@@ -1,7 +1,7 @@
 ---
 title: "How to Choose Brand Colours That Work Everywhere"
 description: "A practical method for choosing brand colours: category research, building a palette, testing contrast and checking print and screen."
-date: 2027-02-24
+date: 2026-12-10
 category: "Branding"
 author: "Shudhanshu Jha"
 tags: ["brand colours", "brand colour palette", "colour psychology", "brand identity"]

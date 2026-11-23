@@ -1,7 +1,7 @@
 ---
 title: "How to Structure a Brand Film Script"
 description: "A simple structure for brand film and ad scripts: hook, tension, turn, proof and close, with examples for 15, 30 and 60-second films."
-date: 2027-01-27
+date: 2026-12-04
 category: "AI Filmmaking"
 author: "Shudhanshu Jha"
 tags: ["brand film script", "ad film script", "video script structure", "brand storytelling"]

@@ -1,7 +1,7 @@
 ---
 title: "Video for Real Estate Marketing: Films That Sell Homes"
 description: "The video formats that help developers and agents sell property: walkthroughs, lifestyle films, construction updates, location films and ads."
-date: 2027-02-23
+date: 2026-12-10
 category: "AI Filmmaking"
 author: "Shudhanshu Jha"
 tags: ["real estate video marketing", "property walkthrough video", "real estate ad film", "real estate marketing agency delhi ncr"]

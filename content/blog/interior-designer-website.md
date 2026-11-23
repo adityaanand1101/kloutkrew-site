@@ -1,7 +1,7 @@
 ---
 title: "Website for Interior Designers: Pages, Portfolio and Leads"
 description: "What an interior designer's website needs to win clients: portfolio structure, project stories, services, process, testimonials and enquiry forms."
-date: 2027-01-25
+date: 2026-12-04
 category: "Web Development"
 author: "Shudhanshu Jha"
 tags: ["interior designer website", "interior design website design", "portfolio website", "website for designers"]

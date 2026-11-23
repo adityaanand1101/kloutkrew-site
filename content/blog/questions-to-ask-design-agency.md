@@ -1,7 +1,7 @@
 ---
 title: "15 Questions to Ask Before Hiring a Design Agency"
 description: "The questions to ask a branding, packaging or web design agency before signing: process, team, timeline, revisions, ownership, costs and support."
-date: 2027-01-20
+date: 2026-12-03
 category: "Studio Notes"
 author: "Shudhanshu Jha"
 tags: ["questions to ask design agency", "hiring a design agency", "agency selection", "design agency checklist"]

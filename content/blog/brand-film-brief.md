@@ -1,7 +1,7 @@
 ---
 title: "How to Write a Brand Film Brief"
 description: "A simple brand film brief template covering goal, audience, message, tone, channels, mandatory elements, budget and timeline."
-date: 2027-01-18
+date: 2026-12-03
 category: "AI Filmmaking"
 author: "Shudhanshu Jha"
 tags: ["brand film brief", "video brief template", "ad film brief", "creative brief"]

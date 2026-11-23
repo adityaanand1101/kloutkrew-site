@@ -1,7 +1,7 @@
 ---
 title: "Website Design for Doctors and Clinics: Trust and Bookings"
 description: "What a clinic or doctor's website needs: services, doctor profiles, appointment booking, location, reviews, speed and patient-friendly design."
-date: 2027-03-16
+date: 2026-12-15
 category: "Web Development"
 author: "Shudhanshu Jha"
 tags: ["website for doctors", "clinic website design", "healthcare website design", "medical website"]

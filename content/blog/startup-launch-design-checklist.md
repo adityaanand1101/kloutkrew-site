@@ -1,7 +1,7 @@
 ---
 title: "Startup Launch Design Checklist: Every Asset You Need"
 description: "A checklist of the design assets a startup needs for launch day: brand, website, product, social, sales, PR and packaging."
-date: 2027-01-29
+date: 2026-12-04
 category: "Studio Notes"
 author: "Shudhanshu Jha"
 tags: ["startup launch checklist", "launch design assets", "brand launch", "startup marketing"]

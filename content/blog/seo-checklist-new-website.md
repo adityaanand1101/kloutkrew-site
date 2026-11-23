@@ -1,7 +1,7 @@
 ---
 title: "SEO Checklist for a New Website (2026)"
 description: "Everything a new website needs to be found on Google and AI search: technical setup, on-page basics, local SEO, content and measurement."
-date: 2027-03-03
+date: 2026-12-11
 category: "Marketing"
 author: "Shudhanshu Jha"
 tags: ["seo checklist", "new website seo", "on page seo", "technical seo"]

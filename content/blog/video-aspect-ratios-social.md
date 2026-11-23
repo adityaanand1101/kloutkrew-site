@@ -1,7 +1,7 @@
 ---
 title: "Video Aspect Ratios for Social Media: The Cheat Sheet"
 description: "Which video sizes and aspect ratios to use for Instagram, YouTube, LinkedIn, Meta ads and websites, and how to plan one shoot for all of them."
-date: 2027-02-15
+date: 2026-12-09
 category: "AI Filmmaking"
 author: "Shudhanshu Jha"
 tags: ["video aspect ratio", "instagram video size", "reels size", "video formats"]

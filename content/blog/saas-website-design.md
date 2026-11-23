@@ -1,7 +1,7 @@
 ---
 title: "SaaS Website Design: Pages That Turn Visitors Into Trials"
 description: "How to design a SaaS marketing website: homepage messaging, product tours, pricing pages, social proof and sign-up flows."
-date: 2027-02-19
+date: 2026-12-09
 category: "Web Development"
 author: "Shudhanshu Jha"
 tags: ["saas website design", "saas landing page", "b2b website design", "startup website"]

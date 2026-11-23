@@ -1,7 +1,7 @@
 ---
 title: "Homepage Design: What to Put Above the Fold and Below"
 description: "A practical structure for a business homepage that explains what you do, builds trust and gets visitors to the next step."
-date: 2027-01-05
+date: 2026-12-01
 category: "Web Development"
 author: "Shudhanshu Jha"
 tags: ["homepage design", "website homepage", "above the fold", "website structure"]

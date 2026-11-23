@@ -1,7 +1,7 @@
 ---
 title: "Timeless Logo Design: Trends to Avoid and Principles to Keep"
 description: "How to design a logo that lasts: principles of timeless logos, short-lived trends to be careful with, and how to test longevity."
-date: 2027-03-25
+date: 2026-12-16
 category: "Branding"
 author: "Shudhanshu Jha"
 tags: ["timeless logo design", "logo design principles", "logo trends", "logo design"]

@@ -1,7 +1,7 @@
 ---
 title: "Brand Film Production in Delhi: Planning Your First Film"
 description: "How brands in Delhi NCR plan a brand film: goals, formats, budgets, AI or shoot, locations, timelines and working with a production partner."
-date: 2026-12-21
+date: 2026-11-27
 category: "AI Filmmaking"
 author: "Shudhanshu Jha"
 tags: ["brand film production house delhi", "brand film delhi", "corporate film delhi", "video production delhi ncr"]

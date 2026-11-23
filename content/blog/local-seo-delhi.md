@@ -1,7 +1,7 @@
 ---
 title: "Local SEO for Delhi Businesses: Get Found Near You"
 description: "How Delhi NCR businesses can rank in local and map searches: Google Business Profile, location pages, citations, reviews and local content."
-date: 2026-12-31
+date: 2026-11-30
 category: "Marketing"
 author: "Shudhanshu Jha"
 tags: ["local seo delhi", "local seo services delhi ncr", "google maps ranking", "near me seo"]

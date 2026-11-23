@@ -1,7 +1,7 @@
 ---
 title: "YouTube Shorts for Brands: A Practical Starter Guide"
 description: "How brands can use YouTube Shorts for reach and search: formats, hooks, repurposing Reels, titles and linking Shorts to longer content."
-date: 2027-03-23
+date: 2026-12-16
 category: "Marketing"
 author: "Shudhanshu Jha"
 tags: ["youtube shorts for brands", "youtube shorts marketing", "short form video", "video marketing"]

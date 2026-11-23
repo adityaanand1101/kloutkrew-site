@@ -1,7 +1,7 @@
 ---
 title: "Real Estate Marketing in Delhi NCR: A Practical Playbook"
 description: "How developers and brokers in Delhi NCR market projects: branding, project websites, film, Meta and Google ads, portals, channel partners and lead handling."
-date: 2026-12-23
+date: 2026-11-27
 category: "Marketing"
 author: "Shudhanshu Jha"
 tags: ["real estate marketing agency delhi ncr", "real estate marketing", "property marketing", "real estate digital marketing"]

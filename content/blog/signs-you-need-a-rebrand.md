@@ -1,7 +1,7 @@
 ---
 title: "8 Signs Your Business Needs a Rebrand"
 description: "How to tell whether your brand needs a refresh or a full rebrand, the warning signs to watch for, and what to do first."
-date: 2027-03-24
+date: 2026-12-16
 category: "Branding"
 author: "Shudhanshu Jha"
 tags: ["rebrand", "brand refresh", "rebranding", "brand strategy"]

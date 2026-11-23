@@ -1,7 +1,7 @@
 ---
 title: "UGC Brief Template: Get Better Creator Videos"
 description: "A ready-to-use UGC brief template for brands working with creators: product info, key messages, hooks, shot list, dos and don'ts and usage rights."
-date: 2027-03-09
+date: 2026-12-14
 category: "Marketing"
 author: "Shudhanshu Jha"
 tags: ["ugc brief template", "ugc creator brief", "user generated content", "ugc ads"]

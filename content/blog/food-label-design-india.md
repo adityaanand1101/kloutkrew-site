@@ -1,7 +1,7 @@
 ---
 title: "Food Label Design in India: Layout, Hierarchy and Common Mistakes"
 description: "How to design a food label that sells and stays legible: hierarchy, mandatory information layout, claims and mistakes Indian food brands make."
-date: 2027-01-06
+date: 2026-12-01
 category: "Packaging"
 author: "Shudhanshu Jha"
 tags: ["food label design", "food packaging design india", "label design", "fssai label"]

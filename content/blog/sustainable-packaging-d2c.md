@@ -1,7 +1,7 @@
 ---
 title: "Sustainable Packaging for D2C Brands: Practical Options"
 description: "Realistic ways for D2C brands to make packaging more sustainable: reduce, choose better materials, design for recycling and communicate honestly."
-date: 2027-03-01
+date: 2026-12-11
 category: "Packaging"
 author: "Shudhanshu Jha"
 tags: ["sustainable packaging design", "eco friendly packaging", "d2c packaging", "recyclable packaging"]

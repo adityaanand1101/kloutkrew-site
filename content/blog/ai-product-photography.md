@@ -1,7 +1,7 @@
 ---
 title: "AI Product Photography: What Works and What to Watch"
 description: "How brands use AI to create product images and lifestyle scenes, where it saves time and money, and how to keep the product accurate."
-date: 2026-12-24
+date: 2026-11-27
 category: "AI Filmmaking"
 author: "Shudhanshu Jha"
 tags: ["ai product photography", "ai product images", "product photography", "ecommerce images"]

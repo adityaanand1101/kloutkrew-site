@@ -1,7 +1,7 @@
 ---
 title: "Shopify vs WooCommerce for Indian D2C Brands"
 description: "An honest comparison of Shopify and WooCommerce for D2C brands: cost, ease, payments, apps, speed, SEO and when each makes sense."
-date: 2027-03-04
+date: 2026-12-11
 category: "Web Development"
 author: "Shudhanshu Jha"
 tags: ["shopify vs woocommerce", "best ecommerce platform india", "shopify india", "woocommerce"]

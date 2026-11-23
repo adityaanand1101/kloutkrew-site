@@ -1,7 +1,7 @@
 ---
 title: "AI Ad Film Cost in India (2026): What You'll Actually Pay"
 description: "What AI ad films cost in India compared with traditional production, what drives the price, and how to budget for a launch or campaign."
-date: 2026-11-27
+date: 2026-11-23
 category: "AI Filmmaking"
 author: "Shudhanshu Jha"
 tags: ["ai ad film cost in india", "ai ad film", "ad film cost india", "ai video production cost"]

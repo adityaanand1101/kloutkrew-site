@@ -1,7 +1,7 @@
 ---
 title: "Restaurant Website Design: What Diners Look For"
 description: "What a restaurant or café website needs: menu, hours, location, booking, ordering, photos, speed and local SEO basics."
-date: 2027-02-11
+date: 2026-12-08
 category: "Web Development"
 author: "Shudhanshu Jha"
 tags: ["restaurant website design", "cafe website", "restaurant website", "hospitality web design"]

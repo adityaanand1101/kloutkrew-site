@@ -1,7 +1,7 @@
 ---
 title: "How to Give Design Feedback That Gets Better Results"
 description: "How clients and teams can give clear, useful feedback on logos, packaging, websites and films, with examples of helpful and unhelpful comments."
-date: 2026-12-10
+date: 2026-11-25
 category: "Studio Notes"
 author: "Shudhanshu Jha"
 tags: ["design feedback", "how to give design feedback", "working with designers", "creative review"]

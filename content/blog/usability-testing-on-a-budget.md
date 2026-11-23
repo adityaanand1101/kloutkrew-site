@@ -1,7 +1,7 @@
 ---
 title: "Usability Testing on a Budget: A Five-User Method"
 description: "How small teams can run quick usability tests with five users, simple tasks and free tools to find the biggest problems before launch."
-date: 2027-01-19
+date: 2026-12-03
 category: "UI/UX"
 author: "Shudhanshu Jha"
 tags: ["usability testing", "user testing", "ux research", "startup ux"]

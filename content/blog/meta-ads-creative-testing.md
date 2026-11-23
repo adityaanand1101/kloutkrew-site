@@ -1,7 +1,7 @@
 ---
 title: "Meta Ads Creative Testing: A Simple System"
 description: "How D2C brands test ad creatives on Facebook and Instagram: what to test, how many variations, budgets, reading results and scaling winners."
-date: 2027-02-10
+date: 2026-12-08
 category: "Marketing"
 author: "Shudhanshu Jha"
 tags: ["meta ads creative testing", "facebook ads creative", "instagram ads", "performance creative"]

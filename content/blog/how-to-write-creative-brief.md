@@ -1,7 +1,7 @@
 ---
 title: "How to Write a Creative Brief (Template and Examples)"
 description: "A one-page creative brief template for design, campaign and content projects, with examples of strong and weak briefs."
-date: 2026-12-30
+date: 2026-11-30
 category: "Studio Notes"
 author: "Shudhanshu Jha"
 tags: ["creative brief template", "how to write a creative brief", "design brief", "marketing brief"]

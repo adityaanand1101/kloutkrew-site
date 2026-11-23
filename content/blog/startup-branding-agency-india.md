@@ -1,7 +1,7 @@
 ---
 title: "Startup Branding in India: A Checklist for Founders"
 description: "A founder's checklist for startup branding in India: what to do before launch, what can wait, and how to work with a startup branding agency."
-date: 2026-12-09
+date: 2026-11-25
 category: "Branding"
 author: "Shudhanshu Jha"
 tags: ["startup branding agency india", "startup branding", "branding for startups", "brand checklist"]

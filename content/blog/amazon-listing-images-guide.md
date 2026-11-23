@@ -1,7 +1,7 @@
 ---
 title: "Amazon and Flipkart Listing Images: A Design Guide for Brands"
 description: "Which product listing images to create for Amazon, Flipkart and other marketplaces, and how to design them so shoppers understand and choose your product."
-date: 2026-12-02
+date: 2026-11-24
 category: "Packaging"
 author: "Shudhanshu Jha"
 tags: ["amazon listing images", "product listing images", "flipkart product images", "ecommerce design"]

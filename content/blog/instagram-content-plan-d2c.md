@@ -1,7 +1,7 @@
 ---
 title: "An Instagram Content Plan for D2C Brands"
 description: "A practical weekly Instagram content plan for D2C brands: content pillars, formats, posting rhythm, templates and what to measure."
-date: 2027-01-22
+date: 2026-12-03
 category: "Marketing"
 author: "Shudhanshu Jha"
 tags: ["instagram content plan", "instagram marketing d2c", "social media plan", "content pillars"]

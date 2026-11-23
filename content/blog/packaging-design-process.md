@@ -1,7 +1,7 @@
 ---
 title: "The Packaging Design Process, Step by Step"
 description: "How a professional packaging design project runs, from brief and shelf audit to concepts, artwork, print files and launch assets."
-date: 2027-01-15
+date: 2026-12-02
 category: "Packaging"
 author: "Shudhanshu Jha"
 tags: ["packaging design process", "packaging design steps", "packaging design", "product packaging"]

@@ -1,7 +1,7 @@
 ---
 title: "WhatsApp Marketing for Indian Brands: What Works"
 description: "How Indian brands use WhatsApp for marketing and sales: click-to-WhatsApp buttons, catalogues, broadcasts, automation and staying respectful."
-date: 2027-03-18
+date: 2026-12-15
 category: "Marketing"
 author: "Shudhanshu Jha"
 tags: ["whatsapp marketing india", "whatsapp business", "click to whatsapp ads", "conversational marketing"]

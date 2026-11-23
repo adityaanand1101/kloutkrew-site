@@ -1,7 +1,7 @@
 ---
 title: "How to Rebrand Without Losing Customers"
 description: "A step-by-step plan for rolling out a rebrand: what to keep, how to announce it, updating every touchpoint and protecting search rankings."
-date: 2027-03-17
+date: 2026-12-15
 category: "Branding"
 author: "Shudhanshu Jha"
 tags: ["rebrand rollout", "rebranding strategy", "brand launch", "rebrand seo"]

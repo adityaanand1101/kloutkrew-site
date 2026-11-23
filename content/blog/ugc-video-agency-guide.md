@@ -1,7 +1,7 @@
 ---
 title: "Working With a UGC Video Agency: What to Expect"
 description: "What a UGC video agency does, how it sources creators, typical deliverables, how to evaluate one and how UGC fits into your ad strategy."
-date: 2026-12-03
+date: 2026-11-24
 category: "Marketing"
 author: "Shudhanshu Jha"
 tags: ["ugc video agency", "ugc agency india", "ugc video agency delhi", "ugc ads"]

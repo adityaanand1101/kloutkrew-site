@@ -1,7 +1,7 @@
 ---
 title: "Mobile-First Design: Why It Matters and How to Do It"
 description: "What mobile-first design means, why it matters for Indian and global audiences, and practical rules for layouts, navigation, forms and speed."
-date: 2027-01-08
+date: 2026-12-01
 category: "UI/UX"
 author: "Shudhanshu Jha"
 tags: ["mobile first design", "responsive design", "mobile website design", "ux design"]

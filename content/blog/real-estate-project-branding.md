@@ -1,7 +1,7 @@
 ---
 title: "Branding a Real Estate Project: Name, Identity and Launch"
 description: "How developers brand a residential or commercial project: naming, identity, brochures, site hoardings, project website, film and launch campaigns."
-date: 2027-03-12
+date: 2026-12-14
 category: "Branding"
 author: "Shudhanshu Jha"
 tags: ["real estate branding", "real estate project branding", "property branding", "developer branding"]

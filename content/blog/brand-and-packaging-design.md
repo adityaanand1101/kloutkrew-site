@@ -1,7 +1,7 @@
 ---
 title: "Why Brand and Packaging Should Be Designed Together"
 description: "The case for designing your brand identity and packaging with one team: consistency, speed, cost and a stronger launch."
-date: 2026-12-01
+date: 2026-11-24
 category: "Packaging"
 author: "Shudhanshu Jha"
 tags: ["brand and packaging design agency", "brand identity and packaging", "packaging design", "branding agency"]

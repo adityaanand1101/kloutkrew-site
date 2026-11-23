@@ -1,7 +1,7 @@
 ---
 title: "Brand Voice: How to Define How Your Brand Sounds"
 description: "How to define a brand tone of voice, with a simple framework, examples and a one-page guide your team can use for copy and social."
-date: 2027-02-09
+date: 2026-12-08
 category: "Branding"
 author: "Shudhanshu Jha"
 tags: ["brand voice", "tone of voice", "brand copywriting", "brand guidelines"]

@@ -1,7 +1,7 @@
 ---
 title: "Website Redesign Checklist: Don't Lose Your Rankings"
 description: "A practical checklist for redesigning a website without losing Google rankings, traffic or leads: audit, plan, redirects, launch and after-launch checks."
-date: 2027-03-19
+date: 2026-12-15
 category: "Web Development"
 author: "Shudhanshu Jha"
 tags: ["website redesign checklist", "website redesign seo", "site migration", "website relaunch"]

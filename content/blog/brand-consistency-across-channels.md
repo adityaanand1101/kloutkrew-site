@@ -1,7 +1,7 @@
 ---
 title: "Brand Consistency Across Channels: A Practical System"
 description: "How to keep your brand consistent across website, social, packaging, ads, marketplaces and sales materials as your team and channels grow."
-date: 2027-01-01
+date: 2026-11-30
 category: "Branding"
 author: "Shudhanshu Jha"
 tags: ["brand consistency", "consistent branding", "brand management", "brand guidelines"]

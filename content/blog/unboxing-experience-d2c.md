@@ -1,7 +1,7 @@
 ---
 title: "Designing an Unboxing Experience for D2C Brands"
 description: "How D2C brands design memorable unboxing: mailer boxes, layering, inserts, notes and details that customers film and share."
-date: 2027-03-05
+date: 2026-12-11
 category: "Packaging"
 author: "Shudhanshu Jha"
 tags: ["unboxing experience", "mailer box design", "d2c packaging", "custom packaging"]

@@ -1,7 +1,7 @@
 ---
 title: "How to Brief a Web Designer (So You Get the Site You Want)"
 description: "What to include in a website brief: goals, audience, pages, features, content, examples and budget, with a simple template."
-date: 2027-01-14
+date: 2026-12-02
 category: "Web Development"
 author: "Shudhanshu Jha"
 tags: ["website brief", "how to brief a web designer", "website design brief template", "website planning"]

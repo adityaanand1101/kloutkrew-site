@@ -1,7 +1,7 @@
 ---
 title: "UX Writing and Microcopy: Small Words, Big Impact"
 description: "How to write buttons, labels, error messages, empty states and confirmations that make websites and apps easier to use."
-date: 2027-02-08
+date: 2026-12-08
 category: "UI/UX"
 author: "Shudhanshu Jha"
 tags: ["ux writing", "microcopy", "button copy", "error messages"]
