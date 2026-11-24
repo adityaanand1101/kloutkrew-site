@@ -292,6 +292,23 @@ function seoMetaPass(html) {
   return add ? html.replace('</head>', add + '</head>') : html;
 }
 
+// Title attributes for images that don't have one (derived from their alt text).
+function imageTitlePass(html) {
+  return html.replace(/<img\b[^>]*>/gi, tag => {
+    if (/\btitle\s*=/i.test(tag)) return tag;
+    const alt = (tag.match(/\balt="([^"]*)"/i) || [])[1] || '';
+    let title = alt.trim();
+    if (!title) {
+      const src = (tag.match(/\bsrc="([^"]*)"/i) || [])[1] || '';
+      title = src.split(/[/?]/).pop().replace(/\.[a-z0-9]+$/i, '').replace(/%20/g, ' ')
+        .replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim() || SITE_NAME;
+    }
+    title = title.replace(/"/g, '&quot;').replace(/\s+/g, ' ').trim();
+    if (title.length > 120) title = title.slice(0, 117) + '...';
+    return tag.slice(0, -1).replace(/\/$/, '') + ` title="${title}"/>`;
+  });
+}
+
 // Branded typographic cover for posts without an image.
 const ACCENTS = ['#ee1515', '#ff691e', '#fdbc53', '#ab9bff', '#ff767a'];
 function genCover(post, big = false) {
@@ -969,6 +986,7 @@ async function main() {
     if (socialHTML && html.includes(MAIL) && !html.includes('kk-social')) { const i = html.lastIndexOf(MAIL) + MAIL.length; html = html.slice(0, i) + socialHTML + html.slice(i); changed = true; }
     if (profiles.length && html.includes('"@type":"ProfessionalService","name"') && !html.includes('"sameAs"')) { html = html.replace('"knowsAbout":', `"sameAs":${JSON.stringify(profiles)},"knowsAbout":`); changed = true; }
     { const h2 = seoMetaPass(html); if (h2 !== html) { html = h2; changed = true; } }
+    { const h2 = imageTitlePass(html); if (h2 !== html) { html = h2; changed = true; } }
     if (changed) await fsp.writeFile(f, html);
   }
 
