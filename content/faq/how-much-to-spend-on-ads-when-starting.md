@@ -1,6 +1,6 @@
 ---
 title: "How Much to Spend on Meta Ads When Starting | KloutKrew"
-metaDescription: "Your starting ad budget depends on your cost per result. Meta needs about 50 results a week per ad set to stabilise. How to work out a realistic test budget."
+metaDescription: "Your ad budget depends on your cost per result. Meta needs about 50 results a week per ad set to stabilise. How to work out a realistic test budget."
 question: "What budget do I need for Meta or Google ads when I'm starting?"
 answer: "Work backwards from your cost per result. Meta's delivery system usually needs about 50 optimisation events a week per ad set to leave its learning phase, so a test budget should be able to buy roughly that many results, or you should optimise for an earlier, cheaper step until it can."
 service: performance-marketing

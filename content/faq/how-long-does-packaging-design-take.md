@@ -1,6 +1,6 @@
 ---
 title: "How Long Does Packaging Design Take? | KloutKrew"
-metaDescription: "Most packaging design projects take 4 to 6 weeks to print-ready files, with concepts in 7 days. A stage-by-stage timeline and how to avoid print delays."
+metaDescription: "Most packaging projects take 4 to 6 weeks to print-ready files, with concepts in 7 days. A stage-by-stage timeline and how to avoid print delays."
 question: "How long does packaging design take?"
 answer: "Most packaging design projects take 4 to 6 weeks from kickoff to print-ready files, and you see the first concepts within 7 days. A large range with many variants, or a new structural format, can take longer. Printing and production add their own lead time on top."
 service: packaging-design-agency

@@ -1,7 +1,7 @@
 ---
 title: "How to Choose a Packaging Design Agency in India (2026 Guide)"
 seoTitle: "How to Choose a Packaging Design Agency in India"
-description: "What a packaging design agency does, what to look for, the questions to ask and the red flags to avoid, for D2C, FMCG, food and beauty brands in India."
+description: "What a packaging design agency does, what to look for, the questions to ask and the red flags to avoid for D2C, FMCG and food brands in India."
 date: 2026-11-20
 category: "Branding"
 author: "Shudhanshu Jha"

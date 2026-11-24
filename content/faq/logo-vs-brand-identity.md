@@ -1,6 +1,6 @@
 ---
 title: "Logo vs Brand Identity: What's the Difference? | KloutKrew"
-metaDescription: "A logo is one mark; a brand identity is the whole system around it. What each includes, when a logo alone is enough and when you need the full identity."
+metaDescription: "A logo is one mark; a brand identity is the whole system around it. What each includes, when a logo is enough and when you need the full identity."
 question: "What's the difference between a logo and a brand identity?"
 answer: "A logo is a single mark that identifies your business. A brand identity is the whole visual system around it: colours, typography, imagery, layouts and rules, so your website, packaging, social posts and pitch deck all look like they come from the same company."
 service: branding-agency

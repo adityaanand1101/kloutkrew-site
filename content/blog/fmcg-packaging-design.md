@@ -1,7 +1,7 @@
 ---
 title: "FMCG Packaging Design: How to Win on Shelf and Online"
 seoTitle: "FMCG Packaging Design: How to Win on Shelf and Online"
-description: "What FMCG packaging design agencies focus on: shelf impact, range systems, cost-efficient printing and designs that work in modern trade, kiranas and apps."
+description: "What FMCG packaging design agencies focus on: shelf impact, range systems, cost-efficient printing and designs that work in kiranas and apps."
 date: 2026-11-21
 category: "Packaging"
 author: "Shudhanshu Jha"

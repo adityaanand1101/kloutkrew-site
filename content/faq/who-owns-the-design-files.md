@@ -1,6 +1,6 @@
 ---
 title: "Who Owns the Logo and Design Files? | KloutKrew"
-metaDescription: "With KloutKrew you own the final logo, designs and source files once the project is paid. What 'ownership' should include and what to check in any contract."
+metaDescription: "With KloutKrew you own the final logo, designs and source files once the project is paid. What ownership includes and what to check in a contract."
 question: "Who owns the logo and design files after a design project?"
 answer: "It depends on the contract, so check it. With KloutKrew, once the project is paid you own the final logo and designs and receive all the source files. Fonts, stock images and some software assets are licensed separately and stay under their own licence terms."
 service: branding-agency

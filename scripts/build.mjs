@@ -285,6 +285,9 @@ function seoMetaPass(html) {
   let add = '';
   if (!/<meta name="robots"/i.test(html)) add += '<meta name="robots" content="index, follow"/>';
   if (!/<meta name="publisher"/i.test(html)) add += `<meta name="publisher" content="${SITE_NAME}"/>`;
+  const desc = (html.match(/<meta name="description" content="([^"]*)"/i) || [])[1];
+  if (desc && !/<meta property="og:description"/i.test(html)) add += `<meta property="og:description" content="${desc}"/>`;
+  if (desc && !/<meta name="twitter:description"/i.test(html)) add += `<meta name="twitter:description" content="${desc}"/>`;
   if (!/"publisher"\s*:/.test(html)) add += PUBLISHER_SCHEMA;
   return add ? html.replace('</head>', add + '</head>') : html;
 }
@@ -358,7 +361,7 @@ ${CTA}
 </main>`;
   const head = headHTML({
     title: `Branding, Web & Marketing Blog | ${SITE_NAME}`,
-    description: 'Guides on branding, packaging, websites, AI brand films and marketing from KloutKrew Studio, an independent creative studio working with brands worldwide.',
+    description: 'Guides on branding, packaging, websites, AI films and marketing from KloutKrew Studio, an independent creative studio in New Delhi.',
     url: `${SITE}/blog`,
     image: featured?.cover?.og ? SITE + featured.cover.og : DEFAULT_OG,
     jsonLd: {
@@ -432,7 +435,7 @@ function relatedServices(post) {
 // Curated topic hubs turn the long tail of post tags into a handful of useful, indexable pages.
 const TOPIC_HUBS = [
   { slug: 'brand-identity', name: 'Brand identity', service: '/branding-agency',
-    description: 'Logos, colour, type and visual systems: how to build a brand identity that stays recognisable across your website, packaging and every customer touchpoint.',
+    description: 'Logos, colour, type and visual systems: how to build a brand identity that stays recognisable across your website, packaging and customer touchpoints.',
     posts: ['brand-identity-process', 'brand-identity-stand-out', 'logo-design-cost-india', 'branding-cost-startup-india', 'graphics-design-trends-2026'] },
   { slug: 'brand-strategy', name: 'Brand strategy', service: '/branding-agency',
     description: 'Positioning, brand architecture and partner choices: how to decide what your brand stands for and how to organise products as a small company grows.',
@@ -441,7 +444,7 @@ const TOPIC_HUBS = [
     description: 'Packaging design for food, FMCG and D2C products: structure, artwork, labels and print finishes, with guidance on what works on shelf and online.',
     posts: ['fmcg-packaging-design', 'food-packaging-design', 'packaging-design-agency-india'] },
   { slug: 'website-design', name: 'Website design', service: '/website-design-agency',
-    description: 'Website design, platforms and UX for brand sites, architecture portfolios and property projects: cost, speed, accessibility and what to look for in a partner.',
+    description: 'Website design, platforms and UX for brand sites, architecture portfolios and property projects: cost, speed and what to look for in a partner.',
     posts: ['architect-website-cost-india', 'real-estate-website-design', 'ui-ux-design-best-practices', 'webflow-agency-india-guide', 'webflow-vs-framer-vs-wordpress', 'website-for-architects', 'indian-d2c-website-speed-study-2026'] },
   { slug: 'cost-guides', name: 'Cost guides', service: '/brand-budget-calculator',
     description: 'Real 2026 price ranges for branding, websites, packaging and films in India, plus the factors that move each number and where you can safely save.',
@@ -450,13 +453,13 @@ const TOPIC_HUBS = [
     description: 'Content planning, hooks and production habits that keep a brand showing up: calendars, short-form video, UGC and how to measure what actually works.',
     posts: ['content-calendar-guide', 'future-of-content-creation-ai', 'power-of-ugc-for-brands', 'scroll-stopping-content-guide'] },
   { slug: 'social-media', name: 'Social media', service: '/social-media-marketing',
-    description: 'Short-form content, calendars and distribution for brands building an audience: what to post, how often, and how to turn attention into real enquiries.',
+    description: 'Short-form content, calendars and distribution for brands building an audience: what to post, how often and how to turn attention into enquiries.',
     posts: ['content-calendar-guide', 'digital-marketing-b2b-brands', 'power-of-ugc-for-brands', 'scroll-stopping-content-guide'] },
   { slug: 'seo-discovery', name: 'SEO & Discovery', service: '/seo-services',
-    description: 'How people find your brand before they visit: search, local listings, Google Business Profile and AI assistants, with practical steps to improve visibility.',
+    description: 'How people find your brand before they visit: search, local listings, Google Business Profile and AI assistants, with steps to improve visibility.',
     posts: ['ai-search-visibility-geo', 'google-business-profile-guide', 'digital-marketing-b2b-brands'] },
   { slug: 'ai-films', name: 'AI Films & Video', service: '/ai-brand-films',
-    description: 'How AI is changing brand films and video: real costs, what the workflow looks like, and which parts still need a human director, editor and storyteller.',
+    description: 'How AI is changing brand films and video: real costs, the workflow, and which parts still need a human director, editor and storyteller.',
     posts: ['ai-ad-film-cost-india', 'how-ai-is-changing-brand-films', 'future-of-content-creation-ai'] },
   { slug: 'd2c-brands', name: 'D2C brands', service: '/shopify-store-design',
     description: 'Branding, packaging and store decisions for direct-to-consumer brands in India, from positioning and labels to site speed and conversion.',

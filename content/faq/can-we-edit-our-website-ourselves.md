@@ -1,6 +1,6 @@
 ---
 title: "Can We Edit Our Website Ourselves After Launch? | KloutKrew"
-metaDescription: "Yes. A well-built site lets your team edit text, images, blog posts and products without code. What you can change yourself and when you need a developer."
+metaDescription: "Yes. A well-built site lets your team edit text, images, posts and products without code. What you can change yourself and when you need a developer."
 question: "Will we be able to edit our website ourselves?"
 answer: "Yes, if it's built that way. A well-built Webflow, Shopify, Framer or WordPress site lets your team change text, images, blog posts and products without touching code. Bigger changes, such as new page layouts or features, are still easier with a designer or developer."
 service: website-design-agency

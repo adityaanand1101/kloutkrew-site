@@ -1,7 +1,7 @@
 ---
 title: "Website for Architects: What It Needs to Win Clients"
 seoTitle: "Website for Architects: What It Needs to Win Clients"
-description: "The pages, features and technical basics every architecture firm's website needs in 2026, from project pages to speed, SEO and enquiries, with a checklist."
+description: "The pages, features and technical basics every architecture website needs in 2026, from project pages to speed, SEO and enquiries, with a checklist."
 date: 2026-11-19
 category: "Web Development"
 author: "Shudhanshu Jha"

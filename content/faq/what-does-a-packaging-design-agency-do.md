@@ -1,6 +1,6 @@
 ---
 title: "What Does a Packaging Design Agency Do? | KloutKrew"
-metaDescription: "A packaging design agency designs your product's structure, labels and graphics so it sells on shelf and online. What's included and how to choose one."
+metaDescription: "A packaging design agency creates your product structure, labels and graphics so it sells on shelf and online. What is included and how to choose one."
 question: "What does a packaging design agency do?"
 answer: "A packaging design agency designs the outside of your product: the structure, labels, graphics and copy layout. The goal is a pack that stands out on a shelf or a marketplace listing, tells buyers what they need to know, and can be printed accurately at the right cost."
 service: packaging-design-agency

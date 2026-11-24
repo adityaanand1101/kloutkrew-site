@@ -1,7 +1,7 @@
 ---
 title: "UI/UX Design: What Makes a Great User Experience"
 seoTitle: "UI/UX Design: What Makes a Great User Experience"
-description: "Great UX feels invisible. Learn the principles — usability heuristics, accessibility, micro-interactions — that separate good products from great ones."
+description: "Great UX feels invisible. Learn the usability, accessibility and micro-interaction principles that separate good products from great ones."
 date: 2026-06-08
 category: "UI/UX"
 author: "Shudhanshu Jha"

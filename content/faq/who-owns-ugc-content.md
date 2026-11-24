@@ -1,6 +1,6 @@
 ---
 title: "Who Owns UGC Content? Usage Rights Explained | KloutKrew"
-metaDescription: "Creators usually keep copyright and license UGC to brands. What usage rights cover, organic vs paid use, durations, whitelisting and what to put in writing."
+metaDescription: "Creators usually keep copyright and license UGC to brands. What usage rights cover, organic vs paid use, durations and what to put in writing."
 question: "Who owns UGC content, and how do usage rights work?"
 answer: "Usually the creator keeps the copyright and licenses the video to your brand for agreed uses: where it can appear (organic, paid ads, website), for how long, and in which countries. Unless rights are agreed in writing before the shoot, you may not be allowed to run a creator's video as an ad."
 service: content-ugc-production
