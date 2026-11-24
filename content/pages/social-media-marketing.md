@@ -8,7 +8,7 @@ metaDescription: "Social media content, UGC, performance ads and SEO for D2C bra
 serviceName: Social media and digital marketing
 serviceTypes: [Social media management, Content creation, UGC production, Meta Ads, Google Ads, SEO]
 areaServed: [Worldwide, India, Delhi NCR]
-updated: 2026-11-20
+updated: 2026-11-24
 faqs:
   - q: 'What''s included in social media management?'
     a: 'A content plan, designed posts and Reels in your brand''s look, captions, scheduling and a monthly report on what worked. We can also manage community replies if you need it.'
@@ -20,6 +20,10 @@ faqs:
     a: 'Yes. We handle on-page SEO, technical fixes, content planning and local SEO, including Google Business Profile setup.'
   - q: 'Is there a minimum commitment?'
     a: 'Social and marketing work is usually planned month by month. Tell us your goals and budget and we''ll suggest the right scope.'
+  - q: 'How many posts a month do you make?'
+    a: 'It depends on the plan and platforms. Most brands start with a few Reels and posts a week, then adjust based on what performs.'
+  - q: 'Do you reply to comments and DMs?'
+    a: 'Yes, within agreed hours and guidelines, and we pass sales or support questions to your team.'
 hero: owg-remaster
 work: [owg-campaign, magnific-creation, drink-different]
 facts:
@@ -48,6 +52,31 @@ When the people making the creative also see the ad results, the next round of c
 2. **Produce.** Posts, Reels and ad creatives made in batches, approved by you before anything goes live.
 3. **Publish and promote.** Scheduling, community replies if needed, and paid campaigns.
 4. **Report and improve.** A monthly report on reach, engagement and sales, with the next month's plan.
+
+<!-- expanded -->
+## What a monthly plan looks like
+
+- **Strategy:** content pillars, formats and posting rhythm for each platform, based on your audience and goals
+- **A monthly calendar** you approve before anything is made
+- **Production:** Reels, carousels, static posts and stories, designed to your brand
+- **Community management:** replies to comments and DMs, within agreed hours and guidelines
+- **Reporting:** what grew, what didn't, and what we'll change next month
+
+## Which platforms
+
+Most Indian consumer brands focus on Instagram first, with YouTube Shorts for reach and LinkedIn for founder-led and B2B brands. We'd rather do two platforms well than five badly, and we'll recommend where to start based on where your customers actually spend time.
+
+## Organic and paid, together
+
+Organic content builds trust and tells you which ideas resonate; paid ads put the best of it in front of new people. When the same team does both, the posts that perform organically become ads, and ad results shape the next month's content. See [performance marketing](/performance-marketing).
+
+## What we measure
+
+Follower counts matter less than whether social is bringing customers. We track reach, saves and shares (signals people found it useful), profile visits, link clicks, enquiries and sales from social, and we report them monthly in plain language.
+
+## What we need from you
+
+Product samples or access for shoots, quick approvals on the monthly calendar, and someone who can answer customer questions we can't. Read [how to build a content calendar you'll actually follow](/blog/content-calendar-guide).
 
 ## Specialist services
 

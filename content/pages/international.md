@@ -8,7 +8,7 @@ metaDescription: "Remote branding, packaging and website design for startups and
 serviceName: Remote branding, packaging and website design
 areaServed: [Worldwide, United States, United Kingdom, United Arab Emirates, Australia, Europe]
 serviceTypes: [Brand identity design, Logo design, Packaging design, Webflow website design, Shopify website design, AI brand films]
-updated: 2026-11-20
+updated: 2026-11-24
 faqs:
   - q: 'Can a studio in India work with a brand in the US, UK or UAE?'
     a: 'Yes. Our whole process runs remotely, with video calls, shared design files and written updates at each milestone. Clients don''t need to be in the same city, or the same time zone.'
@@ -22,6 +22,10 @@ faqs:
     a: 'Yes. We design to your printer''s dieline and hand over print-ready files, so packaging can be printed wherever you manufacture.'
   - q: 'How do I start?'
     a: 'Tell us about your brand on the [contact page](/contact-us). We reply within 24 hours with questions, ideas and a clear quote.'
+  - q: 'Do you sign NDAs?'
+    a: 'Yes. We''re happy to sign your NDA before you share product or launch details.'
+  - q: 'Can you design in languages other than English?'
+    a: 'Yes. We design layouts for other languages and scripts, working with your translator or native speakers to check the final text.'
 hero: magnific-final
 work: [drink-different, owg-campaign, on-demand-experts]
 ---
@@ -46,6 +50,26 @@ KloutKrew Studio is an independent creative studio based in New Delhi, working w
 ## Why brands work with us from abroad
 
 You get one design team that handles brand, packaging and website together, instead of juggling three freelancers. Our time zone overlaps with yours for calls, and work keeps moving while you're offline.
+
+<!-- expanded -->
+## What clients abroad usually ask us for
+
+- **Brand identity and packaging** for products made or sold in India and abroad
+- **Websites and Shopify stores** built for international customers, currencies and shipping
+- **AI brand films and social content** produced faster and at a lower cost than a local shoot
+- **Ongoing design support** across time zones, as an extension of your in-house team
+
+## Payments and contracts
+
+We work on a clear written scope with milestone payments, and invoice in INR or your currency through standard international transfer methods. Every project ends with you owning the final files and source files.
+
+## Communication that works across time zones
+
+A short weekly call at a time that suits you, written updates at every milestone, and shared Figma files so you can comment whenever you're online. Work keeps moving while you sleep, so feedback in your evening often means new designs by your morning.
+
+## Before you hire any studio abroad
+
+Ask to see work for brands in your market, check who you'll speak to day to day, confirm what you receive and own at the end, and agree payment milestones. Read [hiring a design studio in India from the US, UK or UAE](/faq/hiring-a-design-studio-in-india-from-abroad).
 
 ## Brands we've worked with
 

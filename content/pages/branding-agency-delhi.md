@@ -8,7 +8,7 @@ metaDescription: "Branding, logo, packaging and website design agency in New Del
 serviceName: Branding and packaging design in Delhi NCR
 areaServed: [New Delhi, Delhi NCR, Gurugram, Noida, Faridabad, Ghaziabad]
 serviceTypes: [Brand identity design, Logo design, Packaging design, Website design, Social media creatives, AI brand films]
-updated: 2026-11-20
+updated: 2026-11-24
 faqs:
   - q: 'Do you work with brands outside Delhi?'
     a: 'Yes. We''re based in New Delhi and meet Delhi NCR clients in person when it helps, but most of our projects run remotely, with clients across India and abroad. See [how we work with international brands](/international).'
@@ -20,6 +20,8 @@ faqs:
     a: 'Yes. We design and build websites on Webflow and Shopify, so your brand, packaging and website are made by one team and look like one brand.'
   - q: 'How do I get a quote?'
     a: 'Tell us about your brand on the [contact page](/contact-us). We reply within 24 hours with questions, ideas and a clear quote.'
+  - q: 'Can we meet in person?'
+    a: 'Yes. We can meet in Delhi, Gurugram or Noida for a kickoff workshop or a product shoot; most of the project then runs online.'
 hero: waku-waku
 work: [push-past, plenova, magnific-final]
 ---
@@ -44,6 +46,26 @@ Working with a studio in your own city means you can meet in person for the kick
 2. **First concepts in 7 days.** You get two or three directions to react to, not a single take-it-or-leave-it option.
 3. **Refine and build.** We develop the chosen direction across logo, packaging, website or social.
 4. **Launch.** Most projects are live in 4 to 6 weeks, with every source file handed over.
+
+<!-- expanded -->
+## Industries we work with in Delhi NCR
+
+- **D2C and consumer brands** across food, beauty, personal care and fashion
+- **Startups** in Gurugram, Noida and Delhi preparing for launch or fundraising
+- **Real estate, architecture and interior studios** that need portfolio-led websites
+- **Professional services and B2B companies** moving away from template websites
+
+## In person when it helps
+
+Being in New Delhi means we can meet for a kickoff workshop, visit your factory or store, run product shoots across Delhi, Gurugram and Noida, and check packaging proofs at your printer. Most of the project still runs remotely, which keeps it quick.
+
+## How to choose a branding agency in Delhi
+
+Look at work for brands like yours, ask who will actually work on your project, ask to see concepts shown on real applications, and make sure you'll own every file at the end. Read our guides to [choosing a branding agency in Delhi](/blog/choose-branding-agency-delhi) and [what a creative agency in Delhi does](/blog/creative-agency-delhi-guide).
+
+## Local search
+
+If you serve customers in Delhi NCR, your Google Business Profile matters as much as your website. We can set it up and keep it consistent with your site; see [local SEO for Delhi businesses](/blog/local-seo-delhi).
 
 ## Brands we've worked with
 

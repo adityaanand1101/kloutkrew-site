@@ -8,7 +8,7 @@ metaDescription: "Brand identity and logo design for startups and D2C brands: st
 serviceName: Brand identity and logo design
 serviceTypes: [Brand strategy, Logo design, Visual identity, Brand guidelines, Brand naming]
 areaServed: [Worldwide, India, Delhi NCR]
-updated: 2026-11-20
+updated: 2026-11-24
 faqs:
   - q: 'What is a brand identity?'
     a: 'A brand identity is the set of visual and verbal tools that make a business recognisable, including its logo, colours, typefaces, imagery style, tone of voice and the rules for using them together.'
@@ -45,6 +45,35 @@ KloutKrew Studio is an independent creative studio based in New Delhi. We design
 ## Who it's for
 
 Founders launching a new brand, D2C brands moving from marketplace listings to their own website, and growing companies whose old logo no longer fits. We work with clients across India and remotely with brands in the US, UK, UAE, Australia and Europe.
+
+<!-- expanded -->
+## Signs you need a brand identity, not just a logo
+
+- **Every new asset looks different.** Your website, Instagram, packaging and pitch deck were each designed by someone else, so customers see four companies instead of one.
+- **You're about to spend on growth.** Ads, packaging runs, a new website or fundraising all multiply whatever brand you have, good or bad. It's cheaper to fix the brand first.
+- **You've moved upmarket.** A logo made for a side project rarely works for a brand charging premium prices or selling abroad.
+- **Your team can't brief anyone.** Without a guide, every freelancer asks the same questions and you approve work on gut feel.
+
+## What makes a brand identity work
+
+A strong identity is **distinctive** (it doesn't look like the category leader with the colours changed), **flexible** (it works on a 16-pixel favicon, a shipping box and a billboard), and **easy to apply** (your team can make a new social post that looks right without calling a designer).
+
+That's why we design the system, not just the mark: a logo with a simplified version for small sizes, a colour palette with clear roles (primary, accents, backgrounds), two typefaces at most, and a handful of graphic devices such as a pattern, a frame or an icon style that make the brand recognisable even when the logo isn't visible.
+
+## What we need from you
+
+- **A 45-minute kickoff call** with whoever makes the final decision.
+- **The basics in writing:** what you sell, to whom, at what price, and who you compete with.
+- **Anything that already exists:** an old logo, product photos, a pitch deck, brands you admire and brands you don't.
+- **One round of consolidated feedback** at each stage, so the project keeps moving.
+
+## What affects the price and timeline
+
+Branding projects vary because scope varies. The main drivers are the depth of research and strategy, the number of concepts, whether naming is included, how many applications we design (packaging, website, social templates, stationery), and how many people need to approve the work. Our [branding cost guide](/blog/branding-cost-startup-india) explains typical market ranges in India, and the [budget calculator](/brand-budget-calculator) lets you add up a full launch. For an exact quote, [tell us about the project](/contact-us); we reply within 24 hours.
+
+## After launch
+
+You keep every source file and the guidelines, so any designer can continue the work. Many clients keep us on for packaging, website and social content, which means the brand is applied by the people who built it. If you'd rather work with an in-house designer, we'll walk them through the system.
 
 ## Branding work we've done
 
