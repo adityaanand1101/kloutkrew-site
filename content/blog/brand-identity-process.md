@@ -1,6 +1,8 @@
 ---
 title: "The Brand Identity Process, Step by Step"
+seoTitle: "The Brand Identity Process, Step by Step"
 description: "What happens in a brand identity project, from brief and research to logo, colour, type and guidelines, how long each stage takes and what you should get at the end."
+metaDescription: "A step-by-step look at the brand identity process: brief, research, strategy, concepts, refinement, guidelines and handover."
 date: 2026-11-17
 category: "Branding"
 author: "Shudhanshu Jha"
@@ -83,3 +85,9 @@ Everything is documented in **brand guidelines** your team, printers and freelan
 ## Start your brand identity
 
 KloutKrew Studio designs [brand identities and logos](/branding-agency) for startups and D2C brands in India and worldwide, and can extend them into [packaging](/packaging-design-agency) and [websites](/website-design-agency). [Tell us about your brand](/contact-us) and we'll reply within 24 hours.
+
+## Sources & further reading
+
+- [Brand Finance — Insights](https://brandfinance.com/insights)
+- [Adobe — Creative Cloud design](https://www.adobe.com/creativecloud/design.html)
+- [Interbrand — Brand thinking](https://www.interbrand.com/thinking/)

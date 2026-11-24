@@ -1,5 +1,6 @@
 ---
 title: "How to Choose a Packaging Design Agency in India (2026 Guide)"
+seoTitle: "How to Choose a Packaging Design Agency in India"
 description: "What a packaging design agency does, what to look for, the questions to ask and the red flags to avoid, for D2C, FMCG, food and beauty brands in India."
 date: 2026-11-20
 category: "Branding"
@@ -75,3 +76,9 @@ Packaging works best when it's part of a system. If your logo, colours and websi
 ## Working with KloutKrew Studio
 
 KloutKrew Studio is a [packaging design agency](/packaging-design-agency) based in New Delhi, working with D2C, food, beverage and beauty brands across India and abroad. We show first concepts within 7 days, design to your printer's dielines and hand over every source file. [Tell us about your product](/contact-us) and we'll reply within 24 hours.
+
+## Sources & further reading
+
+- [Clutch — Packaging design agencies in India](https://clutch.co/in/agencies/packaging)
+- [DesignRush — Packaging design agencies](https://www.designrush.com/agency/packaging-design)
+- [GS1 — Barcodes and standards](https://www.gs1.org/)

@@ -1,5 +1,6 @@
 ---
 title: "How to Get Your Brand Recommended by ChatGPT and AI Search"
+seoTitle: "Get Recommended by ChatGPT & AI Search: 2026 Guide"
 description: "What generative engine optimisation (GEO) is, how AI assistants choose which brands to mention, and practical steps to improve your visibility."
 date: 2026-11-21
 category: "Marketing"
@@ -74,3 +75,9 @@ Keyword stuffing, fake reviews and hidden text. AI systems and search engines pe
 Like SEO, AI visibility builds over months. New websites and young domains take longer because they have few mentions elsewhere. Focus on genuinely useful content and real reputation, and measure trends rather than week-to-week changes.
 
 We set up SEO and AI-search foundations as part of our [SEO service](/seo-services). See [how long SEO takes](/faq/how-long-does-seo-take) and our [Google Business Profile guide](/blog/google-business-profile-guide).
+
+## Sources & further reading
+
+- [Google Search Central — AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
+- [Google Search Central — Creating helpful content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- [OpenAI — SearchGPT](https://openai.com/index/searchgpt-prototype/)

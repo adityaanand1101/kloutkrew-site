@@ -1,6 +1,8 @@
 ---
 title: "Indian D2C Website Speed Study 2026: 53 Brands Tested on Mobile"
+seoTitle: "D2C Website Speed Study 2026: 53 Indian Brands Tested"
 description: "We ran Lighthouse on 53 Indian D2C brand homepages. None scored 'good' on mobile: the median score was 34, pages weighed 6.6 MB and the main content took about 7 seconds."
+metaDescription: "We tested 53 Indian D2C brand homepages on mobile. See the scores, what causes slow pages and the fixes we would try first."
 date: 2026-11-22
 category: "Research"
 author: "Shudhanshu Jha"
@@ -143,3 +145,9 @@ Sorted by performance score. LCP is Largest Contentful Paint. Page size and Java
 KloutKrew Studio (2026). *Indian D2C Website Speed Study 2026: 53 Brands Tested on Mobile.* https://kloutkrew.in/blog/indian-d2c-website-speed-study-2026
 
 Journalists and researchers are welcome to use the charts and data with a link back. For questions or a run on your own site, [get in touch](/contact-us).
+
+## Sources & further reading
+
+- [PageSpeed Insights](https://pagespeed.web.dev/)
+- [web.dev — Core Web Vitals](https://web.dev/vitals/)
+- [Chrome UX Report](https://developer.chrome.com/docs/crux/)

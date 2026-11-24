@@ -1,5 +1,6 @@
 ---
 title: "How to Build a Content Calendar That You'll Actually Follow"
+seoTitle: "How to Build a Content Calendar You'll Actually Use"
 description: "A simple content calendar for small brands: monthly themes, weekly slots, batching, approvals and a template you can copy."
 date: 2026-11-23
 category: "Marketing"
@@ -102,3 +103,9 @@ Keep what worked, drop what didn't, and adjust next month's slots.
 A shared Google Sheet or Notion board is enough for most teams. Scheduling tools such as Meta Business Suite help, but they don't replace planning.
 
 See the [power of UGC for brands](/blog/power-of-ugc-for-brands), [how to make scroll-stopping content](/blog/scroll-stopping-content-guide) and our [social and marketing service](/social-media-marketing).
+
+## Sources & further reading
+
+- [HubSpot — How to build a content marketing plan](https://blog.hubspot.com/marketing/content-marketing-plan)
+- [CoSchedule — Content calendar template](https://coschedule.com/blog/content-calendar-template)
+- [Google Trends](https://trends.google.com/)

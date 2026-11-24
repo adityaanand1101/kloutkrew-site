@@ -1,5 +1,6 @@
 ---
 title: "Food Packaging Design: A Guide for Indian Food Brands"
+seoTitle: "Food Packaging Design: A Guide for Indian Food Brands"
 description: "How to design food packaging that looks appetising, communicates freshness and quality, stays practical and works across shelves and delivery apps."
 date: 2026-11-21
 category: "Packaging"
@@ -76,3 +77,9 @@ Many shoppers now look for recyclable or reduced packaging. Be specific and hone
 Look for food category experience, print knowledge and range thinking. Ask to see packs that have actually been printed and sold, not just mockups.
 
 Read [FMCG packaging design](/blog/fmcg-packaging-design) and [choosing a packaging design agency in India](/blog/packaging-design-agency-india). We design food and beverage packaging as part of our [packaging service](/packaging-design-agency).
+
+## Sources & further reading
+
+- [FSSAI — Food Safety and Standards Authority of India](https://www.fssai.gov.in/)
+- [FDA — Food labeling and nutrition](https://www.fda.gov/food/food-labeling-nutrition)
+- [GS1 — Barcodes and standards](https://www.gs1.org/standards/barcodes)

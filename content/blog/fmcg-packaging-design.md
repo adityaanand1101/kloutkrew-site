@@ -1,5 +1,6 @@
 ---
 title: "FMCG Packaging Design: How to Win on Shelf and Online"
+seoTitle: "FMCG Packaging Design: How to Win on Shelf and Online"
 description: "What FMCG packaging design agencies focus on: shelf impact, range systems, cost-efficient printing and designs that work in modern trade, kiranas and apps."
 date: 2026-11-21
 category: "Packaging"
@@ -74,3 +75,9 @@ Change carefully. Loyal customers find your pack by memory. Keep the strongest r
 Look for experience with ranges and large print runs, not just single beautiful packs. Ask how they handle artwork for production and how they'd add new SKUs later.
 
 Read [food packaging design](/blog/food-packaging-design), [how long packaging design takes](/faq/how-long-does-packaging-design-take) and [what a packaging design agency does](/faq/what-does-a-packaging-design-agency-do). We work as an [FMCG and D2C packaging design agency](/packaging-design-agency) for brands across India.
+
+## Sources & further reading
+
+- [GS1 — Barcodes and standards](https://www.gs1.org/standards/barcodes)
+- [NielsenIQ — Consumer insights](https://nielseniq.com/global/en/insights/)
+- [McKinsey — Consumer packaged goods insights](https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights)

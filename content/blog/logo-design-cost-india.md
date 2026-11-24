@@ -1,5 +1,6 @@
 ---
 title: "Logo Design Cost in India (2026): Freelancer vs Agency Prices"
+seoTitle: "Logo Design Cost in India (2026): Freelancer vs Agency"
 description: "How much logo design costs in India in 2026, typical price ranges by type of designer, what drives the price and what you should get for your money."
 date: 2026-11-21
 category: "Branding"

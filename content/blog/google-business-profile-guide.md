@@ -1,5 +1,6 @@
 ---
 title: "Google Business Profile: The Complete Setup Guide for 2026"
+seoTitle: "Google Business Profile Setup Guide (2026)"
 description: "How to set up and optimise a Google Business Profile: categories, service areas, hidden addresses, photos, posts, reviews and common mistakes."
 date: 2026-11-21
 category: "Marketing"
@@ -92,3 +93,9 @@ The profile's performance section shows how people found you, calls, website cli
 If you work at clients' locations or remotely rather than receiving visitors, set a service area and hide your street address. You can still appear in local results for the areas you serve.
 
 See [AI search visibility](/blog/ai-search-visibility-geo) and [how long SEO takes](/faq/how-long-does-seo-take). We help set up local SEO as part of our [SEO service](/seo-services).
+
+## Sources & further reading
+
+- [Google Business Profile Help](https://support.google.com/business/)
+- [Google — Improve your local ranking](https://support.google.com/business/answer/7091)
+- [Google Business Profile — Guidelines](https://support.google.com/business/answer/3038177)

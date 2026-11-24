@@ -231,7 +231,9 @@ async function loadPosts() {
     posts.push({
       slug, file, html, cover,
       title: String(data.title),
+      seoTitle: data.seoTitle ? String(data.seoTitle) : '',
       description: String(data.description),
+      metaDescription: data.metaDescription ? String(data.metaDescription) : '',
       date,
       updated: data.updated ? new Date(data.updated) : null,
       category: String(data.category || 'Studio Notes'),
@@ -397,8 +399,8 @@ ${CTA}
 </main>`;
   const image = post.cover?.og ? SITE + post.cover.og : post.cover?.external || DEFAULT_OG;
   const head = headHTML({
-    title: `${post.title} | ${SITE_NAME}`,
-    description: post.description,
+    title: post.seoTitle || `${post.title} | ${SITE_NAME}`,
+    description: post.metaDescription || post.description,
     url, image, type: 'article',
     extra: [
       `<meta property="article:published_time" content="${post.date.toISOString()}"/>`,

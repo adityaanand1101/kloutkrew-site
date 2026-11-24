@@ -1,5 +1,6 @@
 ---
 title: "The Ultimate Guide to Scroll-Stopping Content"
+seoTitle: "The Ultimate Guide to Scroll-Stopping Content"
 description: "What makes people stop scrolling? We break down the hooks, visuals, and pacing that turn casual scrollers into engaged viewers."
 date: 2026-07-08
 category: "Content Strategy"
@@ -8,6 +9,17 @@ tags: ["scroll stopping content", "content strategy", "social media content"]
 cover: ./images/scroll-stopping-content-guide/cover.jpg
 coverAlt: "Illustration of scroll-stopping content: engagement, visual impact and storytelling"
 updated: 2026-11-24
+faqs:
+  - q: 'What makes content stop the scroll?'
+    a: 'Movement, faces, contrast, a clear hook and a promise the content actually delivers.'
+  - q: 'How long should a hook be?'
+    a: 'Usually the first 1–3 seconds. Put the most interesting visual or statement on screen immediately.'
+  - q: 'Do we need video for every platform?'
+    a: 'No. Carousels and static posts work well when the first slide is strong and the content is genuinely useful.'
+  - q: 'How do we improve content that is not performing?'
+    a: 'Test a new hook on the same content first. The opening is often the problem, not the idea.'
+  - q: 'How often should we post?'
+    a: 'Consistency matters more than volume. Pick a cadence you can sustain and leave room for timely posts.'
 ---
 
 Social feeds move fast. People decide in a moment whether to stop or keep scrolling, and most content never gets a second chance. "Scroll-stopping" content earns that pause, then gives people a reason to stay. This guide explains what makes people stop, how to structure the first few seconds, and how to adapt for each platform.
@@ -75,3 +87,9 @@ Look at how many people watch past the first few seconds, average watch time, sa
 ## Build a repeatable system
 
 Keep a swipe file of hooks that worked, recurring formats your audience likes, and a calendar that leaves time to test. See the [content calendar guide](/blog/content-calendar-guide), [the power of UGC](/blog/power-of-ugc-for-brands) and our [social media marketing service](/social-media-marketing).
+
+## Sources & further reading
+
+- [Think with Google](https://www.thinkwithgoogle.com/)
+- [Nielsen — Insights](https://www.nielsen.com/insights/)
+- [Later — Social media blog](https://later.com/blog/)

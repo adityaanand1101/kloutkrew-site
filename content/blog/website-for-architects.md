@@ -1,5 +1,6 @@
 ---
 title: "Website for Architects: What It Needs to Win Clients"
+seoTitle: "Website for Architects: What It Needs to Win Clients"
 description: "The pages, features and technical basics every architecture firm's website needs in 2026, from project pages to speed, SEO and enquiries, with a checklist."
 date: 2026-11-19
 category: "Web Development"
@@ -76,3 +77,9 @@ Webflow is our usual recommendation for architecture firms: it handles image-hea
 ## Need an architecture website?
 
 KloutKrew Studio designs and builds [websites](/website-design-agency) for architects, interior designers and real estate firms, in India and worldwide. [Tell us about your practice](/contact-us) and we'll reply within 24 hours.
+
+## Sources & further reading
+
+- [ArchDaily](https://www.archdaily.com/)
+- [Dezeen](https://www.dezeen.com/)
+- [RIBA — Royal Institute of British Architects](https://www.architecture.com/)

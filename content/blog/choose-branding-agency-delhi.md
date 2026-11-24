@@ -1,5 +1,6 @@
 ---
 title: "How to Choose a Branding Agency in Delhi"
+seoTitle: "How to Choose a Branding Agency in Delhi"
 description: "A practical guide to choosing a branding agency in Delhi NCR: what to look for, portfolio checks, questions, pricing and red flags."
 date: 2026-11-21
 category: "Branding"
@@ -82,3 +83,9 @@ You should understand why each design decision was made, see concepts on real ap
 See [questions to ask before hiring a design agency](/blog/questions-to-ask-design-agency), and [how long a brand identity project takes](/faq/how-long-does-a-brand-identity-take).
 
 KloutKrew Studio is an independent [branding agency in Delhi](/branding-agency-delhi) working with startups and D2C brands across India and worldwide. See our [branding service](/branding-agency).
+
+## Sources & further reading
+
+- [Clutch — Branding agencies in Delhi](https://clutch.co/in/agencies/branding/delhi)
+- [DesignRush — Branding agencies](https://www.designrush.com/agency/branding)
+- [The Manifest — Branding agencies in India](https://themanifest.com/in/branding/agencies)

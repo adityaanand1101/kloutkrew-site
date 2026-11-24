@@ -1,5 +1,6 @@
 ---
 title: "D2C Branding in India: How New Brands Stand Out"
+seoTitle: "D2C Branding in India: How New Brands Stand Out"
 description: "A practical guide to branding a direct-to-consumer brand in India, from positioning and identity to packaging, website and launch content."
 date: 2026-11-21
 category: "Branding"
@@ -80,3 +81,9 @@ Most founders can't do everything at once. Prioritise positioning, identity, pac
 ## Working with one team
 
 D2C brands move fast. Having brand, [packaging](/packaging-design-agency), [website](/website-design-agency) and content made by one team keeps launches consistent. That's how we work at [KloutKrew Studio](/branding-agency). See also [branding cost for startups in India](/blog/branding-cost-startup-india).
+
+## Sources & further reading
+
+- [Inc42 — D2C startups](https://inc42.com/startups/d2c/)
+- [YourStory — D2C stories](https://yourstory.com/tag/d2c)
+- [Shopify — What is direct-to-consumer?](https://www.shopify.com/blog/what-is-direct-to-consumer)

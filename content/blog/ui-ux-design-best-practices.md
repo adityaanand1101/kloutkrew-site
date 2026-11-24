@@ -1,5 +1,6 @@
 ---
 title: "UI/UX Design: What Makes a Great User Experience"
+seoTitle: "UI/UX Design: What Makes a Great User Experience"
 description: "Great UX feels invisible. Learn the principles — usability heuristics, accessibility, micro-interactions — that separate good products from great ones."
 date: 2026-06-08
 category: "UI/UX"
@@ -8,6 +9,17 @@ tags: ["UI UX design", "user experience", "usability", "interface design"]
 cover: ./images/ui-ux-design-best-practices/cover.jpg
 coverAlt: "UI/UX design principles shown as cards: usability, value, desirability, accessibility and credibility"
 updated: 2026-11-24
+faqs:
+  - q: 'What is the difference between UI and UX?'
+    a: 'UX is the overall experience and flow; UI is the visual and interactive layer people use.'
+  - q: 'How do we know if our product has a UX problem?'
+    a: 'Watch real users attempt key tasks. Hesitation, errors and drop-off points show where the flow needs work.'
+  - q: 'How important is accessibility?'
+    a: 'It is essential for usability and often a legal requirement. WCAG covers contrast, keyboard access, captions and more.'
+  - q: 'How many users do we need for usability testing?'
+    a: 'Five users on key tasks usually reveal most major problems.'
+  - q: 'Should we design mobile-first?'
+    a: 'Yes, if most of your audience uses a phone. It forces clearer hierarchy, tap targets and performance decisions.'
 ---
 
 Good UX tends to go unnoticed: people simply get what they came for. Bad UX is impossible to ignore, from confusing menus and forms that lose your data to buttons too small to tap. This guide covers the principles that separate frustrating interfaces from ones people enjoy, and how to apply them to websites and apps.
@@ -75,3 +87,9 @@ A shared library of components, styles and rules keeps products consistent as th
 Track task completion, drop-off points in key flows, form errors and support questions. They show where the experience still needs work.
 
 See our [UI/UX design service](/ui-ux-design-agency) and [website design service](/website-design-agency).
+
+## Sources & further reading
+
+- [Nielsen Norman Group — 10 usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/)
+- [W3C — Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [Baymard Institute — UX research](https://baymard.com/blog)

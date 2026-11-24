@@ -1,5 +1,6 @@
 ---
 title: "How Much Does an Architect's Website Cost in India? (2026)"
+seoTitle: "Architect Website Cost in India (2026): Real Ranges"
 description: "What drives the cost of a website for an architecture or interior design firm in India, typical market ranges, and what you should get at each level."
 date: 2026-11-23
 category: "Web Development"

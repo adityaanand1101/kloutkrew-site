@@ -1,5 +1,6 @@
 ---
 title: "Branding Cost for Startups in India (2026): A Realistic Budget"
+seoTitle: "Startup Branding Cost in India (2026): Real Budgets"
 description: "What startup branding costs in India, how budgets break down across logo, identity, packaging, website and launch content, and how to phase spend."
 date: 2026-11-21
 category: "Branding"

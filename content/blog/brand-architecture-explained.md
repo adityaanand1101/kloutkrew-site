@@ -1,5 +1,6 @@
 ---
 title: "Brand Architecture Explained: Master Brand, Sub-Brands and Endorsed Brands"
+seoTitle: "Brand Architecture: Master, Sub & Endorsed Brands"
 description: "What brand architecture is, the main models with examples, and how growing D2C and service companies should organise products and brands."
 date: 2026-11-23
 category: "Branding"
@@ -75,3 +76,9 @@ Your architecture shapes naming. In a branded house, product names should be des
 Map every brand, product and range you have today, and the ones planned for the next two to three years. Group them by audience, price and channel, then choose the model that fits most of the portfolio.
 
 For most startups, a branded house with a clear system is the most efficient choice. Read [logo vs brand identity](/faq/logo-vs-brand-identity) and [the brand identity process](/blog/brand-identity-process). We plan architecture in our [branding projects](/branding-agency) and apply it in [packaging design](/packaging-design-agency).
+
+## Sources & further reading
+
+- [Interbrand — Brand thinking](https://www.interbrand.com/thinking/)
+- [Brand Finance — Insights](https://brandfinance.com/insights)
+- [McKinsey — Growth, marketing and sales insights](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights)
