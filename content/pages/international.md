@@ -1,5 +1,5 @@
 ---
-title: "Branding & Web Design Studio for Global Brands | KloutKrew"
+title: "Branding & Web Design for Global Brands | KloutKrew Studio"
 h1: A branding and web design studio for brands worldwide
 breadcrumb: Work with us from anywhere
 eyebrow: Worldwide

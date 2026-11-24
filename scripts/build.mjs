@@ -275,6 +275,20 @@ function headHTML({ title, description, url, image, type = 'website', jsonLd, ex
 const page = (head, content, scripts = '') =>
   template.replace('{{HEAD}}', () => head).replace('{{CONTENT}}', () => content).replace('{{SCRIPTS}}', () => scripts);
 
+// Applied to every generated page in dist, including the static Webflow pages.
+const PUBLISHER_SCHEMA = `<script type="application/ld+json">${JSON.stringify({
+  '@context': 'https://schema.org', '@type': 'WebSite', name: SITE_NAME, url: SITE,
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE, logo: { '@type': 'ImageObject', url: `${SITE}/favicon.png` } },
+}).replace(/</g, '\\u003c')}</script>`;
+function seoMetaPass(html) {
+  if (!html.includes('</head>')) return html;
+  let add = '';
+  if (!/<meta name="robots"/i.test(html)) add += '<meta name="robots" content="index, follow"/>';
+  if (!/<meta name="publisher"/i.test(html)) add += `<meta name="publisher" content="${SITE_NAME}"/>`;
+  if (!/"publisher"\s*:/.test(html)) add += PUBLISHER_SCHEMA;
+  return add ? html.replace('</head>', add + '</head>') : html;
+}
+
 // Branded typographic cover for posts without an image.
 const ACCENTS = ['#ee1515', '#ff691e', '#fdbc53', '#ab9bff', '#ff767a'];
 function genCover(post, big = false) {
@@ -847,7 +861,7 @@ ${CTA}
       { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
       { '@type': 'ListItem', position: 2, name: 'FAQ', item: url }] },
   ];
-  const head = headHTML({ title: 'FAQ: Branding, Packaging, Websites & Marketing | KloutKrew', description: 'Answers about branding, packaging, websites, AI films and marketing: timelines, costs, files, ownership and working with an Indian studio from abroad.', url, image: DEFAULT_OG, jsonLd: { '@context': 'https://schema.org', '@graph': graph } });
+  const head = headHTML({ title: 'FAQ: Branding, Packaging & Websites | KloutKrew Studio', description: 'Answers about branding, packaging, websites, AI films and marketing: timelines, costs, files, ownership and working with an Indian studio from abroad.', url, image: DEFAULT_OG, jsonLd: { '@context': 'https://schema.org', '@graph': graph } });
   return page(head, content, `<script src="/assets/blog.js" defer></script>`);
 }
 
@@ -951,6 +965,7 @@ async function main() {
     { const h2 = footerize(html); if (h2 !== html) { html = h2; changed = true; } }
     if (socialHTML && html.includes(MAIL) && !html.includes('kk-social')) { const i = html.lastIndexOf(MAIL) + MAIL.length; html = html.slice(0, i) + socialHTML + html.slice(i); changed = true; }
     if (profiles.length && html.includes('"@type":"ProfessionalService","name"') && !html.includes('"sameAs"')) { html = html.replace('"knowsAbout":', `"sameAs":${JSON.stringify(profiles)},"knowsAbout":`); changed = true; }
+    { const h2 = seoMetaPass(html); if (h2 !== html) { html = h2; changed = true; } }
     if (changed) await fsp.writeFile(f, html);
   }
 

@@ -4,7 +4,7 @@ h1: Shopify store design and development for D2C brands
 breadcrumb: Shopify stores
 eyebrow: Shopify
 description: KloutKrew Studio designs and builds Shopify stores for D2C brands in India and worldwide, with fast product pages, strong branding, mobile-first checkout flows and the apps and tracking you need.
-metaDescription: "Shopify store design and development for D2C brands: product pages, collections, speed, apps and tracking. New Delhi studio, working worldwide."
+metaDescription: "Shopify store design for D2C brands: fast product pages, mobile-first checkout, strong branding and the apps and tracking needed to turn visits into sales."
 serviceName: Shopify store design and development
 serviceTypes: [Shopify store design, Shopify theme customisation, Shopify development, E-commerce UX, Store speed optimisation]
 areaServed: [Worldwide, India, Delhi NCR]

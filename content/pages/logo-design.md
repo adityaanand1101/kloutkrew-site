@@ -4,7 +4,7 @@ h1: Logo design that's distinctive, simple and built to last
 breadcrumb: Logo design
 eyebrow: Logo design
 description: KloutKrew Studio designs original logos for startups, D2C brands and businesses in India and worldwide, with every version and file format you need for screens, print, packaging and signage.
-metaDescription: "Original logo design for startups and brands: 2–3 concepts, full logo suite, every file format and usage rules. New Delhi studio, working worldwide."
+metaDescription: "Original logo design for startups: 2–3 concepts, a full logo suite and every file format for screens, print, packaging and signage, with usage rules."
 serviceName: Logo design
 serviceTypes: [Logo design, Wordmark design, Brand mark design, Logo redesign]
 areaServed: [Worldwide, India, Delhi NCR]

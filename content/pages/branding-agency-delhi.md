@@ -1,5 +1,5 @@
 ---
-title: Branding & Packaging Agency in Delhi NCR | KloutKrew Studio
+title: Branding Agency in Delhi NCR | KloutKrew Studio
 h1: Branding, packaging and website agency in Delhi NCR
 breadcrumb: Branding agency in Delhi
 eyebrow: Delhi NCR
