@@ -14,6 +14,7 @@ faqs:
     a: 'Offer a private viewing, brochure download or call-back request instead of aggressive pop-ups.'
 cover: ./images/luxury-real-estate-website-design/cover.jpg
 coverAlt: "A luxury real estate website on a tablet with virtual tour and amenities panels"
+draft: true   # merged into another post, 301 redirect in vercel.json
 ---
 
 Luxury buyers judge the project by the experience of the website. **Luxury real estate website design** should feel as considered as the homes.

@@ -5,26 +5,71 @@ date: 2026-06-08
 category: "UI/UX"
 author: "Shudhanshu Jha"
 tags: ["UI UX design", "user experience", "usability", "interface design"]
+updated: 2026-11-24
 ---
 
-Great UX feels invisible. You do not notice it — you just glide through the experience effortlessly. Bad UX, on the other hand, is impossible to ignore. Here are the principles that separate forgettable interfaces from ones people love.
+Good UX tends to go unnoticed: people simply get what they came for. Bad UX is impossible to ignore, from confusing menus and forms that lose your data to buttons too small to tap. This guide covers the principles that separate frustrating interfaces from ones people enjoy, and how to apply them to websites and apps.
 
-## Usability Heuristics
+## Start with the user's goal
 
-Jakob Nielsen's 10 usability heuristics remain the foundation of UX design. They include principles like **match between system and real world** (use language the user understands), **error prevention** (design flows that prevent mistakes before they happen), and **recognition over recall** (make options visible rather than requiring the user to remember them).
+Every screen should answer: what is the person trying to do here, and what's the shortest clear path to it? Before designing, list your main user groups and their top three tasks. Design those paths first, and make everything else secondary.
 
-Every interface decision should map back to one of these heuristics. If it does not, it is decoration, not design.
+## Usability heuristics
+
+Jakob Nielsen's ten usability heuristics remain a solid foundation. A few that matter most day to day:
+
+- **Visibility of system status:** show what's happening, such as loading states, progress and confirmations
+- **Match with the real world:** use your users' language, not internal jargon
+- **Error prevention:** design flows that stop mistakes before they happen
+- **Recognition over recall:** keep options visible rather than relying on memory
+- **Consistency:** the same action should look and behave the same everywhere
+
+Use them as a checklist when reviewing any screen.
+
+## Clear information architecture
+
+Navigation should reflect how users think, not how the company is organised. Card sorting with real users, simple labels and limited top-level menu items make a big difference. If people can't find something, it may as well not exist.
+
+## Visual hierarchy
+
+Size, weight, colour and spacing tell users what matters most. Each screen should have one clear primary action. If everything is bold, nothing stands out.
 
 ## Accessibility
 
-Accessibility is not a nice-to-have — it is a legal requirement and a moral obligation. WCAG 2.2 guidelines cover everything from color contrast ratios to screen reader compatibility. The best design teams bake accessibility into the design system from day one, not as a retroactive checklist.
+Accessibility is essential, and in many markets it's also a legal requirement. The Web Content Accessibility Guidelines (WCAG) cover colour contrast, text alternatives for images, keyboard navigation, focus states, captions and much more. Build it into your design system from the start rather than fixing it at the end.
 
-Good accessibility benefits everyone. High contrast helps in bright sunlight. Clear navigation helps the experienced user just as much as the assistive technology user.
+Good accessibility helps everyone: high contrast helps in bright sunlight, captions help in noisy places, and clear structure helps every reader.
 
-## Micro-Interactions
+## Forms that don't frustrate
 
-The difference between a good product and a beloved one is in the micro-interactions. A button that subtly changes shade on hover. A loading animation that feels satisfying rather than annoying. A subtle haptic feedback when a task completes. These tiny details accumulate into an experience that feels alive and responsive.
+- Ask only for what you really need
+- Use clear labels above fields, not placeholder text alone
+- Show errors next to the field, explaining how to fix them
+- Keep what users typed when there's an error
+- Use the right keyboard on mobile for numbers, email and phone
 
-## Mobile-First
+## Micro-interactions
 
-More than half of all web traffic is mobile. If your design does not work on a 375px screen, it does not work. Mobile-first design means thinking about content hierarchy, touch targets, and performance before you ever design for desktop.
+Small details make a product feel responsive: a button that changes on hover or tap, a satisfying confirmation when a task completes, a loading state that shows progress. Keep them subtle and purposeful, and respect users who prefer reduced motion.
+
+## Mobile-first
+
+Most people will use your site or app on a phone. Designing mobile-first forces clear priorities: content hierarchy, thumb-friendly tap targets and fast loading. Then expand for larger screens.
+
+## Performance is UX
+
+A beautiful design that takes eight seconds to load is a bad experience. Optimise images, limit heavy scripts and test on real mid-range phones and mobile networks. See our [Indian D2C website speed study](/blog/indian-d2c-website-speed-study-2026).
+
+## Test with real people
+
+You don't need a lab. Five users attempting your key tasks will reveal most major problems. Watch where they hesitate, and don't explain the interface while they're testing. Test early with wireframes, not just finished designs.
+
+## Use a design system
+
+A shared library of components, styles and rules keeps products consistent as they grow, and speeds up design and development.
+
+## Measure after launch
+
+Track task completion, drop-off points in key flows, form errors and support questions. They show where the experience still needs work.
+
+See our [UI/UX design service](/ui-ux-design-agency) and [website design service](/website-design-agency).

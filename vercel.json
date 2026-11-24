@@ -12,6 +12,16 @@
       "source": "/blogs/:slug",
       "destination": "/blog/:slug",
       "permanent": true
+    },
+    {
+      "source": "/blog/luxury-real-estate-website-design",
+      "destination": "/blog/real-estate-website-design",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-first-creative-strategy",
+      "destination": "/blog/future-of-content-creation-ai",
+      "permanent": true
     }
   ],
   "rewrites": [
