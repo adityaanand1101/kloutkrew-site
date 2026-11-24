@@ -218,6 +218,27 @@ body, .page_wrapper { background: #fff; }
 .kb-copy { appearance: none; background: none; border: 0; border-bottom: 1px solid currentColor; padding: 0; font: inherit; font-weight: 500; color: inherit; cursor: pointer; }
 .kb-share a:hover, .kb-copy:hover { color: var(--kb-red); }
 
+/* Related services on articles */
+.kb-post-services { padding: clamp(48px, 6vw, 88px) var(--kb-gutter) 0; }
+.kb-post-services .kb-narrow { border-top: 2px solid var(--kb-black); padding-top: 26px; }
+.kb-post-services h2 {
+  font-family: var(--kb-display); font-weight: 400; text-transform: uppercase;
+  font-size: clamp(2rem, 3.4vw, 3.2rem); line-height: 1; margin: 0 0 10px;
+}
+.kb-post-services p { margin: 0 0 20px; color: var(--kb-gray); font-size: 1rem; }
+.kb-post-services ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.kb-post-services a {
+  display: flex; flex-direction: column; gap: 4px; padding: 16px 20px;
+  border: 1px solid var(--kb-line); border-radius: 18px;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.kb-post-services a:hover { background: var(--kb-black); border-color: var(--kb-black); color: #fff; }
+.kb-post-services a span { font-weight: 600; }
+.kb-post-services a span::after { content: " \2197"; font-weight: 400; }
+.kb-post-services a em { font-style: normal; font-size: .9375rem; color: var(--kb-gray); }
+.kb-post-services a:hover em { color: #cfcfcf; }
+@media (prefers-reduced-motion: reduce) { .kb-post-services a { transition: none; } }
+
 .kb-related { padding: 0 0 clamp(70px, 8vw, 120px); }
 .kb-section-title {
   font-family: var(--kb-display); font-weight: 400; text-transform: uppercase;

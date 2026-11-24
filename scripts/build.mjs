@@ -362,11 +362,69 @@ ${faqs.map(f => `<details><summary>${esc(f.q)}</summary><div>${md.render(String(
 }
 const faqLd = faqs => ({ '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: String(f.a).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') } })) });
 
+// Every article points at the money pages that match its topic.
+const SERVICE_CLUSTERS = {
+  branding: [
+    { href: '/branding-agency', label: 'Branding agency', note: 'Positioning, identity and guidelines that make brands recognisable.' },
+  ],
+  packaging: [
+    { href: '/packaging-design-agency', label: 'Packaging design agency', note: 'Structures, labels and artwork that sell on shelf.' },
+  ],
+  web: [
+    { href: '/website-design-agency', label: 'Website design agency', note: 'Fast, focused sites built around your business goals.' },
+    { href: '/shopify-store-design', label: 'Shopify store design', note: 'D2C stores designed to load fast and convert.' },
+  ],
+  content: [
+    { href: '/ai-brand-films', label: 'AI brand films', note: 'Film-quality storytelling without a full shoot.' },
+    { href: '/content-ugc-production', label: 'Content & UGC production', note: 'A steady supply of content people actually trust.' },
+  ],
+};
+const CLUSTER_BY_CATEGORY = {
+  'Branding': 'branding',
+  'Brand Strategy': 'branding',
+  'Design': 'branding',
+  'Packaging': 'packaging',
+  'Web Development': 'web',
+  'UI/UX': 'web',
+  'Research': 'web',
+  'AI Filmmaking': 'content',
+  'Marketing': 'content',
+  'Content Strategy': 'content',
+  'Future': 'content',
+};
+const CLUSTER_BY_SLUG = {
+  'packaging-design-agency-india': 'packaging',
+};
+const clusterOf = post => CLUSTER_BY_SLUG[post.slug] || CLUSTER_BY_CATEGORY[post.category] || 'branding';
+
+function relatedServices(post) {
+  const services = SERVICE_CLUSTERS[clusterOf(post)];
+  if (!services?.length) return '';
+  return `<section class="kb-post-services" aria-labelledby="services-title"><div class="kb-narrow">
+<h2 id="services-title">Related services</h2>
+<p>Where we can help with what you just read.</p>
+<ul>${services.map(s => `<li><a href="${s.href}"><span>${esc(s.label)}</span><em>${esc(s.note)}</em></a></li>`).join('')}</ul>
+</div></section>`;
+}
+
+function relatedPosts(post, posts) {
+  const tags = new Set(post.tags.map(t => String(t).toLowerCase()));
+  const cluster = clusterOf(post);
+  return posts
+    .filter(p => p !== post && !p.draft)
+    .map(p => ({
+      post: p,
+      score: (p.category === post.category ? 4 : 0)
+        + (clusterOf(p) === cluster ? 2 : 0)
+        + p.tags.filter(t => tags.has(String(t).toLowerCase())).length * 2,
+    }))
+    .sort((a, b) => b.score - a.score || (b.post.date?.getTime?.() || 0) - (a.post.date?.getTime?.() || 0))
+    .slice(0, 3)
+    .map(x => x.post);
+}
+
 function postPage(post, posts) {
-  const related = [
-    ...posts.filter(p => p !== post && p.category === post.category),
-    ...posts.filter(p => p !== post && p.category !== post.category),
-  ].slice(0, 3);
+  const related = relatedPosts(post, posts);
   const url = `${SITE}/blog/${post.slug}`;
   const share = encodeURIComponent(url);
   const content = `<div class="kb-progress" aria-hidden="true"></div>
@@ -385,6 +443,7 @@ ${post.draft ? '<p class="kb-draft-banner">Draft preview — this post is hidden
 ${post.html}
 </div>
 ${faqSection(post.faqs)}
+${relatedServices(post)}
 <footer class="kb-post-foot"><div class="kb-narrow">
 ${post.tags.length ? `<ul class="kb-tags">${post.tags.map(t => `<li>#${esc(t)}</li>`).join('')}</ul>` : ''}
 <div class="kb-share"><span>Share</span>
