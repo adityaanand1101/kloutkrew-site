@@ -12,6 +12,8 @@ faqs:
     a: 'Industry reports describe AI-assisted production cutting costs significantly, in some cases by most of the budget, but creative direction, editing, sound and revisions still cost money.'
   - q: 'Are AI tool subscriptions the main cost?'
     a: 'No. Tools are a small part. The cost is in concept, direction, iteration, editing, sound and brand accuracy.'
+cover: ./images/ai-ad-film-cost-india/cover.jpg
+coverAlt: "A clapperboard beside a 2026 AI ad film pricing sheet broken down by script, voiceover, generation and editing"
 updated: 2026-11-24
 ---
 
@@ -23,7 +25,7 @@ AI has changed ad film budgets in India. Films that once needed a crew, location
 - A Hyderabad production house quotes [₹5–7 lakh for a 30-second brand or ad film without star cast](https://auromediahouse.com/?p=9414), and notes AI tools cost ₹5,000–25,000 a month each but don't cover direction or brand alignment.
 - [Entrepreneur India](https://india.entrepreneur.com/?p=100348) reported AI cutting a 60-second brand film from ₹10–25 lakh to around ₹50,000–75,000 for one platform, with timelines dropping sharply.
 
-These are examples, not price lists. Your cost depends on scope.
+These are examples, not price lists. The cover above shows an indicative breakdown by stage for a short AI-led ad film: roughly ₹90,000 to ₹3 lakh and up, depending on length, realism and how many versions you need. Your cost depends on scope.
 
 To see how a film fits next to the rest of a launch budget, try the free [brand launch budget calculator](/brand-budget-calculator).
 

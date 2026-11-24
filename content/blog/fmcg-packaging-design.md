@@ -12,6 +12,8 @@ faqs:
     a: 'Experience with ranges and variants, knowledge of print processes and costs, shelf and thumbnail testing, and the ability to deliver artwork for many SKUs accurately.'
   - q: 'How do I keep FMCG packaging costs down?'
     a: 'Standardise dielines across sizes, limit special finishes, reduce ink colours where possible, and design a system so new SKUs reuse templates.'
+cover: ./images/fmcg-packaging-design/cover.jpg
+coverAlt: "A range of four FMCG snack packs sharing one brand block with different variant colours"
 updated: 2026-11-24
 ---
 

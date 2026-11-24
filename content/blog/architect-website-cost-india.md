@@ -12,6 +12,8 @@ faqs:
     a: 'They need custom layouts for large imagery, a project database, image optimisation, and careful design that reflects the firm''s own design standards.'
   - q: 'What ongoing costs should I expect?'
     a: 'Domain, hosting or platform plan, occasional updates, and optional SEO or content support.'
+cover: ./images/architect-website-cost-india/cover.jpg
+coverAlt: "An architect website on screen beside a 2026 budget sheet for design, 3D showcase, development and SEO"
 updated: 2026-11-24
 ---
 

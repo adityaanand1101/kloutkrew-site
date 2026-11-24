@@ -12,6 +12,8 @@ faqs:
     a: 'Yes. Good agencies explain the thinking behind designs, not just the final visuals.'
   - q: 'Is it better to work with a large or small agency?'
     a: 'Smaller studios often give senior attention and speed; larger agencies offer more capacity for big, multi-market programmes.'
+cover: ./images/choose-branding-agency-delhi/cover.jpg
+coverAlt: "A shortlist checklist and red flags for choosing a branding agency in Delhi NCR"
 updated: 2026-11-24
 ---
 

@@ -5,6 +5,8 @@ date: 2026-06-08
 category: "UI/UX"
 author: "Shudhanshu Jha"
 tags: ["UI UX design", "user experience", "usability", "interface design"]
+cover: ./images/ui-ux-design-best-practices/cover.jpg
+coverAlt: "UI/UX design principles shown as cards: usability, value, desirability, accessibility and credibility"
 updated: 2026-11-24
 ---
 
