@@ -12,6 +12,7 @@ faqs:
     a: 'Show your best eight to twelve projects in depth rather than everything you''ve done.'
   - q: 'How do interior designers get clients from Google?'
     a: 'Project pages with locations and room types, a Google Business Profile with photos and reviews, and helpful articles about costs, timelines and styles.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Clients hire interior designers they trust with their homes and money. An **interior designer website** builds that trust before the first call.

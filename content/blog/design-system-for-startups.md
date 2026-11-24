@@ -12,6 +12,7 @@ faqs:
     a: 'When more than one designer or developer is building screens and inconsistency starts slowing the team down.'
   - q: 'Is a design system the same as brand guidelines?'
     a: 'Related but different. Brand guidelines cover identity and communication; a design system covers interface components for products and websites.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 As a product grows, screens drift: three button styles, five greys, inconsistent spacing. A **design system** fixes that and speeds everyone up.

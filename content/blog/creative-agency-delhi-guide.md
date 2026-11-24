@@ -12,6 +12,8 @@ faqs:
     a: 'A branding agency focuses on identity: strategy, naming, logo, visual system and guidelines that everything else is built on.'
   - q: 'Do I need several agencies?'
     a: 'Not necessarily. Many independent studios cover branding, design, web and content with one team, which keeps work consistent.'
+cover: ./images/creative-agency-delhi-guide/cover.jpg
+coverAlt: "Creative agency, branding agency and ad agency roles compared"
 ---
 
 "Creative agency" covers a lot of ground. Here's how the main types differ.

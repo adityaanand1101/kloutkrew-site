@@ -12,6 +12,7 @@ faqs:
     a: 'A static, high-fidelity design showing how a screen will look, with real colours, type and imagery.'
   - q: 'What is a prototype?'
     a: 'A clickable or interactive version of the design used to test flows before development.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 These three terms come up in every website and app project. Here's what each one means.

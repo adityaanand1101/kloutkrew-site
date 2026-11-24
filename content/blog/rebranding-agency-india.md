@@ -12,6 +12,7 @@ faqs:
     a: 'Business goals, current brand assets, customer insights, access to stakeholders and a clear decision-maker.'
   - q: 'Can a rebrand be done in phases?'
     a: 'Yes. Many companies launch the new identity digitally first, then phase in packaging and physical materials.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A rebrand touches everything. A good **rebranding agency** manages both the creative and the change.

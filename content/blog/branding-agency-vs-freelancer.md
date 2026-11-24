@@ -12,6 +12,7 @@ faqs:
     a: 'When you need a focused piece of work, such as a logo or a set of social templates, and you''re comfortable managing the project yourself.'
   - q: 'When should I hire an agency?'
     a: 'When you need several connected pieces, such as strategy, identity, packaging, website and launch content, delivered consistently and on a deadline.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Both can do excellent work. The right choice depends on what you need, how fast, and how much managing you want to do.

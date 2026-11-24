@@ -12,6 +12,7 @@ faqs:
     a: 'Give them brand guidelines, ready-made templates and approved assets, and review their first pieces closely.'
   - q: 'How often should I check brand consistency?'
     a: 'Do a quick review monthly for social and ads, and a fuller brand audit once a year.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 As brands grow, more people create more things in more places. Without a system, the brand fragments.

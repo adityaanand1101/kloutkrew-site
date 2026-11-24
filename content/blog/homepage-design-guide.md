@@ -12,6 +12,7 @@ faqs:
     a: 'Yes, especially on mobile, but only if the first screen convinces them it''s worth it.'
   - q: 'Should my homepage have a video?'
     a: 'A short, light, muted video can work if it shows your product or work, but it shouldn''t delay the main message from loading.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Your homepage is a signpost. In a few seconds it should tell visitors they're in the right place and where to go next.

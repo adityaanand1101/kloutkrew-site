@@ -12,6 +12,7 @@ faqs:
     a: 'Most marketplaces require the main image to show the actual product on a plain white background without extra text. Check each marketplace''s current guidelines.'
   - q: 'Do listing images affect sales?'
     a: 'Yes. Shoppers can''t touch the product, so images answer their questions and build trust before they read the description.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 On a marketplace, images do the selling. **Listing images** need to answer every question a shopper would ask in a store.

@@ -12,6 +12,7 @@ faqs:
     a: 'Associations exist but vary by culture and category. Standing out from competitors and fitting your positioning matter more than generic colour meanings.'
   - q: 'Why does my brand colour look different in print?'
     a: 'Screens mix light (RGB) and printers mix ink (CMYK). Define separate values for each and approve printed proofs.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Colour is often the first thing people remember about a brand, before the name or logo. Here's how to choose **brand colours** that are distinctive, flexible and practical.

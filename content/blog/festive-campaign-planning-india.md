@@ -12,6 +12,7 @@ faqs:
     a: 'Not always. Limited-edition sleeves, stickers or gift boxes can create a festive feel at lower cost than full redesigns.'
   - q: 'How do I stand out during festivals?'
     a: 'Avoid generic diyas and fireworks; connect the festival to something specific about your brand or customers.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Festivals are peak buying seasons in India, and the most crowded. Planning early is the advantage.

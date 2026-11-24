@@ -12,6 +12,7 @@ faqs:
     a: 'Often yes. A sent deck needs more text to stand alone; a presented deck can be more visual because you''re speaking.'
   - q: 'Does design really matter to investors?'
     a: 'Clear design helps investors understand quickly and signals care. Content still decides the outcome.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Investors skim decks quickly. Good design helps them get your story fast.

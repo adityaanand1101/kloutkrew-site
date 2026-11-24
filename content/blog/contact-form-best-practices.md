@@ -12,6 +12,7 @@ faqs:
     a: 'Use a hidden honeypot field and server-side checks before resorting to visible CAPTCHAs.'
   - q: 'How do I know if my form is working?'
     a: 'Test it yourself regularly and track successful submissions as conversion events in analytics.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A broken or annoying form loses business silently. Here's how to get **contact forms** right.

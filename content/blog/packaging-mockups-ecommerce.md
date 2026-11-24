@@ -12,6 +12,7 @@ faqs:
     a: 'Yes, for pack shots and range images, especially before stock is printed. For lifestyle and texture shots, real photography or AI-assisted imagery often looks more convincing.'
   - q: 'Are AI images good for product listings?'
     a: 'They can create lifestyle settings quickly, but the product itself must be accurate. Combine a real pack or accurate render with AI-generated backgrounds.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 You can launch a product page before a single pack is printed. **Packaging mockups** and 3D renders make it possible.

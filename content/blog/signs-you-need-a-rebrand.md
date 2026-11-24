@@ -12,6 +12,7 @@ faqs:
     a: 'There is no fixed schedule. Many brands refresh every five to ten years and only rebrand when their business, audience or market changes significantly.'
   - q: 'Will a rebrand confuse my existing customers?'
     a: 'Not if you plan it. Explain the change, keep familiar elements where you can, and update every touchpoint at the same time.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A **rebrand** is expensive and disruptive, so it should solve a real problem. Here are the signs it's time, and how to tell whether you need a light refresh or a full change.

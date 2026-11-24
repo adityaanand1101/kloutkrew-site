@@ -12,6 +12,7 @@ faqs:
     a: 'A complete Google Business Profile, service pages for each treatment, consistent contact details and genuine patient reviews.'
   - q: 'Can I show patient results on my website?'
     a: 'Check the rules that apply to your profession and get written patient consent. When in doubt, focus on clear information about treatments and your team.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Patients choose clinics they trust and can book easily. A **clinic website** should feel calm, clear and credible.

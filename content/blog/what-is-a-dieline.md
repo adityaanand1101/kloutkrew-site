@@ -12,6 +12,7 @@ faqs:
     a: 'Usually your printer or packaging manufacturer, because it must match their cutting dies and materials.'
   - q: 'What happens if artwork doesn''t match the dieline?'
     a: 'Text or graphics can be cut off, land on the wrong panel or fold in the wrong place, and a whole print run may be wasted.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Before a box is a box, it's a flat sheet. The **dieline** is the map of that sheet.

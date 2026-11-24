@@ -12,6 +12,7 @@ faqs:
     a: 'Short guidance inside the real product usually works better than long tutorials users skip.'
   - q: 'How do I measure onboarding success?'
     a: 'Track how many new users complete the key first action, and how many return in the first week.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Many users decide whether an app is worth keeping within their first session. **Onboarding UX** should get them to a first win quickly.

@@ -12,6 +12,7 @@ faqs:
     a: 'Local helps if you want in-person meetings. Remote can work just as well with a clear process. Choose on quality and fit first.'
   - q: 'Why do quotes vary so much?'
     a: 'Template vs custom design, content and SEO inclusion, number of pages and features, and the team''s experience all change the price.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Delhi NCR has hundreds of web design companies, from solo freelancers to large agencies. Here's how to choose well.

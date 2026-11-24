@@ -12,6 +12,7 @@ faqs:
     a: 'The product, protected; a thank-you note or card; usage instructions; and optionally a sample or discount for the next order.'
   - q: 'How can I make unboxing special on a small budget?'
     a: 'Use a one-colour printed mailer, a branded sticker or tape, and a well-written card. Thoughtful details matter more than expensive materials.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 For a D2C brand, the box arriving at the door is the first time a customer touches the brand. A good **unboxing experience** turns that moment into a story worth sharing.

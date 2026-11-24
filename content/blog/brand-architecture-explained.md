@@ -12,6 +12,8 @@ faqs:
     a: 'Only if it serves a different audience or would damage or be damaged by the main brand. Otherwise, launching under the master brand is cheaper and faster.'
   - q: 'What''s the most common model for startups?'
     a: 'A branded house, where everything carries the master brand name with simple product names.'
+cover: ./images/brand-architecture-explained/cover.jpg
+coverAlt: "Diagram of a parent brand linked to sub-brands and endorsed brands"
 ---
 
 As companies grow from one product to many, a question appears: should each product have its own name and look? That's **brand architecture**.

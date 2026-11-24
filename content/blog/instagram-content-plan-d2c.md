@@ -12,6 +12,7 @@ faqs:
     a: 'Three to five recurring themes, such as product education, customer stories and behind the scenes, that keep content varied and on-strategy.'
   - q: 'Should D2C brands focus on Reels?'
     a: 'Reels usually reach more new people; carousels and Stories build trust with existing followers. Use a mix.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Posting randomly burns time. A simple **Instagram content plan** keeps a D2C brand consistent and on-message.

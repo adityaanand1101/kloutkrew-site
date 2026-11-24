@@ -12,6 +12,7 @@ faqs:
     a: 'A clear positioning, name, logo, basic identity system, a simple website and templates for decks and social.'
   - q: 'How is startup branding different from corporate branding?'
     a: 'Startups need speed, flexibility and room to evolve, so systems should be simple and easy to extend.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Early-stage branding should be fast, focused and flexible. Use this checklist.

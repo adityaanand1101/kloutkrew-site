@@ -12,6 +12,7 @@ faqs:
     a: '4:5 vertical usually takes more screen space in feeds than 1:1 or 16:9.'
   - q: 'How do I make one video work everywhere?'
     a: 'Plan framing for the tightest crop, keep key action and text in the centre safe zone, then export each ratio separately.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 One film, many screens. Here are the common formats.

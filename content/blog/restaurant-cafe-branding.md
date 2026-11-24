@@ -12,6 +12,7 @@ faqs:
     a: 'Very. For many restaurants, delivery is the first experience a customer has, so boxes, bags and stickers carry the brand into homes.'
   - q: 'Should a restaurant have a website?'
     a: 'Yes. Even a simple site with menu, location, hours, booking or ordering links helps search visibility and gives you a place you control.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 People choose restaurants with their eyes first: on Instagram, on a delivery app, on the street. **Restaurant branding** makes a place feel like somewhere worth going.

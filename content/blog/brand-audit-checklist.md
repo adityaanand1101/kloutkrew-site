@@ -12,6 +12,7 @@ faqs:
     a: 'Once a year, and before any rebrand, fundraise or major launch.'
   - q: 'Who should do the audit?'
     a: 'Someone from your team plus an outside view. Customers and outsiders notice inconsistencies that teams stop seeing.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A **brand audit** shows where your brand is strong, where it's inconsistent and what to fix first. Use this checklist and score each line from 0 to 2.

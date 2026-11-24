@@ -12,6 +12,7 @@ faqs:
     a: 'Better as a web page. It loads faster on phones, is readable by search engines and is easier to update.'
   - q: 'What''s the most important thing on a restaurant website?'
     a: 'Hours, location and a way to book or order, visible within seconds on a phone.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Most restaurant website visits happen on a phone, minutes before deciding where to eat. A **restaurant website** should answer questions instantly.

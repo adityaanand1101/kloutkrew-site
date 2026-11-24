@@ -12,6 +12,7 @@ faqs:
     a: 'Google''s thresholds for a good experience are LCP within 2.5 seconds, INP under 200 milliseconds and CLS below 0.1.'
   - q: 'Do Core Web Vitals affect rankings?'
     a: 'They are part of Google''s page experience signals. Content relevance matters more, but speed affects both rankings and conversions.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Slow websites lose visitors before they see anything. **Core Web Vitals** are how Google measures that experience.

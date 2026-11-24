@@ -12,6 +12,7 @@ faqs:
     a: 'Usually the client or marketing lead, often refined together with the agency in a kickoff call.'
   - q: 'What makes a brief strong?'
     a: 'One clear objective, a specific audience, a single key message and honest constraints.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A strong brief is the most valuable page in any creative project.

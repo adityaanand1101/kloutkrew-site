@@ -12,6 +12,7 @@ faqs:
     a: 'Ideally eight to twelve weeks, so branding, website and content are ready together.'
   - q: 'What''s most often forgotten?'
     a: 'Social share images, favicon, email signatures, and listing images for marketplaces.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Launch day goes smoother when every asset is ready. Use this checklist.

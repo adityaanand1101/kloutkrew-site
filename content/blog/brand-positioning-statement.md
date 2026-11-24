@@ -12,6 +12,7 @@ faqs:
     a: 'No. The positioning statement is an internal tool for decisions. A tagline is a short public line that may be inspired by it.'
   - q: 'How often should positioning change?'
     a: 'Rarely. Revisit it when your audience, product range or competitors change significantly.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A **brand positioning statement** is a short, internal sentence that keeps every decision on track, from your logo colour to your Instagram captions.

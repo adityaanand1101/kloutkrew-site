@@ -12,6 +12,7 @@ faqs:
     a: 'Descriptive names are easy to understand but hard to protect and easy to outgrow. Invented or suggestive names are more distinctive but need more marketing to explain.'
   - q: 'Do I need the .com domain?'
     a: 'Not always. A matching .in, .co or .com with a short prefix can work, but make sure the exact .com isn''t owned by a competitor in your category.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A name is the one part of your brand you'll say thousands of times. It should be easy to say, hard to confuse and possible to own. Here's a practical process for **brand naming**.

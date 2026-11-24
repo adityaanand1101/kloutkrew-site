@@ -12,6 +12,7 @@ faqs:
     a: 'No. Campaigns and social content can follow trends. Keep the core logo simple and let the wider identity flex.'
   - q: 'How long should a logo last?'
     a: 'A well-designed logo can last ten years or more with only small refinements.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A logo is a long-term investment. Trends can make it feel fresh today and dated in two years. Here's how to build one that lasts.

@@ -12,6 +12,7 @@ faqs:
     a: 'Shopify supports several gateways used in India. Check current options and fees for your business before choosing.'
   - q: 'Which is better for SEO?'
     a: 'Both can rank well. Speed, content, product data and links matter more than the platform.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Choosing an e-commerce platform shapes how you run your store for years. Here's how **Shopify and WooCommerce** compare.

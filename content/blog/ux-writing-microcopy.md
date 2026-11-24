@@ -12,6 +12,7 @@ faqs:
     a: 'A specific verb that says what will happen, such as "Save changes" or "Send enquiry", not "Submit" or "OK".'
   - q: 'How should error messages be written?'
     a: 'Say what went wrong and how to fix it, in plain language, without blaming the user.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Users rarely notice good microcopy, but they notice bad microcopy immediately.

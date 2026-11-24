@@ -12,6 +12,7 @@ faqs:
     a: 'Change one big variable at a time: the hook, the format, the angle or the offer.'
   - q: 'How do I know a creative is winning?'
     a: 'Compare cost per purchase or lead over enough spend and conversions to be meaningful, not just clicks or likes.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 In paid social, creative is often the biggest lever. A **creative testing system** finds winners faster.

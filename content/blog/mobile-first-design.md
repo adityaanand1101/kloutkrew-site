@@ -12,6 +12,7 @@ faqs:
     a: 'Responsive design adapts to screen sizes; mobile-first is the approach of starting with mobile priorities before scaling up.'
   - q: 'Does Google use the mobile version of my site?'
     a: 'Yes. Google primarily uses the mobile version of a page for indexing and ranking.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 For most businesses, the majority of visitors arrive on phones. **Mobile-first design** makes sure the experience works there first.

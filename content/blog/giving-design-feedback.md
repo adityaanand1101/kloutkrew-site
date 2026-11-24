@@ -12,6 +12,7 @@ faqs:
     a: 'Gather input, but consolidate it into one set of comments from one decision-maker.'
   - q: 'How many revision rounds are normal?'
     a: 'Two or three rounds are typical for most design projects when feedback is consolidated and specific.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Good feedback makes revisions faster and the final work better.

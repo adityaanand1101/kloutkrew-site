@@ -12,6 +12,7 @@ faqs:
     a: 'It can if you change everything. Keep key recognition cues, such as colour or logo position, and communicate the change.'
   - q: 'How do I test a new pack?'
     a: 'Compare old and new in shelf and thumbnail mockups, and get quick feedback from real customers before printing.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A **packaging redesign** can lift sales, but changing too much can lose customers who shop by colour and shape.

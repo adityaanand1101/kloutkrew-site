@@ -12,6 +12,7 @@ faqs:
     a: 'Usually not. Give key points and hooks, and let creators speak naturally. Over-scripted UGC looks like an ad.'
   - q: 'What usage rights do I need?'
     a: 'Agree whether you can use the video in paid ads, for how long, and on which platforms, before production.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Good UGC feels natural but is carefully briefed. Use this template.

@@ -12,6 +12,7 @@ faqs:
     a: 'Minimalism is common, which makes it harder to stand out. Distinctive colour, structure or typography matters more than following the trend.'
   - q: 'How do I design a skincare range?'
     a: 'Keep a fixed layout and type system, and use colour or a single graphic element to distinguish products.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Beauty is one of the most crowded D2C categories in India. **Cosmetic packaging** has to look premium on a shelf, in a flat-lay photo and in an unboxing video.

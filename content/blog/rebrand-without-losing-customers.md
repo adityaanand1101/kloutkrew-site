@@ -12,6 +12,7 @@ faqs:
     a: 'A visual rebrand alone won''t. A name or domain change can, unless you set up permanent redirects and update your Google Business Profile and directory listings.'
   - q: 'Should I change everything on one day?'
     a: 'Digital touchpoints should change together. Packaging and printed materials can phase in as stock runs out, as long as both versions are clearly the same brand.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A rebrand should bring new customers without confusing the ones you have. Here's how to roll one out.

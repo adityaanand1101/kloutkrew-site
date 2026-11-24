@@ -12,6 +12,8 @@ faqs:
     a: 'Plan themes a month ahead and detailed posts one to two weeks ahead, leaving room for timely content.'
   - q: 'What tool should I use?'
     a: 'A shared spreadsheet or a simple project board is enough for most small teams.'
+cover: ./images/content-calendar-guide/cover.jpg
+coverAlt: "A content calendar workflow from goal setting to publishing and measuring"
 ---
 
 The best content plan is one your team can keep up. Here's how to build a **content calendar** that works.

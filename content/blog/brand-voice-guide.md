@@ -12,6 +12,7 @@ faqs:
     a: 'Voice stays the same; tone adapts to the situation. A playful brand might be lighter on Instagram and calmer in a delivery-delay email.'
   - q: 'How do I keep brand voice consistent?'
     a: 'Write a one-page guide with traits, do and don''t examples and a word list, and share it with everyone who writes for the brand.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Two brands can sell the same product with the same design and still feel completely different because of how they write. That's **brand voice**.

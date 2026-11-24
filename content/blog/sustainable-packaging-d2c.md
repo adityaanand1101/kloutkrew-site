@@ -12,6 +12,7 @@ faqs:
     a: 'Not always. It depends on weight, coatings, protection and local recycling. Plastic-lined paper, for example, is often hard to recycle.'
   - q: 'How should I communicate sustainability?'
     a: 'Make specific, true claims, such as "100% paper, no plastic" or "refill pack uses less plastic", and avoid vague words like "eco-friendly" without proof.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Customers notice excess packaging, especially in unboxing videos. **Sustainable packaging** doesn't have to mean higher cost; often it starts with using less.

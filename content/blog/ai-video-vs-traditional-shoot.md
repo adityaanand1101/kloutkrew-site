@@ -12,6 +12,7 @@ faqs:
     a: 'When you need real people using your actual product, authentic testimonials, precise product handling or a specific location.'
   - q: 'What is hybrid production?'
     a: 'Combining filmed product shots or people with AI-generated environments, transitions and effects.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Brands now have a real choice between generating footage and filming it. Here's how to decide.

@@ -12,6 +12,7 @@ faqs:
     a: 'Only if its licence allows commercial use on the channels you need, such as web, apps, packaging and video. Check before you design.'
   - q: 'Should my logo font be my headline font?'
     a: 'Not necessarily. Logos are often custom-drawn; headline fonts need to work across many words and sizes.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Typography carries a brand's voice before anyone reads a word. A condensed bold sans feels loud and modern; a refined serif feels editorial and premium.

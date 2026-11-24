@@ -12,6 +12,7 @@ faqs:
     a: 'Rarely. Good AI films combine generated footage with human direction, editing, sound design, colour grading and often real product shots.'
   - q: 'Who owns an AI-generated ad film?'
     a: 'Ownership depends on your contract and the tools'' terms. Agree rights clearly with your production partner.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 AI has made film-quality ads possible on smaller budgets. But a good **AI ad film** still follows a disciplined process.

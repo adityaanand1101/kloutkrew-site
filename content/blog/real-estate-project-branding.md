@@ -12,6 +12,7 @@ faqs:
     a: 'Name, logo, colour and type system, brochure, hoardings and site signage, sales gallery graphics, project website, walkthrough film and launch ads.'
   - q: 'How should a project brand relate to the developer brand?'
     a: 'Usually as an endorsed brand: the project has its own identity, with the developer''s logo adding trust.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 In a market full of similar towers, **real estate project branding** is often what makes buyers book a site visit.

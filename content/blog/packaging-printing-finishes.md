@@ -12,6 +12,7 @@ faqs:
     a: 'Each finish adds a production step, so costs rise with quantity of finishes and complexity. Ask your printer for options.'
   - q: 'How do I tell the printer where a finish goes?'
     a: 'The designer supplies each finish on a separate layer or file, marked clearly, aligned to the artwork and dieline.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Finishes add touch and shine to packaging. Used well, they make a pack feel premium; overused, they look busy.

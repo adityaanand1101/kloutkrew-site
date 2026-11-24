@@ -12,6 +12,7 @@ faqs:
     a: 'Specific lessons, stories with a point, behind-the-scenes looks and opinions backed by experience.'
   - q: 'Do carousels still work on LinkedIn?'
     a: 'Document-style carousels are still a good way to share frameworks and visual explanations.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 LinkedIn rewards founders who share useful, specific experience. Here's a simple system.

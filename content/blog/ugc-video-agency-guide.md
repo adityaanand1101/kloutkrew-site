@@ -12,6 +12,7 @@ faqs:
     a: 'Agencies save time on sourcing, briefing, reshoots and editing, and can deliver many variations for ad testing.'
   - q: 'What deliverables should I expect?'
     a: 'Finished videos in several hooks and formats, raw clips, captions and clear usage rights.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 UGC is one of the most effective ad formats for D2C brands. A **UGC video agency** makes it repeatable.

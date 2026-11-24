@@ -12,6 +12,7 @@ faqs:
     a: 'Two to six weeks is typical, depending on whether it''s AI-led, shot, or hybrid, and how many approvals are needed.'
   - q: 'Should a Delhi brand shoot locally?'
     a: 'If you need real locations, people or products, local shoots are efficient. AI and hybrid approaches reduce how much needs to be filmed.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A brand film is often the first piece of content people share about you. Here's how to plan one in Delhi NCR.

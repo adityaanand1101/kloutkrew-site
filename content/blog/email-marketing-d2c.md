@@ -12,6 +12,7 @@ faqs:
     a: 'Regularly but not excessively, often weekly or every two weeks, depending on your audience''s response.'
   - q: 'Do emails need to be designed?'
     a: 'Simple, branded templates work best. Heavily designed image-only emails often load slowly and get flagged.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Ads bring customers; email brings them back. Automated flows work while you sleep.

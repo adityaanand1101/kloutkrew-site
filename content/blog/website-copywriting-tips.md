@@ -12,6 +12,7 @@ faqs:
     a: 'For people first, using the words your customers use. That naturally includes the keywords they search for.'
   - q: 'What''s the most common copywriting mistake?'
     a: 'Talking about yourself instead of the customer''s problem and outcome.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Design gets attention; words make the decision. Here's how to write **website copy** that works.

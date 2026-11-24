@@ -12,6 +12,7 @@ faqs:
     a: 'Through video calls, shared design files, written updates at milestones and clear approval steps, without needing to meet in person.'
   - q: 'How do payments usually work?'
     a: 'Typically in milestones, such as a deposit at kickoff and the balance on delivery, with invoices in an agreed currency.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 More brands abroad now work with design studios in India. Done well, it combines high-quality work with good value and a smooth process.

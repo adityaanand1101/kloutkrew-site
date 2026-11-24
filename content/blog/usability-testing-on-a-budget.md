@@ -12,6 +12,7 @@ faqs:
     a: 'Only if they match your target users and aren''t familiar with the product. Real target users give more reliable results.'
   - q: 'Do I need special software?'
     a: 'No. A video call with screen sharing, a prototype or live site and a notes document are enough.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 You don't need a lab to test usability. A few short sessions find the biggest problems quickly.

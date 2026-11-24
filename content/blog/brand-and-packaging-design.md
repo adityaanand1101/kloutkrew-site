@@ -12,6 +12,7 @@ faqs:
     a: 'Often, yes, because research, concepts and assets are shared, and there''s no hand-over between teams.'
   - q: 'What if I already have a logo?'
     a: 'A packaging project can extend it into a full system, or refresh it slightly so it works better on pack.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Many brands design a logo with one person and packaging with another. The result is often a pack that doesn't quite fit the brand. Designing **brand and packaging together** avoids that.

@@ -12,6 +12,7 @@ faqs:
     a: 'Usually yes. Visible pricing filters leads and builds trust. Enterprise plans can use "contact us".'
   - q: 'Which platform is best for a SaaS marketing site?'
     a: 'Webflow is popular because marketing teams can update pages without developers, while the product itself runs separately.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A SaaS website has one job: help the right visitors understand the product fast enough to try it.

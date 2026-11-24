@@ -12,6 +12,7 @@ faqs:
     a: 'Many accessibility practices, such as descriptive alt text, proper headings and clear link text, also help search engines understand your pages.'
   - q: 'How do I check my site''s accessibility?'
     a: 'Run Lighthouse''s accessibility audit in Chrome, try navigating with only a keyboard, and test with a screen reader.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Accessibility makes your website usable for more people. Many fixes are simple and also improve SEO and conversions.

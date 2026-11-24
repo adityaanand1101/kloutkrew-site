@@ -12,6 +12,7 @@ faqs:
     a: 'Yes. Paid or gifted collaborations should be clearly disclosed. Check current advertising guidelines in India for the exact requirements.'
   - q: 'How do I measure influencer marketing?'
     a: 'Use unique discount codes or tracked links, and track reach, engagement quality, sales and content you can reuse in ads.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Influencer marketing can build trust faster than ads, if you choose creators carefully.

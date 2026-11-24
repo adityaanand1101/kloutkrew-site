@@ -12,6 +12,7 @@ faqs:
     a: 'Clear photos, price, the main benefit, size or variant selection, delivery information, reviews and a visible add-to-cart button.'
   - q: 'How do I make my Shopify store faster?'
     a: 'Compress images, limit apps, avoid heavy sliders and auto-playing video above the fold, and test with Lighthouse.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Shopify makes it easy to start selling. **Shopify store design** is what makes visitors buy.

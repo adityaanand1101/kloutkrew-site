@@ -12,6 +12,7 @@ faqs:
     a: 'As long as needed to answer the visitor''s questions. Simple, low-cost offers can be short; expensive or complex ones need more proof and detail.'
   - q: 'Should a landing page have navigation?'
     a: 'Usually minimal or none, so visitors focus on the one action you want.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A good landing page does one job. Here's how to design one that converts.

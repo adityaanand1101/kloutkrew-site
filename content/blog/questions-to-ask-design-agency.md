@@ -12,6 +12,7 @@ faqs:
     a: 'Yes. Speaking to one or two past clients is one of the best ways to understand how an agency works.'
   - q: 'Who should own the final files?'
     a: 'You should, once paid. Confirm ownership of designs, source files and licences in writing.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 The right questions save months of frustration. Ask these before you sign.

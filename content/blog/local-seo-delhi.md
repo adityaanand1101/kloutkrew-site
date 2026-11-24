@@ -12,6 +12,7 @@ faqs:
     a: 'If you genuinely serve those areas, a well-written page for each can help, as long as each has useful, specific content.'
   - q: 'What are citations?'
     a: 'Listings of your business name, address or area and phone on directories and websites, which help search engines trust your details.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 When someone in Delhi NCR searches "branding agency near me" or "cafe in Hauz Khas", local SEO decides who appears.

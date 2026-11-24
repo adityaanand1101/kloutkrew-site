@@ -12,6 +12,7 @@ faqs:
     a: 'A logo built from mathematical shapes rather than pixels, so it can scale to any size without blurring. SVG, PDF, EPS and AI files are vector formats.'
   - q: 'Why does my logo look blurry?'
     a: 'You''re probably using a small raster file (PNG or JPG) at a larger size than it was made for. Use the vector version instead.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 You've finished your logo, and the designer sends a folder full of files. Here's what each one is for.

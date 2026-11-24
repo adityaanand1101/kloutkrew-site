@@ -12,6 +12,7 @@ faqs:
     a: 'Not always. Many work with on-screen text and music, which also helps muted viewing.'
   - q: 'What''s the most common script mistake?'
     a: 'Trying to say too many things. One clear message lands better than five.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Great brand films feel effortless because the structure underneath is tight.

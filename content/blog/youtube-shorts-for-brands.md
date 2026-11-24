@@ -12,6 +12,7 @@ faqs:
     a: 'Most perform well between 15 and 45 seconds; keep it as long as it stays interesting.'
   - q: 'Do Shorts help YouTube search?'
     a: 'Shorts can appear in YouTube and Google results, and descriptive titles help them get discovered.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 **YouTube Shorts** combine short-form reach with YouTube's search engine. For brands, that means content can keep being found long after posting.

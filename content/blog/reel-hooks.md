@@ -12,6 +12,7 @@ faqs:
     a: 'Both where possible. Many people watch muted, so on-screen text is essential.'
   - q: 'How do I know which hook works?'
     a: 'Post variations with the same body and different hooks, and compare retention in the first three seconds.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Most viewers decide in the first seconds whether to keep watching. Here are **hook formulas** to adapt.

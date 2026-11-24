@@ -12,6 +12,7 @@ faqs:
     a: 'Big enough to read at around 100 pixels wide on a phone. Test by viewing your pack at that size.'
   - q: 'Do I need different images for apps?'
     a: 'Use the real pack as the main image, then add images showing size, key benefits and ingredients to help shoppers decide.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 On Blinkit, Zepto and Swiggy Instamart, your product appears as a square thumbnail among dozens of others. **Packaging for quick commerce** must work at that size.

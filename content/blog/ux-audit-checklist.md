@@ -12,6 +12,7 @@ faqs:
     a: 'A focused audit of key journeys can take a few days; a full product audit takes longer.'
   - q: 'What do I get from a UX audit?'
     a: 'A prioritised list of issues with evidence, screenshots and recommended fixes.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A **UX audit** finds the friction that quietly costs you enquiries, sign-ups and sales.

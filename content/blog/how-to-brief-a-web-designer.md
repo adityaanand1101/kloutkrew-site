@@ -12,6 +12,7 @@ faqs:
     a: 'One to three pages is usually enough. Clarity about goals and must-have features matters more than length.'
   - q: 'Should I write the website copy before design starts?'
     a: 'Ideally have at least a draft. Design works best around real content, and missing copy is the most common cause of delays.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A clear brief is the cheapest way to get a better website. Here's what to send a web designer before the first call.

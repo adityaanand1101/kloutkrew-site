@@ -12,6 +12,7 @@ faqs:
     a: 'UX is how the product works and feels across the journey; UI is the visual and interactive layer of each screen.'
   - q: 'Do I need research before design?'
     a: 'Some research always helps, even a few user interviews and a review of analytics, so design decisions are grounded in real behaviour.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A good **UI/UX design agency** helps you build a product people understand and enjoy using. Here's what to expect and how to choose one.

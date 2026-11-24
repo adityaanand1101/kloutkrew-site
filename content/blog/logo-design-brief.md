@@ -12,6 +12,7 @@ faqs:
     a: 'Yes, but explain why you like each one, whether it''s the shape, the colour or the feeling. Designers learn more from the reasons than from the images.'
   - q: 'How many logo concepts should I expect?'
     a: 'Most studios show two or three distinct directions first, then refine the one you choose.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A **logo design brief** is a short document that tells a designer what your logo needs to do. A good brief leads to better first concepts and fewer revision rounds. A vague one ("make it modern and clean") leads to guesswork.

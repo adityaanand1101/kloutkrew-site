@@ -12,6 +12,7 @@ faqs:
     a: 'Two to three hours a week is enough for consistent LinkedIn posting and engagement once you have a system.'
   - q: 'Should a founder''s brand look like the company brand?'
     a: 'It should feel related but personal. Use a consistent photo style and colours, but write in your own voice.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Early on, customers often buy from the founder before they buy from the brand. A focused **founder personal brand** makes that easier.

@@ -12,6 +12,7 @@ faqs:
     a: 'Most single-product projects take 4 to 6 weeks from brief to print-ready files. Large ranges take longer.'
   - q: 'What do I need before starting packaging design?'
     a: 'Product details, mandatory label text, your printer''s dielines if available, target price and where the product will be sold.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Packaging design is part creative and part technical. Here's how a well-run **packaging design process** works.

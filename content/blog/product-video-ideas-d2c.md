@@ -12,6 +12,7 @@ faqs:
     a: 'Six to thirty seconds for social and ads; up to two minutes for product page explainers.'
   - q: 'Do I need a professional crew?'
     a: 'Not always. Phone-shot UGC, AI-assisted visuals and simple studio setups can all perform well.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Video sells products that photos can't explain. Here are formats that work for D2C brands.

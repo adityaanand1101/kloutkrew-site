@@ -12,6 +12,7 @@ faqs:
     a: 'As fast as possible. Interest drops quickly, so quick calls or WhatsApp replies make a big difference.'
   - q: 'What creative do property ads need?'
     a: 'Short lifestyle and location videos, renders, floor plan carousels and clear offers or configurations.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Delhi NCR's property market is crowded across Gurugram, Noida, Greater Noida and Delhi. Marketing that's clear, fast and trustworthy wins site visits.

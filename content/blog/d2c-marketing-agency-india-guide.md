@@ -12,6 +12,7 @@ faqs:
     a: 'It can help, because the people making ads see what performs. Some brands split them; either way, creative and media teams must work closely.'
   - q: 'How should I measure a D2C agency?'
     a: 'On business results such as revenue, customer acquisition cost and return on ad spend, alongside creative output and testing velocity.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 D2C growth depends on a steady supply of good creative, smart media buying and retention. The right agency covers the gaps in your team.

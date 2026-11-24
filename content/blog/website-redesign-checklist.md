@@ -12,6 +12,7 @@ faqs:
     a: 'A permanent redirect that sends visitors and search engines from an old URL to its new address, passing on most of the old page''s ranking value.'
   - q: 'How long after a redesign do rankings settle?'
     a: 'Usually a few weeks. Monitor Search Console for errors and fix them quickly.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A redesign should improve your site, not reset your traffic. Use this **website redesign checklist**.

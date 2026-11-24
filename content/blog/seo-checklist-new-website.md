@@ -12,6 +12,7 @@ faqs:
     a: 'A blog helps you rank for questions customers ask and shows Google and AI tools what you know, but service pages matter most for enquiries.'
   - q: 'What is structured data?'
     a: 'Code that describes your business, services, articles and FAQs to search engines, which can enable rich results.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Launching a site isn't the same as being found. Use this **SEO checklist** for any new website.

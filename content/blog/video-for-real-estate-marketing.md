@@ -12,6 +12,7 @@ faqs:
     a: 'Yes. AI and 3D can create lifestyle and location visuals before the building exists, as long as they''re clearly representative and not misleading.'
   - q: 'Which platforms work best for property video?'
     a: 'YouTube for long walkthroughs, Instagram and Meta ads for short lifestyle cuts, and WhatsApp for sharing with interested buyers.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 Property is an emotional purchase. Video helps buyers imagine living there before they visit.

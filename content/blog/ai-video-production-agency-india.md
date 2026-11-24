@@ -12,6 +12,7 @@ faqs:
     a: 'A production house mainly films with crews and locations. An AI-first studio generates much of the footage digitally and often combines it with small shoots.'
   - q: 'What should I check before hiring?'
     a: 'Finished work that looks consistent and on-brand, a clear process with storyboards, honest advice on what AI can''t do, and clear rights and usage terms.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 India now has a growing number of studios offering AI video. Here's how to tell the strong ones apart.

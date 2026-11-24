@@ -12,6 +12,7 @@ faqs:
     a: 'Marketplaces have rules about main images showing the actual product. Use AI mainly for secondary lifestyle images, and check each platform''s policy.'
   - q: 'How do I keep AI images on-brand?'
     a: 'Define a visual style guide, reuse consistent prompts and references, and have a designer finish and check every image.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 AI can place your product in a sunlit kitchen, a beach or a studio set in minutes. Used carefully, **AI product photography** saves time and budget.

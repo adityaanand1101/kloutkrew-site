@@ -12,6 +12,7 @@ faqs:
     a: 'For most startups, 15 to 30 pages is enough. A short guide that people actually open beats a 100-page manual nobody reads.'
   - q: 'Who needs a copy of the brand guidelines?'
     a: 'Everyone who makes anything for the brand, including your team, freelancers, printers, agencies and marketplace sellers.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 **Brand guidelines** are the rulebook for your brand. They explain how to use your logo, colours, type, imagery and voice so that a social post made by an intern, a box printed in Ahmedabad and a website built in Bengaluru all look like the same company.

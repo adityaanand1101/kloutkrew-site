@@ -12,6 +12,7 @@ faqs:
     a: 'For many Indian businesses, yes. It''s often the easiest way for mobile visitors to ask a question.'
   - q: 'What are click-to-WhatsApp ads?'
     a: 'Meta ads that open a WhatsApp chat with your business instead of a website, useful for high-consideration products and services.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 For many Indian customers, WhatsApp is the most natural way to talk to a business.

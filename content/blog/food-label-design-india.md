@@ -12,6 +12,7 @@ faqs:
     a: 'Use a clear hierarchy: brand and product on the front, mandatory details organised on the back or side panel in a consistent grid with a legible minimum font size.'
   - q: 'Can a designer make my label compliant?'
     a: 'A designer lays out the information clearly and to size rules you specify; the content itself should be checked by you or a compliance advisor.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A food label has two jobs: sell the product in a few seconds and give buyers the information they need. Good **food label design** does both without clutter.

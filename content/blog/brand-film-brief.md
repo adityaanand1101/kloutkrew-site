@@ -12,6 +12,7 @@ faqs:
     a: 'One to two pages. The single key message matters most.'
   - q: 'Should I include reference videos?'
     a: 'Yes, with notes on what you like about each, such as pace, colour, humour or storytelling.'
+draft: true   # on hold: expand to 900+ words before publishing
 ---
 
 A clear brief makes a better film. Use this template.
