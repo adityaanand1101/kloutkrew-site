@@ -333,6 +333,9 @@ ${featured ? `<section class="kb-featured"><div class="kb-wrap">
 <button class="kb-chip is-active" data-filter="all" aria-pressed="true">All</button>
 ${cats.map(c => `<button class="kb-chip" data-filter="${esc(slugify(c))}" aria-pressed="false">${esc(c)}</button>`).join('\n')}
 </div>
+<div class="kb-topic-strip" aria-label="Browse by topic"><span>Browse by topic</span>
+${TOPIC_HUBS.map(h => `<a href="/blog/topics/${h.slug}">${esc(h.name)}</a>`).join('')}
+</div>
 <div class="kb-grid">${rest.map(card).join('\n')}</div>
 <p class="kb-empty" hidden>Nothing here yet — check back soon.</p>
 ${rest.length > 12 ? `<p class="kb-more-wrap"><button type="button" class="kb-btn kb-more">Show more articles</button></p>` : ''}
@@ -363,21 +366,31 @@ ${faqs.map(f => `<details><summary>${esc(f.q)}</summary><div>${md.render(String(
 const faqLd = faqs => ({ '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: String(f.a).replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') } })) });
 
 // Every article points at the money pages that match its topic.
+const SERVICE_INFO = {
+  '/branding-agency': ['Branding agency', 'Positioning, identity and guidelines that make brands recognisable.'],
+  '/packaging-design-agency': ['Packaging design agency', 'Structures, labels and artwork that sell on shelf.'],
+  '/website-design-agency': ['Website design agency', 'Fast, focused sites built around your business goals.'],
+  '/shopify-store-design': ['Shopify store design', 'D2C stores designed to load fast and convert.'],
+  '/ai-brand-films': ['AI brand films', 'Film-quality storytelling without a full shoot.'],
+  '/content-ugc-production': ['Content & UGC production', 'A steady supply of content people actually trust.'],
+  '/social-media-marketing': ['Social media marketing', 'Channels, calendars and content that build an audience.'],
+  '/seo-services': ['SEO & AI search', 'Get found in search and recommended by AI assistants.'],
+  '/brand-budget-calculator': ['Budget calculator', 'Plan a realistic 2026 budget in a couple of minutes.'],
+};
+const serviceLink = href => {
+  const [label, note] = SERVICE_INFO[href] || [];
+  return label ? `<li><a href="${href}"><span>${esc(label)}</span><em>${esc(note)}</em></a></li>` : '';
+};
+const servicesBlock = (hrefs, intro = 'Where we can help with what you just read.') => `<section class="kb-post-services" aria-labelledby="services-title"><div class="kb-narrow">
+<h2 id="services-title">Related services</h2><p>${esc(intro)}</p>
+<ul>${hrefs.map(serviceLink).join('')}</ul>
+</div></section>`;
+
 const SERVICE_CLUSTERS = {
-  branding: [
-    { href: '/branding-agency', label: 'Branding agency', note: 'Positioning, identity and guidelines that make brands recognisable.' },
-  ],
-  packaging: [
-    { href: '/packaging-design-agency', label: 'Packaging design agency', note: 'Structures, labels and artwork that sell on shelf.' },
-  ],
-  web: [
-    { href: '/website-design-agency', label: 'Website design agency', note: 'Fast, focused sites built around your business goals.' },
-    { href: '/shopify-store-design', label: 'Shopify store design', note: 'D2C stores designed to load fast and convert.' },
-  ],
-  content: [
-    { href: '/ai-brand-films', label: 'AI brand films', note: 'Film-quality storytelling without a full shoot.' },
-    { href: '/content-ugc-production', label: 'Content & UGC production', note: 'A steady supply of content people actually trust.' },
-  ],
+  branding: ['/branding-agency'],
+  packaging: ['/packaging-design-agency'],
+  web: ['/website-design-agency', '/shopify-store-design'],
+  content: ['/ai-brand-films', '/content-ugc-production'],
 };
 const CLUSTER_BY_CATEGORY = {
   'Branding': 'branding',
@@ -399,13 +412,46 @@ const clusterOf = post => CLUSTER_BY_SLUG[post.slug] || CLUSTER_BY_CATEGORY[post
 
 function relatedServices(post) {
   const services = SERVICE_CLUSTERS[clusterOf(post)];
-  if (!services?.length) return '';
-  return `<section class="kb-post-services" aria-labelledby="services-title"><div class="kb-narrow">
-<h2 id="services-title">Related services</h2>
-<p>Where we can help with what you just read.</p>
-<ul>${services.map(s => `<li><a href="${s.href}"><span>${esc(s.label)}</span><em>${esc(s.note)}</em></a></li>`).join('')}</ul>
-</div></section>`;
+  return services?.length ? servicesBlock(services) : '';
 }
+
+// Curated topic hubs turn the long tail of post tags into a handful of useful, indexable pages.
+const TOPIC_HUBS = [
+  { slug: 'brand-identity', name: 'Brand identity', service: '/branding-agency',
+    description: 'Logos, colour, type and visual systems: how to build a brand identity that stays recognisable across your website, packaging and every customer touchpoint.',
+    posts: ['brand-identity-process', 'brand-identity-stand-out', 'logo-design-cost-india', 'branding-cost-startup-india', 'graphics-design-trends-2026'] },
+  { slug: 'brand-strategy', name: 'Brand strategy', service: '/branding-agency',
+    description: 'Positioning, brand architecture and partner choices: how to decide what your brand stands for and how to organise products as a small company grows.',
+    posts: ['brand-architecture-explained', 'd2c-branding-india', 'creative-agency-delhi-guide', 'choose-branding-agency-delhi'] },
+  { slug: 'packaging-design', name: 'Packaging design', service: '/packaging-design-agency',
+    description: 'Packaging design for food, FMCG and D2C products: structure, artwork, labels and print finishes, with guidance on what works on shelf and online.',
+    posts: ['fmcg-packaging-design', 'food-packaging-design', 'packaging-design-agency-india'] },
+  { slug: 'website-design', name: 'Website design', service: '/website-design-agency',
+    description: 'Website design, platforms and UX for brand sites, architecture portfolios and property projects: cost, speed, accessibility and what to look for in a partner.',
+    posts: ['architect-website-cost-india', 'real-estate-website-design', 'ui-ux-design-best-practices', 'webflow-agency-india-guide', 'webflow-vs-framer-vs-wordpress', 'website-for-architects', 'indian-d2c-website-speed-study-2026'] },
+  { slug: 'cost-guides', name: 'Cost guides', service: '/brand-budget-calculator',
+    description: 'Real 2026 price ranges for branding, websites, packaging and films in India, plus the factors that move each number and where you can safely save.',
+    posts: ['ai-ad-film-cost-india', 'architect-website-cost-india', 'branding-cost-startup-india', 'logo-design-cost-india'] },
+  { slug: 'content-marketing', name: 'Content marketing', service: '/content-ugc-production',
+    description: 'Content planning, hooks and production habits that keep a brand showing up: calendars, short-form video, UGC and how to measure what actually works.',
+    posts: ['content-calendar-guide', 'future-of-content-creation-ai', 'power-of-ugc-for-brands', 'scroll-stopping-content-guide'] },
+  { slug: 'social-media', name: 'Social media', service: '/social-media-marketing',
+    description: 'Short-form content, calendars and distribution for brands building an audience: what to post, how often, and how to turn attention into real enquiries.',
+    posts: ['content-calendar-guide', 'digital-marketing-b2b-brands', 'power-of-ugc-for-brands', 'scroll-stopping-content-guide'] },
+  { slug: 'seo-discovery', name: 'SEO & Discovery', service: '/seo-services',
+    description: 'How people find your brand before they visit: search, local listings, Google Business Profile and AI assistants, with practical steps to improve visibility.',
+    posts: ['ai-search-visibility-geo', 'google-business-profile-guide', 'digital-marketing-b2b-brands'] },
+  { slug: 'ai-films', name: 'AI Films & Video', service: '/ai-brand-films',
+    description: 'How AI is changing brand films and video: real costs, what the workflow looks like, and which parts still need a human director, editor and storyteller.',
+    posts: ['ai-ad-film-cost-india', 'how-ai-is-changing-brand-films', 'future-of-content-creation-ai'] },
+  { slug: 'd2c-brands', name: 'D2C brands', service: '/shopify-store-design',
+    description: 'Branding, packaging and store decisions for direct-to-consumer brands in India, from positioning and labels to site speed and conversion.',
+    posts: ['d2c-branding-india', 'indian-d2c-website-speed-study-2026', 'packaging-design-agency-india'] },
+  { slug: 'agency-guides', name: 'Agency guides', service: '/branding-agency',
+    description: 'How to choose a creative, branding or web partner: questions to ask, what to check in a portfolio, and how to avoid costly mistakes before you sign.',
+    posts: ['choose-branding-agency-delhi', 'creative-agency-delhi-guide', 'webflow-agency-india-guide'] },
+];
+const hubsOf = post => TOPIC_HUBS.filter(h => h.posts.includes(post.slug));
 
 function relatedPosts(post, posts) {
   const tags = new Set(post.tags.map(t => String(t).toLowerCase()));
@@ -445,7 +491,7 @@ ${post.html}
 ${faqSection(post.faqs)}
 ${relatedServices(post)}
 <footer class="kb-post-foot"><div class="kb-narrow">
-${post.tags.length ? `<ul class="kb-tags">${post.tags.map(t => `<li>#${esc(t)}</li>`).join('')}</ul>` : ''}
+${hubsOf(post).length ? `<ul class="kb-tags kb-topics">${hubsOf(post).map(h => `<li><a href="/blog/topics/${h.slug}">#${esc(h.name)}</a></li>`).join('')}</ul>` : ''}
 <div class="kb-share"><span>Share</span>
 <a href="https://www.linkedin.com/sharing/share-offsite/?url=${share}" target="_blank" rel="noopener">LinkedIn</a>
 <a href="https://wa.me/?text=${encodeURIComponent(post.title + ' ' + url)}" target="_blank" rel="noopener">WhatsApp</a>
@@ -487,6 +533,36 @@ ${CTA}
   return page(head, content, `<script src="/assets/blog.js" defer></script>`);
 }
 
+function topicPage(hub, posts) {
+  const items = hub.posts.map(s => posts.find(p => p.slug === s)).filter(p => p && !p.draft);
+  const url = `${SITE}/blog/topics/${hub.slug}`;
+  const content = `<main class="kb kb-listing">
+<section class="kb-topic-head"><div class="kb-wrap">
+<p class="kb-breadcrumb"><a href="/blog">Blog</a> / Topics / ${esc(hub.name)}</p>
+<p class="kb-eyebrow"><span class="kb-dot"></span>Explore <em>(the)</em> blog</p>
+<h1 class="kb-topic-title">${esc(hub.name)}</h1>
+<p class="kb-topic-dek">${esc(hub.description)}</p>
+</div></section>
+<section class="kb-topic-posts"><div class="kb-wrap">
+<div class="kb-grid">${items.map((p, i) => card(p, i)).join('\n')}</div>
+</div></section>
+${servicesBlock([hub.service], 'Need a hand with this? Here is the service behind these articles.')}
+${CTA}
+</main>`;
+  const head = headHTML({
+    title: `${hub.name} Guides | ${SITE_NAME}`,
+    description: hub.description,
+    url,
+    image: items.find(p => p.cover?.og)?.cover.og ? SITE + items.find(p => p.cover?.og).cover.og : DEFAULT_OG,
+    jsonLd: {
+      '@context': 'https://schema.org', '@type': 'CollectionPage', name: hub.name, description: hub.description, url,
+      isPartOf: { '@type': 'Blog', url: `${SITE}/blog` },
+      mainEntity: { '@type': 'ItemList', numberOfItems: items.length, itemListElement: items.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}/blog/${p.slug}`, name: p.title })) },
+    },
+  });
+  return page(head, content, `<script src="/assets/blog.js" defer></script>`);
+}
+
 function rss(posts) {
   const items = posts.filter(p => !p.draft).slice(0, 30).map(p => `<item>
 <title>${esc(p.title)}</title><link>${SITE}/blog/${p.slug}</link><guid>${SITE}/blog/${p.slug}</guid>
@@ -502,7 +578,7 @@ ${items}
 `;
 }
 
-function sitemap(posts, landings = []) {
+function sitemap(posts, landings = [], topics = []) {
   const src = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8');
   const keep = [...src.matchAll(/<url>[\s\S]*?<\/url>/g)].map(m => m[0]).filter(u => !/<loc>[^<]*\/blog\/[^<]+<\/loc>/.test(u));
   const today = isoDate(new Date());
@@ -511,6 +587,12 @@ function sitemap(posts, landings = []) {
     <lastmod>${isoDate(p.updated || p.date)}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>`);
+  const topicUrls = topics.filter(t => t.posts.some(s => posts.some(p => p.slug === s && !p.draft))).map(t => `  <url>
+    <loc>${SITE}/blog/topics/${t.slug}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>`);
   const all = keep.map(u => '  ' + u.replace(/(<loc>https:\/\/kloutkrew\.in\/blog<\/loc>\s*<lastmod>)[^<]*/, `$1${today}`));
   const lpUrls = landings.map(l => `  <url>
@@ -521,7 +603,7 @@ function sitemap(posts, landings = []) {
   </url>`);
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...all, ...lpUrls, ...blogUrls].join('\n')}
+${[...all, ...lpUrls, ...blogUrls, ...topicUrls].join('\n')}
 </urlset>
 `;
 }
@@ -797,6 +879,7 @@ async function main() {
   const t0 = Date.now();
   await fsp.rm(DIST, { recursive: true, force: true });
   await fsp.mkdir(path.join(DIST, 'blog'), { recursive: true });
+  await fsp.mkdir(path.join(DIST, 'blog', 'topics'), { recursive: true });
 
   for (const e of await fsp.readdir(ROOT, { withFileTypes: true })) {
     if (e.isFile() && STATIC_EXT.has(path.extname(e.name).toLowerCase()) && !STATIC_SKIP.has(e.name)) {
@@ -812,6 +895,7 @@ async function main() {
   for (const p of posts) p.html = unlinkScheduled(p.html);
   await fsp.writeFile(path.join(DIST, 'blog.html'), listingPage(posts));
   for (const post of posts) await fsp.writeFile(path.join(DIST, 'blog', `${post.slug}.html`), postPage(post, posts));
+  for (const hub of TOPIC_HUBS) await fsp.writeFile(path.join(DIST, 'blog', 'topics', `${hub.slug}.html`), topicPage(hub, posts));
   await fsp.writeFile(path.join(DIST, 'blog', 'rss.xml'), rss(posts));
   const landings = await loadLandingPages();
   for (const q of await loadFaqPages()) (FAQ_INDEX[q.data.service] = FAQ_INDEX[q.data.service] || []).push(q);
@@ -822,10 +906,11 @@ async function main() {
   await fsp.writeFile(path.join(DIST, 'faq.html'), unlinkScheduled(faqHub(faqs, landings)));
   const legal = await buildLegal();
   const faqLandings = [...legal, { slug: 'faq', updated: new Date() }, ...faqs.map(q => ({ slug: 'faq/' + q.slug, updated: q.updated }))];
-  await fsp.writeFile(path.join(DIST, 'sitemap.xml'), sitemap(posts, [...landings, ...faqLandings]));
+  await fsp.writeFile(path.join(DIST, 'sitemap.xml'), sitemap(posts, [...landings, ...faqLandings], TOPIC_HUBS));
   const llms = fs.readFileSync(path.join(ROOT, 'llms.txt'), 'utf8').trimEnd()
     + (landings.length ? '\n\n## Pages\n\n' + landings.map(l => `- [${l.data.h1}](${SITE}/${l.slug}): ${l.data.description}`).join('\n') : '')
     + (faqs.length ? '\n\n## FAQ\n\n' + faqs.map(q => `- [${q.data.question}](${SITE}/faq/${q.slug}): ${q.data.answer}`).join('\n') : '')
+    + '\n\n## Topics\n\n' + TOPIC_HUBS.map(h => `- [${h.name}](${SITE}/blog/topics/${h.slug}): ${h.description}`).join('\n')
     + '\n\n## Blog\n\n' + posts.filter(p => !p.draft).map(p => `- [${p.title}](${SITE}/blog/${p.slug}): ${p.description}`).join('\n') + '\n';
   await fsp.writeFile(path.join(DIST, 'llms.txt'), llms);
 
