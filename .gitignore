@@ -23,3 +23,5 @@ dist/
 !assets/**/*.png
 !assets/**/*.webp
 !assets/**/*.avif
+!favicon.png
+!apple-touch-icon.png

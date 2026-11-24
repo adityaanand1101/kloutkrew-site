@@ -349,7 +349,7 @@ ${CTA}
     image: featured?.cover?.og ? SITE + featured.cover.og : DEFAULT_OG,
     jsonLd: {
       '@context': 'https://schema.org', '@type': 'Blog', name: `${SITE_NAME} Blog`, url: `${SITE}/blog`,
-      publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: `${SITE}/favicon.svg` } },
+      publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: `${SITE}/favicon.png` } },
       blogPost: posts.slice(0, 20).map(p => ({ '@type': 'BlogPosting', headline: p.title, url: `${SITE}/blog/${p.slug}`, datePublished: isoDate(p.date) })),
     },
   });
@@ -520,13 +520,13 @@ ${CTA}
       headline: post.title, description: post.description, image,
       datePublished: post.date.toISOString(), dateModified: (post.updated || post.date).toISOString(),
       author: post.author === SITE_NAME ? { '@type': 'Organization', name: SITE_NAME } : { '@type': 'Person', name: post.author, worksFor: { '@type': 'Organization', name: SITE_NAME, url: SITE } },
-      publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: `${SITE}/favicon.svg` } },
+      publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: `${SITE}/favicon.png` } },
       mainEntityOfPage: url, keywords: post.tags.join(', '), articleSection: post.category }, faqLd(post.faqs)] } : {
       '@context': 'https://schema.org', '@type': 'BlogPosting',
       headline: post.title, description: post.description, image,
       datePublished: post.date.toISOString(), dateModified: (post.updated || post.date).toISOString(),
       author: post.author === SITE_NAME ? { '@type': 'Organization', name: SITE_NAME } : { '@type': 'Person', name: post.author, worksFor: { '@type': 'Organization', name: SITE_NAME, url: SITE } },
-      publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: `${SITE}/favicon.svg` } },
+      publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: `${SITE}/favicon.png` } },
       mainEntityOfPage: url, keywords: post.tags.join(', '), articleSection: post.category,
     },
   });

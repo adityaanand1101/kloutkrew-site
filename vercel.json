@@ -50,10 +50,6 @@
       "destination": "/blog.html"
     },
     {
-      "source": "/favicon.ico",
-      "destination": "/favicon.svg"
-    },
-    {
       "source": "/branding-agency-delhi",
       "destination": "/branding-agency-delhi.html"
     },
