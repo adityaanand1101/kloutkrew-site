@@ -280,7 +280,7 @@ const PUBLISHER_SCHEMA = `<script type="application/ld+json">${JSON.stringify({
   '@context': 'https://schema.org', '@type': 'WebSite', name: SITE_NAME, url: SITE,
   publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE, logo: { '@type': 'ImageObject', url: `${SITE}/favicon.png` } },
 }).replace(/</g, '\\u003c')}</script>`;
-function seoMetaPass(html) {
+function seoMetaPass(html, { tags = [], trail = null } = {}) {
   if (!html.includes('</head>')) return html;
   let add = '';
   if (!/<meta name="robots"/i.test(html)) add += '<meta name="robots" content="index, follow"/>';
@@ -288,8 +288,59 @@ function seoMetaPass(html) {
   const desc = (html.match(/<meta name="description" content="([^"]*)"/i) || [])[1];
   if (desc && !/<meta property="og:description"/i.test(html)) add += `<meta property="og:description" content="${desc}"/>`;
   if (desc && !/<meta name="twitter:description"/i.test(html)) add += `<meta name="twitter:description" content="${desc}"/>`;
+  const keywords = tags.filter(Boolean).join(', ');
+  if (keywords && !/<meta name="keywords"/i.test(html)) add += `<meta name="keywords" content="${esc(keywords)}"/>`;
+  if (trail && !/"@type":"BreadcrumbList"/.test(html)) {
+    add += `<script type="application/ld+json">${JSON.stringify(breadcrumbLd(trail)).replace(/</g, '\\u003c')}</script>`;
+  }
   if (!/"publisher"\s*:/.test(html)) add += PUBLISHER_SCHEMA;
   return add ? html.replace('</head>', add + '</head>') : html;
+}
+
+const CRUMB_CSS = `<style>.kk-crumbs{padding:18px var(--kb-gutter,5%) 0;max-width:1680px;margin:0 auto;color:var(--kb-gray,#5c5c5c);font-size:.8125rem}.kk-crumbs a{color:inherit;text-decoration:underline;text-underline-offset:3px}.kk-crumbs span{margin:0 8px;opacity:.6}</style>`;
+
+function pageLabel(html) {
+  const h1 = (html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] || '';
+  return h1.replace(/<[^>]+>/g, ' ').replace(/&(?:amp|quot|#39);/g, m => ({ '&amp;': '&', '&quot;': '"', '&#39;': "'" })[m] || m)
+    .replace(/\s+/g, ' ').trim().slice(0, 70);
+}
+
+function breadcrumbTrail(rel, label) {
+  if (rel === 'index.html' || rel === '404.html') return null;
+  const home = { name: 'Home', path: '/' };
+  const path = '/' + rel.replace(/\.html$/, '');
+  if (rel === 'blog.html') return [home, { name: 'Blog', path: '/blog' }];
+  if (rel.startsWith('blog/topics/')) return [home, { name: 'Blog', path: '/blog' }, { name: 'Topics', path: '/blog' }, { name: label || 'Topic', path }];
+  if (rel.startsWith('blog/')) return [home, { name: 'Blog', path: '/blog' }, { name: label || 'Article', path }];
+  if (rel === 'faq.html') return [home, { name: 'FAQ', path: '/faq' }];
+  if (rel.startsWith('faq/')) return [home, { name: 'FAQ', path: '/faq' }, { name: label || 'Question', path }];
+  if (SERVICES.some(([s]) => s === rel.replace(/\.html$/, ''))) return [home, { name: 'Services', path: '/services' }, { name: label || 'Service', path }];
+  return [home, { name: label || 'Page', path }];
+}
+
+function breadcrumbHtml(trail) {
+  if (!trail?.length) return '';
+  const last = trail.at(-1).name;
+  const items = trail.map((c, i) => i === trail.length - 1
+    ? `<span aria-current="page">${esc(last)}</span>`
+    : `<a href="${c.path}">${esc(c.name)}</a><span aria-hidden="true">/</span>`);
+  return `<nav class="kk-crumbs" aria-label="Breadcrumb">${items.join('')}</nav>`;
+}
+
+function breadcrumbLd(trail) {
+  return {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: trail.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: SITE + c.path })),
+  };
+}
+
+function breadcrumbPass(html, trail) {
+  if (!trail || /class="[^"]*breadcrumb/i.test(html)) return html;
+  const nav = CRUMB_CSS + breadcrumbHtml(trail);
+  const mainTag = html.match(/<main\b[^>]*>/i);
+  if (mainTag) return html.replace(mainTag[0], mainTag[0] + nav);
+  const bodyTag = html.match(/<body\b[^>]*>/i);
+  return bodyTag ? html.replace(bodyTag[0], bodyTag[0] + nav) : html;
 }
 
 // Title attributes for images that don't have one (derived from their alt text).
@@ -972,11 +1023,28 @@ async function main() {
   const legal = await buildLegal();
   const faqLandings = [...legal, { slug: 'faq', updated: new Date() }, ...faqs.map(q => ({ slug: 'faq/' + q.slug, updated: q.updated }))];
   await fsp.writeFile(path.join(DIST, 'sitemap.xml'), sitemap(posts, [...landings, ...faqLandings], TOPIC_HUBS));
+  const tagMap = new Map();
+  for (const p of posts) tagMap.set('blog/' + p.slug + '.html', p.tags);
+  for (const h of TOPIC_HUBS) tagMap.set('blog/topics/' + h.slug + '.html', [h.name, ...h.points.slice(0, 3)]);
+  for (const q of faqs) tagMap.set('faq/' + q.slug + '.html', [q.data.service || 'FAQ', 'KloutKrew Studio', 'New Delhi']);
+  for (const l of landings) tagMap.set(l.slug + '.html', [l.data.serviceName || l.data.h1, 'KloutKrew Studio', 'New Delhi']);
+  tagMap.set('index.html', ['KloutKrew Studio', 'branding', 'packaging', 'websites', 'AI brand films', 'New Delhi']);
+  tagMap.set('about.html', ['KloutKrew Studio', 'creative studio', 'New Delhi', 'design team']);
+  tagMap.set('services.html', ['branding', 'packaging', 'websites', 'UI/UX', 'digital marketing', 'AI brand films']);
+  tagMap.set('works.html', ['brand films', 'packaging', 'websites', 'case studies', 'KloutKrew Studio']);
+  tagMap.set('contact-us.html', ['contact', 'quote', 'New Delhi', 'KloutKrew Studio']);
+  tagMap.set('blog.html', ['branding', 'packaging', 'websites', 'AI films', 'marketing', 'guides']);
+  tagMap.set('faq.html', ['branding', 'packaging', 'websites', 'costs', 'timelines', 'file ownership']);
+  const llEntry = (title, url, desc, rel) => {
+    const tags = tagMap.get(rel) || [];
+    const trail = breadcrumbTrail(rel, title);
+    return `- [${title}](${url}): ${desc}${tags.length ? ' Tags: ' + tags.slice(0, 6).join(', ') + '.' : ''}${trail ? ' Breadcrumb: ' + trail.map(c => c.name).join(' > ') + '.' : ''}`;
+  };
   const llms = fs.readFileSync(path.join(ROOT, 'llms.txt'), 'utf8').trimEnd()
-    + (landings.length ? '\n\n## Pages\n\n' + landings.map(l => `- [${l.data.h1}](${SITE}/${l.slug}): ${l.data.description}`).join('\n') : '')
-    + (faqs.length ? '\n\n## FAQ\n\n' + faqs.map(q => `- [${q.data.question}](${SITE}/faq/${q.slug}): ${q.data.answer}`).join('\n') : '')
-    + '\n\n## Topics\n\n' + TOPIC_HUBS.map(h => `- [${h.name}](${SITE}/blog/topics/${h.slug}): ${h.description}`).join('\n')
-    + '\n\n## Blog\n\n' + posts.filter(p => !p.draft).map(p => `- [${p.title}](${SITE}/blog/${p.slug}): ${p.description}`).join('\n') + '\n';
+    + (landings.length ? '\n\n## Pages\n\n' + landings.map(l => llEntry(l.data.h1, `${SITE}/${l.slug}`, l.data.description, `${l.slug}.html`)).join('\n') : '')
+    + (faqs.length ? '\n\n## FAQ\n\n' + faqs.map(q => llEntry(q.data.question, `${SITE}/faq/${q.slug}`, q.data.answer, `faq/${q.slug}.html`)).join('\n') : '')
+    + '\n\n## Topics\n\n' + TOPIC_HUBS.map(h => llEntry(h.name, `${SITE}/blog/topics/${h.slug}`, h.description, `blog/topics/${h.slug}.html`)).join('\n')
+    + '\n\n## Blog\n\n' + posts.filter(p => !p.draft).map(p => llEntry(p.title, `${SITE}/blog/${p.slug}`, p.description, `blog/${p.slug}.html`)).join('\n') + '\n';
   await fsp.writeFile(path.join(DIST, 'llms.txt'), llms);
 
   // Link the studio's third-party profiles (profiles.json) into every page's ProfessionalService schema.
@@ -1017,7 +1085,10 @@ async function main() {
     { const h2 = footerize(html); if (h2 !== html) { html = h2; changed = true; } }
     if (socialHTML && html.includes(MAIL) && !html.includes('kk-social')) { const i = html.lastIndexOf(MAIL) + MAIL.length; html = html.slice(0, i) + socialHTML + html.slice(i); changed = true; }
     if (profiles.length && html.includes('"@type":"ProfessionalService","name"') && !html.includes('"sameAs"')) { html = html.replace('"knowsAbout":', `"sameAs":${JSON.stringify(profiles)},"knowsAbout":`); changed = true; }
-    { const h2 = seoMetaPass(html); if (h2 !== html) { html = h2; changed = true; } }
+    const rel = path.relative(DIST, f).replace(/\\/g, '/');
+    const trail = breadcrumbTrail(rel, pageLabel(html));
+    { const h2 = seoMetaPass(html, { tags: tagMap.get(rel) || [], trail }); if (h2 !== html) { html = h2; changed = true; } }
+    { const h2 = breadcrumbPass(html, trail); if (h2 !== html) { html = h2; changed = true; } }
     { const h2 = imageTitlePass(html); if (h2 !== html) { html = h2; changed = true; } }
     if (changed) await fsp.writeFile(f, html);
   }
