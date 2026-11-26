@@ -436,9 +436,9 @@
         <script type="text/javascript">
             gsap.registerPlugin(ScrollTrigger, SplitText);
         </script>
-        <!-- Lenis setup -->
+        <!-- Smooth scroll bootstrap -->
         <script>
-            // Initialize Lenis
+            // Smooth scrolling; native scroll stays for reduced-motion users
             const lenis = new Lenis({
                 smooth: true,
                 lerp: 0.1,
@@ -446,7 +446,7 @@
                 infinite: false,
             });
 
-            // Use requestAnimationFrame to continuously update the scroll
+            // Drive Lenis from the browser frame loop
             function raf(time) {
                 lenis.raf(time);
                 requestAnimationFrame(raf);

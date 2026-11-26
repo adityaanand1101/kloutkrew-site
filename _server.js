@@ -45,7 +45,7 @@ function saveSubmission(data) {
 http.createServer((req, res) => {
   const method = req.method.toUpperCase();
 
-  // --- API: Handle form submissions ---
+  // POST /api/submit: accept a form payload and email it
   if (method === 'POST' && req.url === '/api/contact') {
     readBody(req).then(body => {
       const params = querystring.parse(body);
@@ -66,7 +66,7 @@ http.createServer((req, res) => {
     return;
   }
 
-  // --- API: View submissions (only from localhost) ---
+  // GET /api/submissions: local-only inbox view
   if (method === 'GET' && req.url === '/api/submissions') {
     const ip = req.socket.remoteAddress;
     if (ip !== '127.0.0.1' && ip !== '::1' && ip !== '::ffff:127.0.0.1') {
@@ -84,7 +84,7 @@ http.createServer((req, res) => {
     return;
   }
 
-  // --- Static file serving ---
+  // Serve built files with a fallback for clean URLs
   let urlPath = decodeURIComponent(req.url.split('?')[0]);
   if (urlPath === '/') urlPath = '/index.html';
   if (urlPath === '/service' || urlPath === '/services') urlPath = '/services.html';
