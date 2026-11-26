@@ -453,36 +453,58 @@ function relatedServices(post) {
 const TOPIC_HUBS = [
   { slug: 'brand-identity', name: 'Brand identity', service: '/branding-agency',
     description: 'Logos, colour, type and visual systems: how to build a brand identity that stays recognisable across your website, packaging and customer touchpoints.',
+    intro: "A brand identity is the set of visual and verbal choices people recognise before they read a word: the mark, colour, type, imagery and the rules that hold them together. We treat it as a working system, not a single design file — something your team can apply to a website, a label or a sales deck without guessing.",
+    points: ["What makes a mark distinctive in its category", "How colour and type choices survive real applications", "When a refresh is safer than a full rebrand", "What belongs in a guide your team will actually use"],
     posts: ['brand-identity-process', 'brand-identity-stand-out', 'logo-design-cost-india', 'branding-cost-startup-india', 'graphics-design-trends-2026'] },
   { slug: 'brand-strategy', name: 'Brand strategy', service: '/branding-agency',
     description: 'Positioning, brand architecture and partner choices: how to decide what your brand stands for and how to organise products as a small company grows.',
+    intro: "Strategy decides what a brand stands for and how the products under it sit together. For a growing company that usually means choosing a position, naming the range, and deciding which products get their own identity and which share a master brand. The articles here turn those decisions into steps a small team can take.",
+    points: ["How to write a position your team can repeat", "Master brand, sub-brand or endorsed brand", "When to rename and when to keep recognition", "How to check a strategy against buyer language"],
     posts: ['brand-architecture-explained', 'd2c-branding-india', 'creative-agency-delhi-guide', 'choose-branding-agency-delhi'] },
   { slug: 'packaging-design', name: 'Packaging design', service: '/packaging-design-agency',
     description: 'Packaging design for food, FMCG and D2C products: structure, artwork, labels and print finishes, with guidance on what works on shelf and online.',
+    intro: "Packaging has to work twice over: it must sell on shelf and survive printing, storage and delivery. These articles cover structure, artwork, labels and finishes for food, FMCG and D2C products, including what changes when the same pack appears in a kirana store, a supermarket and a delivery-app thumbnail.",
+    points: ["Structure and format choices by product", "Labels, claims and mandatory information", "Print finishes and cost trade-offs", "How to brief and review artwork"],
     posts: ['fmcg-packaging-design', 'food-packaging-design', 'packaging-design-agency-india'] },
   { slug: 'website-design', name: 'Website design', service: '/website-design-agency',
     description: 'Website design, platforms and UX for brand sites, architecture portfolios and property projects: cost, speed and what to look for in a partner.',
+    intro: "A website is often the first place a buyer checks whether a brand is real. The guides here cover the decisions that matter most: platform choice, page structure, mobile speed, accessibility and enquiries. We write them for founders and marketing teams who need to brief a designer and judge the result.",
+    points: ["Which platform fits your team and budget", "Pages and features for service and property sites", "Speed, Core Web Vitals and mobile behaviour", "How to make a site easy for your team to edit"],
     posts: ['architect-website-cost-india', 'real-estate-website-design', 'ui-ux-design-best-practices', 'webflow-agency-india-guide', 'webflow-vs-framer-vs-wordpress', 'website-for-architects', 'indian-d2c-website-speed-study-2026'] },
   { slug: 'cost-guides', name: 'Cost guides', service: '/brand-budget-calculator',
     description: 'Real 2026 price ranges for branding, websites, packaging and films in India, plus the factors that move each number and where you can safely save.',
+    intro: "Prices for creative work vary widely, and a single number is rarely useful. Our cost guides give published 2026 market ranges for Indian projects, then explain what moves each figure: scope, number of deliverables, revisions, printing and how senior the team is. Use them to build a brief and a budget, not as a quote.",
+    points: ["What drives logo and identity budgets", "Website and Shopify cost ranges", "Packaging artwork and print variables", "Film and content production by format"],
     posts: ['ai-ad-film-cost-india', 'architect-website-cost-india', 'branding-cost-startup-india', 'logo-design-cost-india'] },
   { slug: 'content-marketing', name: 'Content marketing', service: '/content-ugc-production',
     description: 'Content planning, hooks and production habits that keep a brand showing up: calendars, short-form video, UGC and how to measure what actually works.',
+    intro: "Content works when it is planned around a real audience question rather than a posting schedule. These articles cover the practical side: calendars, hooks, short-form video, UGC and measurement. The aim is a workflow a small team can keep up without a large production crew.",
+    points: ["Build a calendar you can actually maintain", "Write hooks that earn the first seconds", "Mix brand-made and creator content", "Measure attention, saves and enquiries"],
     posts: ['content-calendar-guide', 'future-of-content-creation-ai', 'power-of-ugc-for-brands', 'scroll-stopping-content-guide'] },
   { slug: 'social-media', name: 'Social media', service: '/social-media-marketing',
     description: 'Short-form content, calendars and distribution for brands building an audience: what to post, how often and how to turn attention into enquiries.',
+    intro: "Social channels reward clarity and consistency more than volume. Here we look at what to post, how often, and how to turn attention into enquiries: content calendars, short-form hooks, UGC and platform-specific pacing. The guidance is written for brands with a small in-house team.",
+    points: ["A posting rhythm that survives a busy month", "Formats for each platform", "Turning customer content into posts", "What to track beyond likes"],
     posts: ['content-calendar-guide', 'digital-marketing-b2b-brands', 'power-of-ugc-for-brands', 'scroll-stopping-content-guide'] },
   { slug: 'seo-discovery', name: 'SEO & Discovery', service: '/seo-services',
     description: 'How people find your brand before they visit: search, local listings, Google Business Profile and AI assistants, with steps to improve visibility.',
+    intro: "Most buyers form a shortlist before they contact anyone. These guides cover how a brand gets into that shortlist: technical search basics, Google Business Profile, local listings and the AI assistants that increasingly answer research questions. Each article focuses on steps you can verify yourself.",
+    points: ["Search basics that affect crawl and index", "Local listings and profile accuracy", "How assistants choose brands to mention", "How to measure discovery, not just traffic"],
     posts: ['ai-search-visibility-geo', 'google-business-profile-guide', 'digital-marketing-b2b-brands'] },
   { slug: 'ai-films', name: 'AI Films & Video', service: '/ai-brand-films',
     description: 'How AI is changing brand films and video: real costs, the workflow, and which parts still need a human director, editor and storyteller.',
+    intro: "AI has changed what a brand film can cost and how fast it can be made, but it has not removed the need for direction. These articles explain where AI tools help, where they fail, and what still needs a human eye: story, product accuracy, editing, sound and colour.",
+    points: ["Real cost ranges for AI-led films", "A workable generation-to-edit workflow", "When a shoot is still the right call", "How to keep the result on brand"],
     posts: ['ai-ad-film-cost-india', 'how-ai-is-changing-brand-films', 'future-of-content-creation-ai'] },
   { slug: 'd2c-brands', name: 'D2C brands', service: '/shopify-store-design',
     description: 'Branding, packaging and store decisions for direct-to-consumer brands in India, from positioning and labels to site speed and conversion.',
+    intro: "Direct-to-consumer brands have to carry their own packaging, store and story at once. The guides here connect those decisions: positioning, label and pack design, store speed and conversion, and the content needed after launch. They are written for Indian D2C teams working with limited budgets.",
+    points: ["Positioning before packaging", "Pack decisions that affect delivery", "Store speed and product pages", "Launch content that stays consistent"],
     posts: ['d2c-branding-india', 'indian-d2c-website-speed-study-2026', 'packaging-design-agency-india'] },
   { slug: 'agency-guides', name: 'Agency guides', service: '/branding-agency',
     description: 'How to choose a creative, branding or web partner: questions to ask, what to check in a portfolio, and how to avoid costly mistakes before you sign.',
+    intro: "Choosing a creative partner is easier when you know what each type of agency does and what to ask before signing. These guides compare branding, creative and web agencies, list portfolio checks and questions, and flag the red flags that tend to show up in proposals.",
+    points: ["Branding vs creative vs ad agency", "What to look for in a portfolio", "Questions that reveal how a team works", "Scope, files and ownership in the contract"],
     posts: ['choose-branding-agency-delhi', 'creative-agency-delhi-guide', 'webflow-agency-india-guide'] },
 ];
 const hubsOf = post => TOPIC_HUBS.filter(h => h.posts.includes(post.slug));
@@ -577,9 +599,18 @@ function topicPage(hub, posts) {
 <h1 class="kb-topic-title">${esc(hub.name)}</h1>
 <p class="kb-topic-dek">${esc(hub.description)}</p>
 </div></section>
+<section class="kb-topic-intro"><div class="kb-narrow">
+<p>${esc(hub.intro)}</p>
+<h2>What you'll find here</h2>
+<ul>${hub.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul>
+</div></section>
 <section class="kb-topic-posts"><div class="kb-wrap">
 <div class="kb-grid">${items.map((p, i) => card(p, i)).join('\n')}</div>
 </div></section>
+<section class="kb-topic-more"><div class="kb-wrap">
+<div class="kb-topic-strip" aria-label="More topics"><span>More topics</span>
+${TOPIC_HUBS.filter(h => h !== hub).map(h => `<a href="/blog/topics/${h.slug}">${esc(h.name)}</a>`).join('')}
+</div></div></section>
 ${servicesBlock([hub.service], 'Need a hand with this? Here is the service behind these articles.')}
 ${CTA}
 </main>`;

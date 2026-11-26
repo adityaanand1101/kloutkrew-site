@@ -254,6 +254,15 @@ body, .page_wrapper { background: #fff; }
   font-size: clamp(4rem, 12vw, 12rem); line-height: .82; margin: 0 0 22px;
 }
 .kb-topic-dek { max-width: 56ch; margin: 0; font-size: clamp(1.125rem, 1.6vw, 1.5rem); line-height: 1.45; }
+.kb-topic-intro { padding: 0 0 clamp(48px, 6vw, 88px); }
+.kb-topic-intro .kb-narrow { border-top: 1px solid var(--kb-line); padding-top: 28px; }
+.kb-topic-intro p { font-size: 1.0625rem; line-height: 1.7; margin: 0 0 1.2em; }
+.kb-topic-intro h2 { font-family: var(--kb-display); font-weight: 400; text-transform: uppercase; font-size: clamp(1.8rem, 3vw, 2.6rem); margin: 0 0 16px; }
+.kb-topic-intro ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.kb-topic-intro li { padding-left: 22px; position: relative; line-height: 1.55; }
+.kb-topic-intro li::before { content: "/"; position: absolute; left: 0; color: var(--kb-red); font-family: var(--kb-display); }
+.kb-topic-more { padding: 0 0 clamp(48px, 6vw, 88px); }
+.kb-topic-more .kb-topic-strip { margin: 0; }
 .kb-topic-posts { padding: 0 0 clamp(60px, 7vw, 110px); }
 
 .kb-related { padding: 0 0 clamp(70px, 8vw, 120px); }
