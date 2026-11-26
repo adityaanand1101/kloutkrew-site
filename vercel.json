@@ -187,6 +187,19 @@
       ]
     },
     {
+      "source": "/assets/data/(.*)\\.csv",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment"
+        }
+      ]
+    },
+    {
       "source": "/assets/(video-posters/.*|hero/.*|work/.*|og-default\\.jpg)",
       "headers": [
         {
