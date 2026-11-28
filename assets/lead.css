@@ -16,3 +16,5 @@
 @media (max-width:600px){.kk-lead{left:12px;bottom:12px;width:calc(100vw - 88px);padding:14px 14px 14px}.kk-lead-t{font-size:22px;margin-bottom:8px}.kk-lead-d{display:none}.kk-lead-f{gap:6px}.kk-lead-f input[type=text],.kk-lead-f input[type=email]{padding:9px 12px;font-size:16px}.kk-lead-b{font-size:18px;padding:10px}}
 @media (prefers-reduced-motion:reduce){.kk-lead{transition:none}}
 @media print{.kk-lead{display:none}}
+
+.kk-heading-as-text{margin:20px 0 10px;font-weight:700}
